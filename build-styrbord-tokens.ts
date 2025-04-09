@@ -94,6 +94,15 @@ function getStyleDictionaryConfig(brand: string): Config {
       web: {
         expand: {
           include: ['typography'],
+          // more info about typesMap later...
+          typesMap: {
+            // all width props are mapped to 'dimension' type
+            width: 'dimension',
+            typography: {
+              // fontSize prop is mapped to 'dimension' type if inside a typography composite type token
+              fontSize: 'dimension',
+            },
+          },
         },
         transformGroup: 'ssnn',
         buildPath: `dist/`,
@@ -161,6 +170,13 @@ function getStyleDictionaryConfig(brand: string): Config {
             );
           },
         },
+        fontsize: {
+          type: 'value',
+          filter: (token) => token.path.includes('fontsize'),
+          transform: (token) => {
+            return `${token.value}px`;
+          },
+        },
       },
     },
   };
@@ -207,6 +223,7 @@ writeFiles().then(async () => {
         'opacity',
         'shadows',
         'renametypo',
+        'fontsize',
         // 'typography/css/shorthand',
       ],
     });

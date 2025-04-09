@@ -1,6 +1,6 @@
 {
   "name": "@kystverket/styrbord-tokens",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "type": "module",
   "exports": {
@@ -18,7 +18,7 @@
     "dist/**/*"
   ],
   "scripts": {
-    "build": "npx tsx build-styrbord-tokens.ts"
+    "build": "npx tsx build-styrbord-tokens.ts && sed 's/--/--ds-/g' < dist/style-tokens.css > dist/style-ds.css && cat dist/style-tokens.css dist/style-ds.css > dist/style.css"
   },
   "author": "",
   "license": "ISC",

@@ -99,7 +99,7 @@ function getStyleDictionaryConfig(brand: string): Config {
         buildPath: `dist/`,
         files: [
           {
-            destination: `${brand.replace('theme-etat1', 'style')}.css`,
+            destination: `${brand.replace('theme-etat1', 'style-tokens')}.css`,
             format: 'css/variables',
             // selector: `.${brand}-theme`,
             // Exclude the source file, so that we avoid having styles for every brand in every file.

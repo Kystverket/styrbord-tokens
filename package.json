@@ -1,0 +1,32 @@
+{
+  "name": "@kystverket/styrbord-tokens",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "exports": {
+    ".": {
+      "style": "./dist/style.css"
+    },
+    "./*.css": {
+      "import": "./dist/*.css",
+      "require": "./dist/*.css"
+    }
+  },
+  "main": "./dist/main.js",
+  "typings": "./dist/src/main.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "npx tsx build-styrbord-tokens.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tokens-studio/sd-transforms": "^1.2.12",
+    "@types/node": "^22.14.0",
+    "style-dictionary": "^4.3.3",
+    "token-transformer": "^0.0.33",
+    "tsx": "^4.19.3"
+  }
+}

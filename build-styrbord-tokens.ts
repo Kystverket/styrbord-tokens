@@ -1,6 +1,8 @@
 import fs from 'node:fs';
 import StyleDictionary, { type Config } from 'style-dictionary';
 
+import { logBrokenReferenceLevels, logVerbosityLevels, logWarningLevels } from 'style-dictionary/enums';
+
 const rawTokens = await import('./tokens.json');
 const brands = ['theme-etat1'];
 const dir = './temp';
@@ -21,6 +23,7 @@ const typographyRenames = [
   ['textcase', 'text-case'],
   ['textdecoration', 'text-decoration'],
 ];
+
 // --typography-heading-2xl-fontfamily: museo-sans;
 // --typography-heading-2xl-fontweight: 500;
 // --typography-heading-2xl-lineheight: 130%;
@@ -42,7 +45,7 @@ const excludeSource = (token) => !token.filePath.includes('mode-light.json');
 
 function processItem(key): Promise<boolean> {
   const brand = key.replace(/(['"/ ])/g, '-');
-  const token = JSON.stringify(tokens[key]);
+  const token = JSON.stringify(tokens[key], null, 2).replace('\"font-size\"', '\"fontsize\"');
   fileLocation = `${dir}/${brand}.json`;
   return new Promise((resolve, reject) => {
     fs.writeFile(fileLocation, token, (err) => {
@@ -60,7 +63,7 @@ function processItem(key): Promise<boolean> {
 async function writeFiles() {
   for (const key in tokens) {
     if (!key.includes('$')) {
-      console.log(`\nProcessing: ${key}`);
+      console.log(`Outputting to temp: ${key}`);
       await processItem(key);
     }
   }
@@ -72,8 +75,8 @@ function getStyleDictionaryConfig(brand: string): Config {
     `${dir}/global.json`,
     `${dir}/color-scheme-light.json`,
     // `${dir}/color-scheme-dark.json`,
-    // `${dir}/size-small.json`,
-    `${dir}/size-medium.json`,
+    `${dir}/size-small.json`,
+    // `${dir}/size-medium.json`,
     // `${dir}/size-large.json`,
     `${dir}/main-color-primary.json`,
     // `${dir}/main-color-accent.json`,
@@ -115,6 +118,13 @@ function getStyleDictionaryConfig(brand: string): Config {
             filter: excludeSource,
           },
         ],
+      },
+    },
+    log: {
+      warnings: logWarningLevels.warn, // 'warn' | 'error' | 'disabled'
+      verbosity: logVerbosityLevels.verbose, // 'default' | 'silent' | 'verbose'
+      errors: {
+        brokenReferences: logBrokenReferenceLevels.throw, // 'throw' | 'console'
       },
     },
     hooks: {
@@ -174,7 +184,7 @@ function getStyleDictionaryConfig(brand: string): Config {
           type: 'value',
           filter: (token) => token.path.includes('fontsize'),
           transform: (token) => {
-            return `${token.value}px`;
+            return token.value.includes('rem') || token.value.includes('px') ? token.value : `${token.value}px`;
           },
         },
       },

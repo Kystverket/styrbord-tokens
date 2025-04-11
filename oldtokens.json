@@ -4461,43 +4461,43 @@
   "Size/medium": {
     "font-size": {
       "1": {
-        "value": "0.812rem",
+        "value": "0.75rem",
         "type": "dimension"
       },
       "2": {
-        "value": "1rem",
+        "value": "0.875rem",
         "type": "dimension"
       },
       "3": {
-        "value": "1.125rem",
+        "value": "1rem",
         "type": "dimension"
       },
       "4": {
-        "value": "1.312rem",
+        "value": "1.125rem",
         "type": "dimension"
       },
       "5": {
-        "value": "1.5rem",
+        "value": "1.312rem",
         "type": "dimension"
       },
       "6": {
-        "value": "1.875rem",
+        "value": "1.5rem",
         "type": "dimension"
       },
       "7": {
-        "value": "2.25rem",
+        "value": "1.875rem",
         "type": "dimension"
       },
       "8": {
-        "value": "3rem",
+        "value": "2.25rem",
         "type": "dimension"
       },
       "9": {
-        "value": "3.75rem",
+        "value": "3rem",
         "type": "dimension"
       },
       "10": {
-        "value": "4.5rem",
+        "value": "3.75rem",
         "type": "dimension"
       }
     },
@@ -4737,43 +4737,43 @@
   "Size/small": {
     "font-size": {
       "1": {
-        "value": "0.812rem",
+        "value": "0.688rem",
         "type": "dimension"
       },
       "2": {
-        "value": "1rem",
+        "value": "0.812rem",
         "type": "dimension"
       },
       "3": {
-        "value": "1.125rem",
+        "value": "0.875rem",
         "type": "dimension"
       },
       "4": {
-        "value": "1.312rem",
+        "value": "1rem",
         "type": "dimension"
       },
       "5": {
-        "value": "1.5rem",
+        "value": "1.125rem",
         "type": "dimension"
       },
       "6": {
-        "value": "1.875rem",
+        "value": "1.312rem",
         "type": "dimension"
       },
       "7": {
-        "value": "2.25rem",
+        "value": "1.5rem",
         "type": "dimension"
       },
       "8": {
-        "value": "3rem",
+        "value": "1.875rem",
         "type": "dimension"
       },
       "9": {
-        "value": "3.75rem",
+        "value": "2.25rem",
         "type": "dimension"
       },
       "10": {
-        "value": "4.5rem",
+        "value": "3rem",
         "type": "dimension"
       }
     },

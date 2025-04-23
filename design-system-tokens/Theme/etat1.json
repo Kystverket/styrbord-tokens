@@ -1,0 +1,386 @@
+{
+  "color": {
+    "neutral": {
+      "1": {
+        "value": "{etat1.neutral.1}",
+        "type": "color"
+      },
+      "2": {
+        "value": "{etat1.neutral.2}",
+        "type": "color"
+      },
+      "3": {
+        "value": "{etat1.neutral.3}",
+        "type": "color"
+      },
+      "4": {
+        "value": "{etat1.neutral.4}",
+        "type": "color"
+      },
+      "5": {
+        "value": "{etat1.neutral.5}",
+        "type": "color"
+      },
+      "6": {
+        "value": "{etat1.neutral.6}",
+        "type": "color"
+      },
+      "7": {
+        "value": "{etat1.neutral.7}",
+        "type": "color"
+      },
+      "8": {
+        "value": "{etat1.neutral.8}",
+        "type": "color"
+      },
+      "9": {
+        "value": "{etat1.neutral.9}",
+        "type": "color"
+      },
+      "10": {
+        "value": "{etat1.neutral.10}",
+        "type": "color"
+      },
+      "11": {
+        "value": "{etat1.neutral.11}",
+        "type": "color"
+      },
+      "12": {
+        "value": "{etat1.neutral.12}",
+        "type": "color"
+      },
+      "13": {
+        "value": "{etat1.neutral.13}",
+        "type": "color"
+      },
+      "14": {
+        "value": "{etat1.neutral.14}",
+        "type": "color"
+      },
+      "15": {
+        "value": "{etat1.neutral.15}",
+        "type": "color"
+      },
+      "16": {
+        "value": "{etat1.neutral.16}",
+        "type": "color"
+      }
+    },
+    "accent": {
+      "1": {
+        "value": "{etat1.accent.1}",
+        "type": "color"
+      },
+      "2": {
+        "value": "{etat1.accent.2}",
+        "type": "color"
+      },
+      "3": {
+        "value": "{etat1.accent.3}",
+        "type": "color"
+      },
+      "4": {
+        "value": "{etat1.accent.4}",
+        "type": "color"
+      },
+      "5": {
+        "value": "{etat1.accent.5}",
+        "type": "color"
+      },
+      "6": {
+        "value": "{etat1.accent.6}",
+        "type": "color"
+      },
+      "7": {
+        "value": "{etat1.accent.7}",
+        "type": "color"
+      },
+      "8": {
+        "value": "{etat1.accent.8}",
+        "type": "color"
+      },
+      "9": {
+        "value": "{etat1.accent.9}",
+        "type": "color"
+      },
+      "10": {
+        "value": "{etat1.accent.10}",
+        "type": "color"
+      },
+      "11": {
+        "value": "{etat1.accent.11}",
+        "type": "color"
+      },
+      "12": {
+        "value": "{etat1.accent.12}",
+        "type": "color"
+      },
+      "13": {
+        "value": "{etat1.accent.13}",
+        "type": "color"
+      },
+      "14": {
+        "value": "{etat1.accent.14}",
+        "type": "color"
+      },
+      "15": {
+        "value": "{etat1.accent.15}",
+        "type": "color"
+      },
+      "16": {
+        "value": "{etat1.accent.16}",
+        "type": "color"
+      }
+    },
+    "primary": {
+      "1": {
+        "value": "{etat1.primary.1}",
+        "type": "color"
+      },
+      "2": {
+        "value": "{etat1.primary.2}",
+        "type": "color"
+      },
+      "3": {
+        "value": "{etat1.primary.3}",
+        "type": "color"
+      },
+      "4": {
+        "value": "{etat1.primary.4}",
+        "type": "color"
+      },
+      "5": {
+        "value": "{etat1.primary.5}",
+        "type": "color"
+      },
+      "6": {
+        "value": "{etat1.primary.6}",
+        "type": "color"
+      },
+      "7": {
+        "value": "{etat1.primary.7}",
+        "type": "color"
+      },
+      "8": {
+        "value": "{etat1.primary.8}",
+        "type": "color"
+      },
+      "9": {
+        "value": "{etat1.primary.9}",
+        "type": "color"
+      },
+      "10": {
+        "value": "{etat1.primary.10}",
+        "type": "color"
+      },
+      "11": {
+        "value": "{etat1.primary.11}",
+        "type": "color"
+      },
+      "12": {
+        "value": "{etat1.primary.12}",
+        "type": "color"
+      },
+      "13": {
+        "value": "{etat1.primary.13}",
+        "type": "color"
+      },
+      "14": {
+        "value": "{etat1.primary.14}",
+        "type": "color"
+      },
+      "15": {
+        "value": "{etat1.primary.15}",
+        "type": "color"
+      },
+      "16": {
+        "value": "{etat1.primary.16}",
+        "type": "color"
+      }
+    },
+    "extra1": {
+      "1": {
+        "value": "{etat1.extra1.1}",
+        "type": "color"
+      },
+      "2": {
+        "value": "{etat1.extra1.2}",
+        "type": "color"
+      },
+      "3": {
+        "value": "{etat1.extra1.3}",
+        "type": "color"
+      },
+      "4": {
+        "value": "{etat1.extra1.4}",
+        "type": "color"
+      },
+      "5": {
+        "value": "{etat1.extra1.5}",
+        "type": "color"
+      },
+      "6": {
+        "value": "{etat1.extra1.6}",
+        "type": "color"
+      },
+      "7": {
+        "value": "{etat1.extra1.7}",
+        "type": "color"
+      },
+      "8": {
+        "value": "{etat1.extra1.8}",
+        "type": "color"
+      },
+      "9": {
+        "value": "{etat1.extra1.9}",
+        "type": "color"
+      },
+      "10": {
+        "value": "{etat1.extra1.10}",
+        "type": "color"
+      },
+      "11": {
+        "value": "{etat1.extra1.11}",
+        "type": "color"
+      },
+      "12": {
+        "value": "{etat1.extra1.12}",
+        "type": "color"
+      },
+      "13": {
+        "value": "{etat1.extra1.13}",
+        "type": "color"
+      },
+      "14": {
+        "value": "{etat1.extra1.14}",
+        "type": "color"
+      },
+      "15": {
+        "value": "{etat1.extra1.15}",
+        "type": "color"
+      },
+      "16": {
+        "value": "{etat1.extra1.16}",
+        "type": "color"
+      }
+    },
+    "extra2": {
+      "1": {
+        "value": "{etat1.extra2.1}",
+        "type": "color"
+      },
+      "2": {
+        "value": "{etat1.extra2.2}",
+        "type": "color"
+      },
+      "3": {
+        "value": "{etat1.extra2.3}",
+        "type": "color"
+      },
+      "4": {
+        "value": "{etat1.extra2.4}",
+        "type": "color"
+      },
+      "5": {
+        "value": "{etat1.extra2.5}",
+        "type": "color"
+      },
+      "6": {
+        "value": "{etat1.extra2.6}",
+        "type": "color"
+      },
+      "7": {
+        "value": "{etat1.extra2.7}",
+        "type": "color"
+      },
+      "8": {
+        "value": "{etat1.extra2.8}",
+        "type": "color"
+      },
+      "9": {
+        "value": "{etat1.extra2.9}",
+        "type": "color"
+      },
+      "10": {
+        "value": "{etat1.extra2.10}",
+        "type": "color"
+      },
+      "11": {
+        "value": "{etat1.extra2.11}",
+        "type": "color"
+      },
+      "12": {
+        "value": "{etat1.extra2.12}",
+        "type": "color"
+      },
+      "13": {
+        "value": "{etat1.extra2.13}",
+        "type": "color"
+      },
+      "14": {
+        "value": "{etat1.extra2.14}",
+        "type": "color"
+      },
+      "15": {
+        "value": "{etat1.extra2.15}",
+        "type": "color"
+      },
+      "16": {
+        "value": "{etat1.extra2.16}",
+        "type": "color"
+      }
+    }
+  },
+  "font-family": {
+    "value": "{etat1.font-family}",
+    "type": "text"
+  },
+  "font-weight": {
+    "medium": {
+      "value": "{etat1.font-weight.medium}",
+      "type": "text"
+    },
+    "semibold": {
+      "value": "{etat1.font-weight.semibold}",
+      "type": "text"
+    },
+    "regular": {
+      "value": "{etat1.font-weight.regular}",
+      "type": "text"
+    }
+  },
+  "border-radius": {
+    "1": {
+      "value": "0.125rem",
+      "type": "dimension"
+    },
+    "2": {
+      "value": "0.25rem",
+      "type": "dimension"
+    },
+    "3": {
+      "value": "0.5rem",
+      "type": "dimension"
+    },
+    "4": {
+      "value": "0.75rem",
+      "type": "dimension"
+    },
+    "5": {
+      "value": "{border-radius.base}",
+      "type": "dimension"
+    },
+    "6": {
+      "value": "624.875rem",
+      "type": "dimension"
+    },
+    "base": {
+      "value": "0.25rem",
+      "type": "dimension"
+    },
+    "scale": {
+      "value": "0.25rem",
+      "type": "dimension"
+    }
+  }
+}

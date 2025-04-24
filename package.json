@@ -1,6 +1,6 @@
 {
   "name": "@kystverket/styrbord-tokens",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "",
   "type": "module",
   "exports": {
@@ -18,15 +18,13 @@
     "dist/**/*"
   ],
   "scripts": {
-    "build": "npx tsx build-styrbord-tokens.ts && sed 's/--/--ds-/g' < dist/style-tokens.css > dist/style-ds.css && cat dist/style-tokens.css dist/style-ds.css static-tokens.css > dist/style.css && sed -i 's/-accent/-xxxxxx/g' dist/style.css && sed -i 's/-primary/-accent/g' dist/style.css  && sed -i 's/-xxxxxx/-primary/g' dist/style.css"
+    "build": "npx tsx file2folder.ts && npx @digdir/designsystemet tokens build -o dist"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@tokens-studio/sd-transforms": "^1.2.12",
-    "@types/node": "^22.14.0",
-    "style-dictionary": "^4.3.3",
-    "token-transformer": "^0.0.33",
-    "tsx": "^4.19.3"
+    "tsx": "^4.19.3",
+    "glob": "^11.0.2",
+    "@types/node": "^22.14.1"
   }
 }

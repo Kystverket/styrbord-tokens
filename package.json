@@ -5,7 +5,7 @@
   "type": "module",
   "exports": {
     ".": {
-      "style": "./dist/style.css"
+      "style": "./dist/kystverket.css"
     },
     "./*.css": {
       "import": "./dist/*.css",
@@ -18,7 +18,7 @@
     "dist/**/*"
   ],
   "scripts": {
-    "build": "npx tsx file2folder.ts && npx @digdir/designsystemet tokens build --clean -t design-tokens-from-file -o dist"
+    "build": "npx tsx file2folder.ts && npx @digdir/designsystemet tokens build --clean -t design-tokens-from-file -o dist && npx tsx append-without-prefix.ts"
   },
   "author": "",
   "license": "ISC",

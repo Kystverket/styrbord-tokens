@@ -33,7 +33,7 @@ jobs:
       - run: npm ci
       - run: npm run build
   tag-version:
-    needs: check-version
+    needs: [check-version, run-linters]
     permissions:
       contents: write
     runs-on: ubuntu-latest
@@ -50,7 +50,7 @@ jobs:
       - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --follow-tags
       - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --tags
   publish-to-github-packages:
-    needs: check-version
+    needs: [check-version, run-linters]
     runs-on: ubuntu-latest
     permissions:
       packages: write

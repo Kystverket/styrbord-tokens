@@ -1,7 +1,7 @@
 import { glob } from 'glob';
 import fs from 'fs';
 
-const outputFolder = 'design-tokens-out';
+const outputFolder = 'design-tokens-from-file';
 const inputFile = 'tokens.json';
 
 const mainFn = async () => {

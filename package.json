@@ -18,7 +18,7 @@
     "dist/**/*"
   ],
   "scripts": {
-    "build": "npx tsx file2folder.ts && npx @digdir/designsystemet tokens build -o dist"
+    "build": "npx tsx file2folder.ts && npx @digdir/designsystemet tokens build --clean -t design-tokens-from-file -o dist"
   },
   "author": "",
   "license": "ISC",

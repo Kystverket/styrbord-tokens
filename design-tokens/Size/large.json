@@ -100,7 +100,7 @@
     },
     "base": {
       "$type": "number",
-      "$value": 18
+      "$value": 16
     },
     "step": {
       "$type": "number",

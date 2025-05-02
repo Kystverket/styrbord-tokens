@@ -10,8 +10,8 @@
         "$value": "Medium"
       },
       "semibold": {
-        "$type": "fontWeights",
-        "$value": "Semi bold"
+        "$type": "text",
+        "$value": "SemiBold"
       },
       "regular": {
         "$type": "fontWeights",

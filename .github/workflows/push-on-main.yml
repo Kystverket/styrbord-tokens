@@ -1,9 +1,12 @@
-name: Publish release to GitHub Packages
+name: Automatisk versjonsbump og publisering til GitHub Packages
 
 on:
   push:
     branches:
       - main
+    paths:
+      - design-tokens/**
+  workflow_dispatch:
 
 jobs:
   run-linters:

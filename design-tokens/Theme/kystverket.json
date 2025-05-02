@@ -333,7 +333,7 @@
   },
   "font-family": {
     "$type": "text",
-    "$value": "Inter"
+    "$value": "Museo sans"
   },
   "font-weight": {
     "medium": {

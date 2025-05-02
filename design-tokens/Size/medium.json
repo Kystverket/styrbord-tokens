@@ -2,15 +2,15 @@
   "size": {
     "_mode-font-size": {
       "$type": "dimension",
-      "$value": "18"
+      "$value": "1rem"
     },
     "_base": {
       "$type": "dimension",
-      "$value": "18"
+      "$value": "1rem"
     },
     "_step": {
       "$type": "dimension",
-      "$value": "4"
+      "$value": "0.25rem"
     }
   },
   "_size": {

@@ -332,8 +332,8 @@
     }
   },
   "font-family": {
-    "$type": "fontFamilies",
-    "$value": "{kystverket.font-family}"
+    "$type": "text",
+    "$value": "Inter"
   },
   "font-weight": {
     "medium": {

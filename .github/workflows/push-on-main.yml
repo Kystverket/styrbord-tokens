@@ -34,8 +34,16 @@ jobs:
           PACKAGEJSON_DIR: '.'
         with:
           version-type: 'patch'
-  check-version:
+  wait-for-bump:
     needs: [bump-version]
+    name: 'Wait for version bump'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sleep for 30 seconds
+        run: sleep 30s
+        shell: bash
+  check-version:
+    needs: [wait-for-bump]
     name: Is NPM version untagged?
     runs-on: ubuntu-latest
     steps:

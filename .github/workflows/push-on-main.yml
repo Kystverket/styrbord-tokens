@@ -30,7 +30,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PACKAGEJSON_DIR: '.'
         with:
-          version-type: 'minor'
+          version-type: 'patch'
   check-version:
     needs: [bump-version]
     name: Is NPM version untagged?

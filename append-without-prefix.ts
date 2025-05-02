@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-const inputFiles = ['dist/etat1.css', 'dist/etat2.css'];
+const inputFiles = ['dist/kystverket.css'];
 
 const mainFn = async (inputFile) => {
   const css = fs.readFileSync(inputFile, 'utf-8');

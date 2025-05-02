@@ -1,0 +1,19 @@
+{
+  "tokenSetOrder": [
+    "Size/medium",
+    "Size/large",
+    "Size/small",
+    "Theme/kystverket",
+    "Theme/etat1",
+    "Theme/etat2",
+    "Typography/Primary",
+    "Typography/Secondary",
+    "Color scheme/Dark",
+    "Color scheme/Light",
+    "Semantic/Semantic",
+    "Main color/primary",
+    "Main color/accent",
+    "Support color/extra1",
+    "Support color/extra2"
+  ]
+}

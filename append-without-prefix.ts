@@ -1,25 +1,22 @@
 import fs from 'fs';
 
-const inputFile = 'dist/kystverket.css';
+const inputFiles = ['dist/etat1.css', 'dist/etat2.css'];
 
-const mainFn = async () => {
+const mainFn = async (inputFile) => {
   const css = fs.readFileSync(inputFile, 'utf-8');
+  const outLines: string[] = [];
 
-  const css2 = css
-    .split('\n')
-    .filter((line) => {
-      if (line.includes('@charset')) {
-        return false;
-      }
-      if (line.includes('@layer') && line.includes(';')) {
-        return false;
-      }
-      return true;
-    })
-    .map((line) => line.replaceAll('--ds-', '--'))
-    .join('\n');
+  css.split('\n').forEach((line) => {
+    outLines.push(line);
+    if (line.includes('--ds-')) {
+      const newLine = line.replaceAll('--ds-', '--');
+      outLines.push(newLine);
+    }
+  });
 
-  fs.writeFileSync(inputFile, css + '\n\n\n\n' + css2, 'utf-8');
+  fs.writeFileSync(inputFile, outLines.join('\n'), 'utf-8');
 };
 
-mainFn();
+inputFiles.forEach((inputFile) => {
+  mainFn(inputFile);
+});

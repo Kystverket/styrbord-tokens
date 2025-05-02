@@ -5,7 +5,7 @@
   "type": "module",
   "exports": {
     ".": {
-      "style": "./dist/etat1.css"
+      "style": "./dist/kystverket.css"
     },
     "./*.css": {
       "import": "./dist/*.css",

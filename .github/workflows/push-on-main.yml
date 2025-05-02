@@ -18,6 +18,9 @@ jobs:
       - run: npm run build
   bump-version:
     needs: [run-linters]
+    permissions:
+      packages: read
+      contents: write
     name: 'Automated Version Bump'
     runs-on: ubuntu-latest
     steps:

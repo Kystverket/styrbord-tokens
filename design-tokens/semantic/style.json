@@ -286,7 +286,7 @@
     },
     "default": {
       "$type": "dimension",
-      "$value": "{border-radius.5}"
+      "$value": "{border-radius.3}"
     },
     "full": {
       "$type": "dimension",

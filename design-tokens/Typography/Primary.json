@@ -1,0 +1,22 @@
+{
+  "kystverket": {
+    "font-family": {
+      "$type": "text",
+      "$value": "Museo sans"
+    },
+    "font-weight": {
+      "medium": {
+        "$type": "text",
+        "$value": "700"
+      },
+      "semibold": {
+        "$type": "text",
+        "$value": "500"
+      },
+      "regular": {
+        "$type": "text",
+        "$value": "300"
+      }
+    }
+  }
+}

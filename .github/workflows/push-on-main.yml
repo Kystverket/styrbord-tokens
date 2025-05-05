@@ -22,67 +22,10 @@ jobs:
   bump-version:
     needs: [run-linters]
     permissions:
-      packages: read
+      packages: write
       contents: write
     name: 'Automated Version Bump'
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: 'phips28/gh-action-bump-version@master'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PACKAGEJSON_DIR: '.'
-        with:
-          version-type: 'patch'
-  wait-for-bump:
-    needs: [bump-version]
-    name: 'Wait for version bump'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Sleep for 30 seconds
-        run: sleep 30s
-        shell: bash
-  check-version:
-    needs: [wait-for-bump]
-    name: Is NPM version untagged?
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '22.x'
-      - name: Hente STYRBORD_VERSION
-        run: echo "STYRBORD_VERSION=v$(node -p "require('./package.json').version")" >> $GITHUB_ENV
-      - run: echo $STYRBORD_VERSION
-      - uses: mukunku/tag-exists-action@v1.6.0
-        id: check-tag
-        with:
-          tag: ${{ env.STYRBORD_VERSION }}
-      - run: exit 1
-        if: steps.check-tag.outputs.exists == 'true'
-  tag-version:
-    needs: [check-version, run-linters, bump-version]
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
-      - run: git config user.name "$GITHUB_ACTOR"
-      - run: git pull "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git"
-      - name: Hente STYRBORD_VERSION
-        run: echo "STYRBORD_VERSION=v$(node -p "require('./package.json').version")" >> $GITHUB_ENV
-      - run: echo $STYRBORD_VERSION
-      - run: echo ${STYRBORD_VERSION}
-      - run: git tag ${STYRBORD_VERSION}
-      - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --follow-tags
-      - run: git push "https://$GITHUB_ACTOR:${{ secrets.ACCESS_TOKEN }}@github.com/$GITHUB_REPOSITORY.git" --tags
-  publish-to-github-packages:
-    needs: [tag-version]
-    runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -91,13 +34,17 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           # Defaults to the user or organization that owns the workflow file
           scope: '@kystverket'
-      - run: git pull
+      - uses: 'phips28/gh-action-bump-version@master'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PACKAGEJSON_DIR: '.'
+        with:
+          version-type: 'patch'
       - name: Install dependencies
         run: |
           printf "//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN\n@kystverket:registry=https://npm.pkg.github.com/" > .npmrc
           npm ci
         env:
           GITHUB_TOKEN: ${{ github.token }}
-      - run: npm ci
       - run: npm run build
       - run: npm publish

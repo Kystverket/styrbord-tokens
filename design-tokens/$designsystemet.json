@@ -1,10 +1,4 @@
 {
-  "name": {
-    "$type": "other",
-    "$value": "@digdir/designsystemet"
-  },
-  "version": {
-    "$type": "other",
-    "$value": "1.0.5"
-  }
+  "name": "@digdir/designsystemet",
+  "version": "1.0.5"
 }

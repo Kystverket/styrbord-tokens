@@ -20,20 +20,6 @@
     "semantic/modes/main-color/accent",
     "semantic/modes/support-color/extra1",
     "semantic/modes/support-color/extra2",
-    "semantic/style",
-    "$designsystemet",
-    "Color scheme/Light",
-    "Color scheme/Dark",
-    "Semantic/Semantic",
-    "Theme/kystverket",
-    "Main color/primary",
-    "Main color/accent",
-    "Support color/extra1",
-    "Support color/extra2",
-    "Typography/Primary",
-    "Typography/Secondary",
-    "Size/medium",
-    "Size/large",
-    "Size/small"
+    "semantic/style"
   ]
 }

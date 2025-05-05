@@ -1,17 +1,25 @@
 {
   "tokenSetOrder": [
-    "Size/medium",
-    "Size/large",
-    "Size/small",
-    "Theme/kystverket",
-    "Typography/Primary",
-    "Typography/Secondary",
-    "Color scheme/Dark",
-    "Color scheme/Light",
-    "Semantic/Semantic",
-    "Main color/primary",
-    "Main color/accent",
-    "Support color/extra1",
-    "Support color/extra2"
+    "primitives/globals",
+    "primitives/modes/size/small",
+    "primitives/modes/size/medium",
+    "primitives/modes/size/large",
+    "primitives/modes/size/global",
+    "primitives/modes/typography/size/small",
+    "primitives/modes/typography/size/medium",
+    "primitives/modes/typography/size/large",
+    "primitives/modes/typography/primary/kystverket",
+    "primitives/modes/typography/secondary/kystverket",
+    "primitives/modes/color-scheme/dark/global",
+    "primitives/modes/color-scheme/dark/kystverket",
+    "primitives/modes/color-scheme/light/global",
+    "primitives/modes/color-scheme/light/kystverket",
+    "themes/kystverket",
+    "semantic/color",
+    "semantic/modes/main-color/primary",
+    "semantic/modes/main-color/accent",
+    "semantic/modes/support-color/extra1",
+    "semantic/modes/support-color/extra2",
+    "semantic/style"
   ]
 }

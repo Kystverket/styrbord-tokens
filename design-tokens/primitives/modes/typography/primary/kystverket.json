@@ -2,20 +2,20 @@
   "kystverket": {
     "font-family": {
       "$type": "fontFamilies",
-      "$value": "Inter"
+      "$value": "Museo sans"
     },
     "font-weight": {
       "medium": {
         "$type": "fontWeights",
-        "$value": "Medium"
+        "$value": "500"
       },
       "semibold": {
         "$type": "fontWeights",
-        "$value": "Semi bold"
+        "$value": "700"
       },
       "regular": {
         "$type": "fontWeights",
-        "$value": "Regular"
+        "$value": "300"
       }
     }
   }

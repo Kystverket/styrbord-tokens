@@ -10,6 +10,29 @@ type ColorMap = {
   colors: ColorStrip[];
 };
 
+const stripHeaders = [
+  {
+    span: 2,
+    text: 'Background',
+  },
+  {
+    span: 4,
+    text: 'Surface',
+  },
+  {
+    span: 3,
+    text: 'Surface',
+  },
+  {
+    span: 2,
+    text: 'Text',
+  },
+  {
+    span: 5,
+    text: 'Base',
+  },
+];
+
 const inputFiles = [
   'design-tokens/primitives/modes/color-scheme/light/kystverket.json',
   'design-tokens/primitives/modes/color-scheme/light/global.json',
@@ -49,13 +72,25 @@ const colorMapToHtml = (colorMap: ColorMap): string => {
   const outLines: string[] = [];
   outLines.push('<div>');
   outLines.push('<h2>' + colorMap.file + '</h2>');
-  outLines.push('<div style="display: flex; flex-wrap: wrap;">');
-  colorMap.colors.forEach((colorStrip) => {
-    outLines.push('<div>');
-    outLines.push('<table>');
-    outLines.push('<tr>');
+  outLines.push('<div>');
+  outLines.push('<table>');
+
+  outLines.push('<tr>');
+  outLines.push('<td></td>');
+  stripHeaders.forEach((header) => {
     outLines.push(
-      '<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px;">' +
+      '<td colspan="' +
+        header.span +
+        '" style="padding: 8px; text-align: center; font-family: monospace; border-left: 1px solid #000;border-right: 1px solid #000;">' +
+        header.text +
+        '</td>',
+    );
+  });
+  outLines.push('</tr>');
+
+  colorMap.colors.forEach((colorStrip) => {
+    outLines.push(
+      '<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px; border-top: 1px solid #000;">' +
         colorStrip.name +
         '</td>',
     );
@@ -71,9 +106,8 @@ const colorMapToHtml = (colorMap: ColorMap): string => {
       outLines.push('<td style="padding: 8px 16px; font-family: monospace;">' + color + '</td>');
     });
     outLines.push('</tr>');
-    outLines.push('</table>');
-    outLines.push('</div>');
   });
+  outLines.push('</table>');
   outLines.push('</div>');
   outLines.push('</div>');
   return outLines.join('\n');

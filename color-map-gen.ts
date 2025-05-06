@@ -55,7 +55,7 @@ const createColorMap = (inputFile): ColorMap => {
         name: stripName,
         colors: [],
       };
-      for (let i = 0; i < 16; i++) {
+      for (let i = 1; i <= 16; i++) {
         const color = strip[String(i)];
         if (color) {
           colorStrip.colors.push(color['$value']);

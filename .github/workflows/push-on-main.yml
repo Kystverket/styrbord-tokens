@@ -1,0 +1,50 @@
+name: Automatisk versjonsbump og publisering til GitHub Packages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - design-tokens/**
+  workflow_dispatch:
+
+jobs:
+  run-linters:
+    name: Pretty / Lint / Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '22.x'
+      - run: npm ci
+      - run: npm run build
+  bump-version:
+    needs: [run-linters]
+    permissions:
+      packages: write
+      contents: write
+    name: 'Automated Version Bump'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          registry-url: 'https://npm.pkg.github.com'
+          # Defaults to the user or organization that owns the workflow file
+          scope: '@kystverket'
+      - uses: 'phips28/gh-action-bump-version@master'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PACKAGEJSON_DIR: '.'
+        with:
+          version-type: 'patch'
+      - name: Install dependencies
+        run: |
+          printf "//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN\n@kystverket:registry=https://npm.pkg.github.com/" > .npmrc
+          npm ci
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - run: npm run build
+      - run: npm publish

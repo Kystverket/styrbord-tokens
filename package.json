@@ -1,0 +1,30 @@
+{
+  "name": "@kystverket/styrbord-tokens",
+  "version": "0.2.24",
+  "description": "",
+  "type": "module",
+  "exports": {
+    ".": {
+      "style": "./dist/kystverket.css"
+    },
+    "./*.css": {
+      "import": "./dist/*.css",
+      "require": "./dist/*.css"
+    }
+  },
+  "main": "./dist/main.js",
+  "typings": "./dist/src/main.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "npx @digdir/designsystemet tokens build -o dist && npx tsx append-without-prefix.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsx": "^4.19.3",
+    "glob": "^11.0.2",
+    "@types/node": "^22.14.1"
+  }
+}

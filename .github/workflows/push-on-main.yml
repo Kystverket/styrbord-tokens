@@ -24,6 +24,7 @@ jobs:
     permissions:
       packages: write
       contents: write
+      id-token: write
     name: 'Automated Version Bump'
     runs-on: ubuntu-latest
     steps:
@@ -48,3 +49,14 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
       - run: npm run build
       - run: npm publish
+      - run: npx tsx color-map-gen.ts
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: 'static'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

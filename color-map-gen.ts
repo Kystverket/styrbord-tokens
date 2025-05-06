@@ -11,10 +11,10 @@ type ColorMap = {
 };
 
 const inputFiles = [
-  'design-tokens/primitives/modes/color-scheme/dark/global.json',
-  'design-tokens/primitives/modes/color-scheme/dark/kystverket.json',
-  'design-tokens/primitives/modes/color-scheme/light/global.json',
   'design-tokens/primitives/modes/color-scheme/light/kystverket.json',
+  'design-tokens/primitives/modes/color-scheme/light/global.json',
+  'design-tokens/primitives/modes/color-scheme/dark/kystverket.json',
+  'design-tokens/primitives/modes/color-scheme/dark/global.json',
 ];
 
 const createColorMap = (inputFile): ColorMap => {
@@ -52,16 +52,25 @@ const colorMapToHtml = (colorMap: ColorMap): string => {
   outLines.push('<div style="display: flex; flex-wrap: wrap;">');
   colorMap.colors.forEach((colorStrip) => {
     outLines.push('<div>');
-    outLines.push('<h3>' + colorStrip.name + '</h3>');
     outLines.push('<table>');
+    outLines.push('<tr>');
+    outLines.push(
+      '<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px;">' +
+        colorStrip.name +
+        '</td>',
+    );
     colorStrip.colors.forEach((color) => {
-      outLines.push('<tr>');
       outLines.push(
-        '<td style="width: 128px; height: 32px; background-color: ' + color + '; border: 1px solid #000;"></td>',
+        '<td style="width: 72px; height: 64px; background-color: ' + color + '; border: 1px solid #000;"></td>',
       );
-      outLines.push('<td style="padding: 8px 16px; font-family: monospace;">' + color + '</td>');
-      outLines.push('</tr>');
     });
+    outLines.push('</tr>');
+    outLines.push('<tr>');
+    outLines.push('<td></td>');
+    colorStrip.colors.forEach((color) => {
+      outLines.push('<td style="padding: 8px 16px; font-family: monospace;">' + color + '</td>');
+    });
+    outLines.push('</tr>');
     outLines.push('</table>');
     outLines.push('</div>');
   });
@@ -73,7 +82,7 @@ const colorMapToHtml = (colorMap: ColorMap): string => {
 const colorMaps: ColorMap[] = inputFiles.map((inputFile) => createColorMap(inputFile));
 
 const endHtml =
-  '<html><head><link href="https://cdn.jsdelivr.net/npm/skeleton-css@2.0.4/css/normalize.min.css" rel="stylesheet"></head><body style="padding: 16px;"><h1>Farger i styrbord-tokens</h1>' +
+  '<html><head><link href="https://cdn.jsdelivr.net/npm/skeleton-css@2.0.4/css/normalize.min.css" rel="stylesheet"></head><body style="padding: 16px;"><h1>Fargekart for styrbord-tokens</h1>' +
   colorMaps.map((cm) => colorMapToHtml(cm)) +
   '</body></html>';
 

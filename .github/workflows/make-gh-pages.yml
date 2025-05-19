@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - design-tokens/**
-      - color-map-gen.ts
+      - token-demo-builder/index.ts
       - .github/workflows/make-gh-pages.yml
   workflow_dispatch:
 
@@ -24,7 +24,7 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           # Defaults to the user or organization that owns the workflow file
           scope: '@kystverket'
-      - run: npx tsx color-map-gen.ts
+      - run: npx tsx token-demo-builder/index.ts
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:

@@ -24,6 +24,7 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           # Defaults to the user or organization that owns the workflow file
           scope: '@kystverket'
+      - run: npm ci
       - run: npx tsx token-demo-builder/index.ts
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4

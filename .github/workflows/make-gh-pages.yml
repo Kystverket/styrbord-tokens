@@ -25,7 +25,7 @@ jobs:
           # Defaults to the user or organization that owns the workflow file
           scope: '@kystverket'
       - run: npm ci
-      - run: npx tsx token-demo-builder/index.ts
+      - run: npm run html
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:

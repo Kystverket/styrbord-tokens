@@ -333,67 +333,67 @@
     "success": {
       "background-default": {
         "$type": "color",
-        "$value": "{global.green.1}"
+        "$value": "{color.extra1.1}"
       },
       "background-tinted": {
         "$type": "color",
-        "$value": "{global.green.2}"
+        "$value": "{color.extra1.2}"
       },
       "surface-default": {
         "$type": "color",
-        "$value": "{global.green.3}"
+        "$value": "{color.extra1.3}"
       },
       "surface-tinted": {
         "$type": "color",
-        "$value": "{global.green.4}"
+        "$value": "{color.extra1.4}"
       },
       "surface-hover": {
         "$type": "color",
-        "$value": "{global.green.5}"
+        "$value": "{color.extra1.5}"
       },
       "surface-active": {
         "$type": "color",
-        "$value": "{global.green.6}"
+        "$value": "{color.extra1.6}"
       },
       "border-subtle": {
         "$type": "color",
-        "$value": "{global.green.7}"
+        "$value": "{color.extra1.7}"
       },
       "border-default": {
         "$type": "color",
-        "$value": "{global.green.8}"
+        "$value": "{color.extra1.8}"
       },
       "border-strong": {
         "$type": "color",
-        "$value": "{global.green.9}"
+        "$value": "{color.extra1.9}"
       },
       "text-subtle": {
         "$type": "color",
-        "$value": "{global.green.10}"
+        "$value": "{color.extra1.10}"
       },
       "text-default": {
         "$type": "color",
-        "$value": "{global.green.11}"
+        "$value": "{color.extra1.11}"
       },
       "base-default": {
         "$type": "color",
-        "$value": "{global.green.12}"
+        "$value": "{color.extra1.12}"
       },
       "base-hover": {
         "$type": "color",
-        "$value": "{global.green.13}"
+        "$value": "{color.extra1.13}"
       },
       "base-active": {
         "$type": "color",
-        "$value": "{global.green.14}"
+        "$value": "{color.extra1.14}"
       },
       "base-contrast-subtle": {
         "$type": "color",
-        "$value": "{global.green.15}"
+        "$value": "{color.extra1.15}"
       },
       "base-contrast-default": {
         "$type": "color",
-        "$value": "{global.green.16}"
+        "$value": "{color.extra1.16}"
       }
     },
     "danger": {
@@ -465,67 +465,67 @@
     "info": {
       "background-default": {
         "$type": "color",
-        "$value": "{global.blue.1}"
+        "$value": "{color.primary.1}"
       },
       "background-tinted": {
         "$type": "color",
-        "$value": "{global.blue.2}"
+        "$value": "{color.primary.2}"
       },
       "surface-default": {
         "$type": "color",
-        "$value": "{global.blue.3}"
+        "$value": "{color.primary.3}"
       },
       "surface-tinted": {
         "$type": "color",
-        "$value": "{global.blue.4}"
+        "$value": "{color.primary.4}"
       },
       "surface-hover": {
         "$type": "color",
-        "$value": "{global.blue.5}"
+        "$value": "{color.primary.5}"
       },
       "surface-active": {
         "$type": "color",
-        "$value": "{global.blue.6}"
+        "$value": "{color.primary.6}"
       },
       "border-subtle": {
         "$type": "color",
-        "$value": "{global.blue.7}"
+        "$value": "{color.primary.7}"
       },
       "border-default": {
         "$type": "color",
-        "$value": "{global.blue.8}"
+        "$value": "{color.primary.8}"
       },
       "border-strong": {
         "$type": "color",
-        "$value": "{global.blue.9}"
+        "$value": "{color.primary.9}"
       },
       "text-subtle": {
         "$type": "color",
-        "$value": "{global.blue.10}"
+        "$value": "{color.primary.10}"
       },
       "text-default": {
         "$type": "color",
-        "$value": "{global.blue.11}"
+        "$value": "{color.primary.11}"
       },
       "base-default": {
         "$type": "color",
-        "$value": "{global.blue.12}"
+        "$value": "{color.primary.12}"
       },
       "base-hover": {
         "$type": "color",
-        "$value": "{global.blue.13}"
+        "$value": "{color.primary.13}"
       },
       "base-active": {
         "$type": "color",
-        "$value": "{global.blue.14}"
+        "$value": "{color.primary.14}"
       },
       "base-contrast-subtle": {
         "$type": "color",
-        "$value": "{global.blue.15}"
+        "$value": "{color.primary.15}"
       },
       "base-contrast-default": {
         "$type": "color",
-        "$value": "{global.blue.16}"
+        "$value": "{color.primary.16}"
       }
     },
     "warning": {

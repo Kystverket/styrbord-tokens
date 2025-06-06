@@ -1,815 +1,2264 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>styrbord-tokens</title>
-<link href="https://cdn.jsdelivr.net/npm/skeleton-css@2.0.4/css/normalize.min.css" rel="stylesheet">
-<style>
-body { padding: 16px; }
-</style>
-</head>
-<body>
-<h1>styrbord-tokens</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>styrbord-tokens</title>
+    <link href="https://cdn.jsdelivr.net/npm/skeleton-css@2.0.4/css/normalize.min.css" rel="stylesheet" />
+    <style>
+      @charset "UTF-8";
+/*
+build: v1.0.8
+design-tokens: v[object Object]
+*/
+
+@layer ds.theme.color-scheme.light {
+:root, [data-color-scheme="light"] {
+  --ds-color-primary-background-default: #ffffff;
+  --color-primary-background-default: #ffffff;
+  --ds-color-primary-background-tinted: #e4f7fe;
+  --color-primary-background-tinted: #e4f7fe;
+  --ds-color-primary-surface-default: #ffffff;
+  --color-primary-surface-default: #ffffff;
+  --ds-color-primary-surface-tinted: #a9e5fb;
+  --color-primary-surface-tinted: #a9e5fb;
+  --ds-color-primary-surface-hover: #77d6f9;
+  --color-primary-surface-hover: #77d6f9;
+  --ds-color-primary-surface-active: #4bc9f7;
+  --color-primary-surface-active: #4bc9f7;
+  --ds-color-primary-border-subtle: #41bfed;
+  --color-primary-border-subtle: #41bfed;
+  --ds-color-primary-border-default: #04207c;
+  --color-primary-border-default: #04207c;
+  --ds-color-primary-border-strong: #000667;
+  --color-primary-border-strong: #000667;
+  --ds-color-primary-text-subtle: #04207c;
+  --color-primary-text-subtle: #04207c;
+  --ds-color-primary-text-default: #000667;
+  --color-primary-text-default: #000667;
+  --ds-color-primary-base-default: #000667;
+  --color-primary-base-default: #000667;
+  --ds-color-primary-base-hover: #002b84;
+  --color-primary-base-hover: #002b84;
+  --ds-color-primary-base-active: #004a9d;
+  --color-primary-base-active: #004a9d;
+  --ds-color-primary-base-contrast-subtle: #a9e5fb;
+  --color-primary-base-contrast-subtle: #a9e5fb;
+  --ds-color-primary-base-contrast-default: #ffffff;
+  --color-primary-base-contrast-default: #ffffff;
+  --ds-color-accent-background-default: #ffffff;
+  --color-accent-background-default: #ffffff;
+  --ds-color-accent-background-tinted: #fff0ed;
+  --color-accent-background-tinted: #fff0ed;
+  --ds-color-accent-surface-default: #ffffff;
+  --color-accent-surface-default: #ffffff;
+  --ds-color-accent-surface-tinted: #ffe2dc;
+  --color-accent-surface-tinted: #ffe2dc;
+  --ds-color-accent-surface-hover: #ffcfc5;
+  --color-accent-surface-hover: #ffcfc5;
+  --ds-color-accent-surface-active: #ffb9ab;
+  --color-accent-surface-active: #ffb9ab;
+  --ds-color-accent-border-subtle: #ffa492;
+  --color-accent-border-subtle: #ffa492;
+  --ds-color-accent-border-default: #df3c1b;
+  --color-accent-border-default: #df3c1b;
+  --ds-color-accent-border-strong: #ad2f15;
+  --color-accent-border-strong: #ad2f15;
+  --ds-color-accent-text-subtle: #ad2f15;
+  --color-accent-text-subtle: #ad2f15;
+  --ds-color-accent-text-default: #53160a;
+  --color-accent-text-default: #53160a;
+  --ds-color-accent-base-default: #FF451F;
+  --color-accent-base-default: #FF451F;
+  --ds-color-accent-base-hover: #ff7559;
+  --color-accent-base-hover: #ff7559;
+  --ds-color-accent-base-active: #ff9a86;
+  --color-accent-base-active: #ff9a86;
+  --ds-color-accent-base-contrast-subtle: #2e0c06;
+  --color-accent-base-contrast-subtle: #2e0c06;
+  --ds-color-accent-base-contrast-default: #000000;
+  --color-accent-base-contrast-default: #000000;
+  --ds-color-neutral-background-default: #ffffff;
+  --color-neutral-background-default: #ffffff;
+  --ds-color-neutral-background-tinted: #f9f6f3;
+  --color-neutral-background-tinted: #f9f6f3;
+  --ds-color-neutral-surface-default: #ffffff;
+  --color-neutral-surface-default: #ffffff;
+  --ds-color-neutral-surface-tinted: #ebe8e5;
+  --color-neutral-surface-tinted: #ebe8e5;
+  --ds-color-neutral-surface-hover: #dcd9d7;
+  --color-neutral-surface-hover: #dcd9d7;
+  --ds-color-neutral-surface-active: #cecbc9;
+  --color-neutral-surface-active: #cecbc9;
+  --ds-color-neutral-border-subtle: #bdbbb9;
+  --color-neutral-border-subtle: #bdbbb9;
+  --ds-color-neutral-border-default: #807e7d;
+  --color-neutral-border-default: #807e7d;
+  --ds-color-neutral-border-strong: #5d5d5d;
+  --color-neutral-border-strong: #5d5d5d;
+  --ds-color-neutral-text-subtle: #5d5d5d;
+  --color-neutral-text-subtle: #5d5d5d;
+  --ds-color-neutral-text-default: #2c2b2b;
+  --color-neutral-text-default: #2c2b2b;
+  --ds-color-neutral-base-default: #1c1b1b;
+  --color-neutral-base-default: #1c1b1b;
+  --ds-color-neutral-base-hover: #2d2c2c;
+  --color-neutral-base-hover: #2d2c2c;
+  --ds-color-neutral-base-active: #3e3d3d;
+  --color-neutral-base-active: #3e3d3d;
+  --ds-color-neutral-base-contrast-subtle: #adacab;
+  --color-neutral-base-contrast-subtle: #adacab;
+  --ds-color-neutral-base-contrast-default: #ffffff;
+  --color-neutral-base-contrast-default: #ffffff;
+  --ds-color-extra1-background-default: #ffffff;
+  --color-extra1-background-default: #ffffff;
+  --ds-color-extra1-background-tinted: #ecf6ef;
+  --color-extra1-background-tinted: #ecf6ef;
+  --ds-color-extra1-surface-default: #ffffff;
+  --color-extra1-surface-default: #ffffff;
+  --ds-color-extra1-surface-tinted: #d9ede0;
+  --color-extra1-surface-tinted: #d9ede0;
+  --ds-color-extra1-surface-hover: #c0e2cc;
+  --color-extra1-surface-hover: #c0e2cc;
+  --ds-color-extra1-surface-active: #a5d5b6;
+  --color-extra1-surface-active: #a5d5b6;
+  --ds-color-extra1-border-subtle: #8bc9a1;
+  --color-extra1-border-subtle: #8bc9a1;
+  --ds-color-extra1-border-default: #318950;
+  --color-extra1-border-default: #318950;
+  --ds-color-extra1-border-strong: #266a3e;
+  --color-extra1-border-strong: #266a3e;
+  --ds-color-extra1-text-subtle: #266a3e;
+  --color-extra1-text-subtle: #266a3e;
+  --ds-color-extra1-text-default: #12311d;
+  --color-extra1-text-default: #12311d;
+  --ds-color-extra1-base-default: #3ba460;
+  --color-extra1-base-default: #3ba460;
+  --ds-color-extra1-base-hover: #64b781;
+  --color-extra1-base-hover: #64b781;
+  --ds-color-extra1-base-active: #8ccaa2;
+  --color-extra1-base-active: #8ccaa2;
+  --ds-color-extra1-base-contrast-subtle: #000101;
+  --color-extra1-base-contrast-subtle: #000101;
+  --ds-color-extra1-base-contrast-default: #000000;
+  --color-extra1-base-contrast-default: #000000;
+  --ds-color-extra2-background-default: #ffffff;
+  --color-extra2-background-default: #ffffff;
+  --ds-color-extra2-background-tinted: #ecf6ef;
+  --color-extra2-background-tinted: #ecf6ef;
+  --ds-color-extra2-surface-default: #ffffff;
+  --color-extra2-surface-default: #ffffff;
+  --ds-color-extra2-surface-tinted: #d9ede0;
+  --color-extra2-surface-tinted: #d9ede0;
+  --ds-color-extra2-surface-hover: #c0e2cc;
+  --color-extra2-surface-hover: #c0e2cc;
+  --ds-color-extra2-surface-active: #a5d5b6;
+  --color-extra2-surface-active: #a5d5b6;
+  --ds-color-extra2-border-subtle: #8bc9a1;
+  --color-extra2-border-subtle: #8bc9a1;
+  --ds-color-extra2-border-default: #318950;
+  --color-extra2-border-default: #318950;
+  --ds-color-extra2-border-strong: #266a3e;
+  --color-extra2-border-strong: #266a3e;
+  --ds-color-extra2-text-subtle: #266a3e;
+  --color-extra2-text-subtle: #266a3e;
+  --ds-color-extra2-text-default: #12311d;
+  --color-extra2-text-default: #12311d;
+  --ds-color-extra2-base-default: #3ba460;
+  --color-extra2-base-default: #3ba460;
+  --ds-color-extra2-base-hover: #64b781;
+  --color-extra2-base-hover: #64b781;
+  --ds-color-extra2-base-active: #8ccaa2;
+  --color-extra2-base-active: #8ccaa2;
+  --ds-color-extra2-base-contrast-subtle: #000101;
+  --color-extra2-base-contrast-subtle: #000101;
+  --ds-color-extra2-base-contrast-default: #000000;
+  --color-extra2-base-contrast-default: #000000;
+  --ds-color-success-background-default: #ffffff;
+  --color-success-background-default: #ffffff;
+  --ds-color-success-background-tinted: #ecf6ef;
+  --color-success-background-tinted: #ecf6ef;
+  --ds-color-success-surface-default: #ffffff;
+  --color-success-surface-default: #ffffff;
+  --ds-color-success-surface-tinted: #d9ede0;
+  --color-success-surface-tinted: #d9ede0;
+  --ds-color-success-surface-hover: #c0e2cc;
+  --color-success-surface-hover: #c0e2cc;
+  --ds-color-success-surface-active: #a5d5b6;
+  --color-success-surface-active: #a5d5b6;
+  --ds-color-success-border-subtle: #8bc9a1;
+  --color-success-border-subtle: #8bc9a1;
+  --ds-color-success-border-default: #318950;
+  --color-success-border-default: #318950;
+  --ds-color-success-border-strong: #266a3e;
+  --color-success-border-strong: #266a3e;
+  --ds-color-success-text-subtle: #266a3e;
+  --color-success-text-subtle: #266a3e;
+  --ds-color-success-text-default: #12311d;
+  --color-success-text-default: #12311d;
+  --ds-color-success-base-default: #3ba460;
+  --color-success-base-default: #3ba460;
+  --ds-color-success-base-hover: #64b781;
+  --color-success-base-hover: #64b781;
+  --ds-color-success-base-active: #8ccaa2;
+  --color-success-base-active: #8ccaa2;
+  --ds-color-success-base-contrast-subtle: #000101;
+  --color-success-base-contrast-subtle: #000101;
+  --ds-color-success-base-contrast-default: #000000;
+  --color-success-base-contrast-default: #000000;
+  --ds-color-danger-background-default: #ffffff;
+  --color-danger-background-default: #ffffff;
+  --ds-color-danger-background-tinted: #fbf1f1;
+  --color-danger-background-tinted: #fbf1f1;
+  --ds-color-danger-surface-default: #ffffff;
+  --color-danger-surface-default: #ffffff;
+  --ds-color-danger-surface-tinted: #f8e4e4;
+  --color-danger-surface-tinted: #f8e4e4;
+  --ds-color-danger-surface-hover: #f3d2d2;
+  --color-danger-surface-hover: #f3d2d2;
+  --ds-color-danger-surface-active: #edbfbf;
+  --color-danger-surface-active: #edbfbf;
+  --ds-color-danger-border-subtle: #e8adad;
+  --color-danger-border-subtle: #e8adad;
+  --ds-color-danger-border-default: #ce4d4d;
+  --color-danger-border-default: #ce4d4d;
+  --ds-color-danger-border-strong: #b81a1a;
+  --color-danger-border-strong: #b81a1a;
+  --ds-color-danger-text-subtle: #b81a1a;
+  --color-danger-text-subtle: #b81a1a;
+  --ds-color-danger-text-default: #590d0d;
+  --color-danger-text-default: #590d0d;
+  --ds-color-danger-base-default: #C01B1B;
+  --color-danger-base-default: #C01B1B;
+  --ds-color-danger-base-hover: #9b1616;
+  --color-danger-base-hover: #9b1616;
+  --ds-color-danger-base-active: #791111;
+  --color-danger-base-active: #791111;
+  --ds-color-danger-base-contrast-subtle: #f7e1e1;
+  --color-danger-base-contrast-subtle: #f7e1e1;
+  --ds-color-danger-base-contrast-default: #ffffff;
+  --color-danger-base-contrast-default: #ffffff;
+  --ds-color-info-background-default: #ffffff;
+  --color-info-background-default: #ffffff;
+  --ds-color-info-background-tinted: #e4f7fe;
+  --color-info-background-tinted: #e4f7fe;
+  --ds-color-info-surface-default: #ffffff;
+  --color-info-surface-default: #ffffff;
+  --ds-color-info-surface-tinted: #a9e5fb;
+  --color-info-surface-tinted: #a9e5fb;
+  --ds-color-info-surface-hover: #77d6f9;
+  --color-info-surface-hover: #77d6f9;
+  --ds-color-info-surface-active: #4bc9f7;
+  --color-info-surface-active: #4bc9f7;
+  --ds-color-info-border-subtle: #41bfed;
+  --color-info-border-subtle: #41bfed;
+  --ds-color-info-border-default: #04207c;
+  --color-info-border-default: #04207c;
+  --ds-color-info-border-strong: #000667;
+  --color-info-border-strong: #000667;
+  --ds-color-info-text-subtle: #04207c;
+  --color-info-text-subtle: #04207c;
+  --ds-color-info-text-default: #000667;
+  --color-info-text-default: #000667;
+  --ds-color-info-base-default: #000667;
+  --color-info-base-default: #000667;
+  --ds-color-info-base-hover: #002b84;
+  --color-info-base-hover: #002b84;
+  --ds-color-info-base-active: #004a9d;
+  --color-info-base-active: #004a9d;
+  --ds-color-info-base-contrast-subtle: #a9e5fb;
+  --color-info-base-contrast-subtle: #a9e5fb;
+  --ds-color-info-base-contrast-default: #ffffff;
+  --color-info-base-contrast-default: #ffffff;
+  --ds-color-warning-background-default: #ffffff;
+  --color-warning-background-default: #ffffff;
+  --ds-color-warning-background-tinted: #fcf2e2;
+  --color-warning-background-tinted: #fcf2e2;
+  --ds-color-warning-surface-default: #ffffff;
+  --color-warning-surface-default: #ffffff;
+  --ds-color-warning-surface-tinted: #fae6c6;
+  --color-warning-surface-tinted: #fae6c6;
+  --ds-color-warning-surface-hover: #f6d5a0;
+  --color-warning-surface-hover: #f6d5a0;
+  --ds-color-warning-surface-active: #f2c275;
+  --color-warning-surface-active: #f2c275;
+  --ds-color-warning-border-subtle: #eeb04c;
+  --color-warning-border-subtle: #eeb04c;
+  --ds-color-warning-border-default: #a56d13;
+  --color-warning-border-default: #a56d13;
+  --ds-color-warning-border-strong: #80540f;
+  --color-warning-border-strong: #80540f;
+  --ds-color-warning-text-subtle: #80540f;
+  --color-warning-text-subtle: #80540f;
+  --ds-color-warning-text-default: #3c2807;
+  --color-warning-text-default: #3c2807;
+  --ds-color-warning-base-default: #EA9B1B;
+  --color-warning-base-default: #EA9B1B;
+  --ds-color-warning-base-hover: #cd8818;
+  --color-warning-base-hover: #cd8818;
+  --ds-color-warning-base-active: #b27614;
+  --color-warning-base-active: #b27614;
+  --ds-color-warning-base-contrast-subtle: #271a04;
+  --color-warning-base-contrast-subtle: #271a04;
+  --ds-color-warning-base-contrast-default: #000000;
+  --color-warning-base-contrast-default: #000000;
+  --ds-color-focus-inner: #ffffff;
+  --color-focus-inner: #ffffff;
+  --ds-color-focus-outer: #000667;
+  --color-focus-outer: #000667;
+  --ds-link-color-visited: #663299;
+  --link-color-visited: #663299;
+
+  color-scheme: light;
+}
+ 
+@media (prefers-color-scheme: light) {
+  [data-color-scheme="auto"] {
+  --ds-color-primary-background-default: #ffffff;
+  --color-primary-background-default: #ffffff;
+  --ds-color-primary-background-tinted: #e4f7fe;
+  --color-primary-background-tinted: #e4f7fe;
+  --ds-color-primary-surface-default: #ffffff;
+  --color-primary-surface-default: #ffffff;
+  --ds-color-primary-surface-tinted: #a9e5fb;
+  --color-primary-surface-tinted: #a9e5fb;
+  --ds-color-primary-surface-hover: #77d6f9;
+  --color-primary-surface-hover: #77d6f9;
+  --ds-color-primary-surface-active: #4bc9f7;
+  --color-primary-surface-active: #4bc9f7;
+  --ds-color-primary-border-subtle: #41bfed;
+  --color-primary-border-subtle: #41bfed;
+  --ds-color-primary-border-default: #04207c;
+  --color-primary-border-default: #04207c;
+  --ds-color-primary-border-strong: #000667;
+  --color-primary-border-strong: #000667;
+  --ds-color-primary-text-subtle: #04207c;
+  --color-primary-text-subtle: #04207c;
+  --ds-color-primary-text-default: #000667;
+  --color-primary-text-default: #000667;
+  --ds-color-primary-base-default: #000667;
+  --color-primary-base-default: #000667;
+  --ds-color-primary-base-hover: #002b84;
+  --color-primary-base-hover: #002b84;
+  --ds-color-primary-base-active: #004a9d;
+  --color-primary-base-active: #004a9d;
+  --ds-color-primary-base-contrast-subtle: #a9e5fb;
+  --color-primary-base-contrast-subtle: #a9e5fb;
+  --ds-color-primary-base-contrast-default: #ffffff;
+  --color-primary-base-contrast-default: #ffffff;
+  --ds-color-accent-background-default: #ffffff;
+  --color-accent-background-default: #ffffff;
+  --ds-color-accent-background-tinted: #fff0ed;
+  --color-accent-background-tinted: #fff0ed;
+  --ds-color-accent-surface-default: #ffffff;
+  --color-accent-surface-default: #ffffff;
+  --ds-color-accent-surface-tinted: #ffe2dc;
+  --color-accent-surface-tinted: #ffe2dc;
+  --ds-color-accent-surface-hover: #ffcfc5;
+  --color-accent-surface-hover: #ffcfc5;
+  --ds-color-accent-surface-active: #ffb9ab;
+  --color-accent-surface-active: #ffb9ab;
+  --ds-color-accent-border-subtle: #ffa492;
+  --color-accent-border-subtle: #ffa492;
+  --ds-color-accent-border-default: #df3c1b;
+  --color-accent-border-default: #df3c1b;
+  --ds-color-accent-border-strong: #ad2f15;
+  --color-accent-border-strong: #ad2f15;
+  --ds-color-accent-text-subtle: #ad2f15;
+  --color-accent-text-subtle: #ad2f15;
+  --ds-color-accent-text-default: #53160a;
+  --color-accent-text-default: #53160a;
+  --ds-color-accent-base-default: #FF451F;
+  --color-accent-base-default: #FF451F;
+  --ds-color-accent-base-hover: #ff7559;
+  --color-accent-base-hover: #ff7559;
+  --ds-color-accent-base-active: #ff9a86;
+  --color-accent-base-active: #ff9a86;
+  --ds-color-accent-base-contrast-subtle: #2e0c06;
+  --color-accent-base-contrast-subtle: #2e0c06;
+  --ds-color-accent-base-contrast-default: #000000;
+  --color-accent-base-contrast-default: #000000;
+  --ds-color-neutral-background-default: #ffffff;
+  --color-neutral-background-default: #ffffff;
+  --ds-color-neutral-background-tinted: #f9f6f3;
+  --color-neutral-background-tinted: #f9f6f3;
+  --ds-color-neutral-surface-default: #ffffff;
+  --color-neutral-surface-default: #ffffff;
+  --ds-color-neutral-surface-tinted: #ebe8e5;
+  --color-neutral-surface-tinted: #ebe8e5;
+  --ds-color-neutral-surface-hover: #dcd9d7;
+  --color-neutral-surface-hover: #dcd9d7;
+  --ds-color-neutral-surface-active: #cecbc9;
+  --color-neutral-surface-active: #cecbc9;
+  --ds-color-neutral-border-subtle: #bdbbb9;
+  --color-neutral-border-subtle: #bdbbb9;
+  --ds-color-neutral-border-default: #807e7d;
+  --color-neutral-border-default: #807e7d;
+  --ds-color-neutral-border-strong: #5d5d5d;
+  --color-neutral-border-strong: #5d5d5d;
+  --ds-color-neutral-text-subtle: #5d5d5d;
+  --color-neutral-text-subtle: #5d5d5d;
+  --ds-color-neutral-text-default: #2c2b2b;
+  --color-neutral-text-default: #2c2b2b;
+  --ds-color-neutral-base-default: #1c1b1b;
+  --color-neutral-base-default: #1c1b1b;
+  --ds-color-neutral-base-hover: #2d2c2c;
+  --color-neutral-base-hover: #2d2c2c;
+  --ds-color-neutral-base-active: #3e3d3d;
+  --color-neutral-base-active: #3e3d3d;
+  --ds-color-neutral-base-contrast-subtle: #adacab;
+  --color-neutral-base-contrast-subtle: #adacab;
+  --ds-color-neutral-base-contrast-default: #ffffff;
+  --color-neutral-base-contrast-default: #ffffff;
+  --ds-color-extra1-background-default: #ffffff;
+  --color-extra1-background-default: #ffffff;
+  --ds-color-extra1-background-tinted: #ecf6ef;
+  --color-extra1-background-tinted: #ecf6ef;
+  --ds-color-extra1-surface-default: #ffffff;
+  --color-extra1-surface-default: #ffffff;
+  --ds-color-extra1-surface-tinted: #d9ede0;
+  --color-extra1-surface-tinted: #d9ede0;
+  --ds-color-extra1-surface-hover: #c0e2cc;
+  --color-extra1-surface-hover: #c0e2cc;
+  --ds-color-extra1-surface-active: #a5d5b6;
+  --color-extra1-surface-active: #a5d5b6;
+  --ds-color-extra1-border-subtle: #8bc9a1;
+  --color-extra1-border-subtle: #8bc9a1;
+  --ds-color-extra1-border-default: #318950;
+  --color-extra1-border-default: #318950;
+  --ds-color-extra1-border-strong: #266a3e;
+  --color-extra1-border-strong: #266a3e;
+  --ds-color-extra1-text-subtle: #266a3e;
+  --color-extra1-text-subtle: #266a3e;
+  --ds-color-extra1-text-default: #12311d;
+  --color-extra1-text-default: #12311d;
+  --ds-color-extra1-base-default: #3ba460;
+  --color-extra1-base-default: #3ba460;
+  --ds-color-extra1-base-hover: #64b781;
+  --color-extra1-base-hover: #64b781;
+  --ds-color-extra1-base-active: #8ccaa2;
+  --color-extra1-base-active: #8ccaa2;
+  --ds-color-extra1-base-contrast-subtle: #000101;
+  --color-extra1-base-contrast-subtle: #000101;
+  --ds-color-extra1-base-contrast-default: #000000;
+  --color-extra1-base-contrast-default: #000000;
+  --ds-color-extra2-background-default: #ffffff;
+  --color-extra2-background-default: #ffffff;
+  --ds-color-extra2-background-tinted: #ecf6ef;
+  --color-extra2-background-tinted: #ecf6ef;
+  --ds-color-extra2-surface-default: #ffffff;
+  --color-extra2-surface-default: #ffffff;
+  --ds-color-extra2-surface-tinted: #d9ede0;
+  --color-extra2-surface-tinted: #d9ede0;
+  --ds-color-extra2-surface-hover: #c0e2cc;
+  --color-extra2-surface-hover: #c0e2cc;
+  --ds-color-extra2-surface-active: #a5d5b6;
+  --color-extra2-surface-active: #a5d5b6;
+  --ds-color-extra2-border-subtle: #8bc9a1;
+  --color-extra2-border-subtle: #8bc9a1;
+  --ds-color-extra2-border-default: #318950;
+  --color-extra2-border-default: #318950;
+  --ds-color-extra2-border-strong: #266a3e;
+  --color-extra2-border-strong: #266a3e;
+  --ds-color-extra2-text-subtle: #266a3e;
+  --color-extra2-text-subtle: #266a3e;
+  --ds-color-extra2-text-default: #12311d;
+  --color-extra2-text-default: #12311d;
+  --ds-color-extra2-base-default: #3ba460;
+  --color-extra2-base-default: #3ba460;
+  --ds-color-extra2-base-hover: #64b781;
+  --color-extra2-base-hover: #64b781;
+  --ds-color-extra2-base-active: #8ccaa2;
+  --color-extra2-base-active: #8ccaa2;
+  --ds-color-extra2-base-contrast-subtle: #000101;
+  --color-extra2-base-contrast-subtle: #000101;
+  --ds-color-extra2-base-contrast-default: #000000;
+  --color-extra2-base-contrast-default: #000000;
+  --ds-color-success-background-default: #ffffff;
+  --color-success-background-default: #ffffff;
+  --ds-color-success-background-tinted: #ecf6ef;
+  --color-success-background-tinted: #ecf6ef;
+  --ds-color-success-surface-default: #ffffff;
+  --color-success-surface-default: #ffffff;
+  --ds-color-success-surface-tinted: #d9ede0;
+  --color-success-surface-tinted: #d9ede0;
+  --ds-color-success-surface-hover: #c0e2cc;
+  --color-success-surface-hover: #c0e2cc;
+  --ds-color-success-surface-active: #a5d5b6;
+  --color-success-surface-active: #a5d5b6;
+  --ds-color-success-border-subtle: #8bc9a1;
+  --color-success-border-subtle: #8bc9a1;
+  --ds-color-success-border-default: #318950;
+  --color-success-border-default: #318950;
+  --ds-color-success-border-strong: #266a3e;
+  --color-success-border-strong: #266a3e;
+  --ds-color-success-text-subtle: #266a3e;
+  --color-success-text-subtle: #266a3e;
+  --ds-color-success-text-default: #12311d;
+  --color-success-text-default: #12311d;
+  --ds-color-success-base-default: #3ba460;
+  --color-success-base-default: #3ba460;
+  --ds-color-success-base-hover: #64b781;
+  --color-success-base-hover: #64b781;
+  --ds-color-success-base-active: #8ccaa2;
+  --color-success-base-active: #8ccaa2;
+  --ds-color-success-base-contrast-subtle: #000101;
+  --color-success-base-contrast-subtle: #000101;
+  --ds-color-success-base-contrast-default: #000000;
+  --color-success-base-contrast-default: #000000;
+  --ds-color-danger-background-default: #ffffff;
+  --color-danger-background-default: #ffffff;
+  --ds-color-danger-background-tinted: #fbf1f1;
+  --color-danger-background-tinted: #fbf1f1;
+  --ds-color-danger-surface-default: #ffffff;
+  --color-danger-surface-default: #ffffff;
+  --ds-color-danger-surface-tinted: #f8e4e4;
+  --color-danger-surface-tinted: #f8e4e4;
+  --ds-color-danger-surface-hover: #f3d2d2;
+  --color-danger-surface-hover: #f3d2d2;
+  --ds-color-danger-surface-active: #edbfbf;
+  --color-danger-surface-active: #edbfbf;
+  --ds-color-danger-border-subtle: #e8adad;
+  --color-danger-border-subtle: #e8adad;
+  --ds-color-danger-border-default: #ce4d4d;
+  --color-danger-border-default: #ce4d4d;
+  --ds-color-danger-border-strong: #b81a1a;
+  --color-danger-border-strong: #b81a1a;
+  --ds-color-danger-text-subtle: #b81a1a;
+  --color-danger-text-subtle: #b81a1a;
+  --ds-color-danger-text-default: #590d0d;
+  --color-danger-text-default: #590d0d;
+  --ds-color-danger-base-default: #C01B1B;
+  --color-danger-base-default: #C01B1B;
+  --ds-color-danger-base-hover: #9b1616;
+  --color-danger-base-hover: #9b1616;
+  --ds-color-danger-base-active: #791111;
+  --color-danger-base-active: #791111;
+  --ds-color-danger-base-contrast-subtle: #f7e1e1;
+  --color-danger-base-contrast-subtle: #f7e1e1;
+  --ds-color-danger-base-contrast-default: #ffffff;
+  --color-danger-base-contrast-default: #ffffff;
+  --ds-color-info-background-default: #ffffff;
+  --color-info-background-default: #ffffff;
+  --ds-color-info-background-tinted: #e4f7fe;
+  --color-info-background-tinted: #e4f7fe;
+  --ds-color-info-surface-default: #ffffff;
+  --color-info-surface-default: #ffffff;
+  --ds-color-info-surface-tinted: #a9e5fb;
+  --color-info-surface-tinted: #a9e5fb;
+  --ds-color-info-surface-hover: #77d6f9;
+  --color-info-surface-hover: #77d6f9;
+  --ds-color-info-surface-active: #4bc9f7;
+  --color-info-surface-active: #4bc9f7;
+  --ds-color-info-border-subtle: #41bfed;
+  --color-info-border-subtle: #41bfed;
+  --ds-color-info-border-default: #04207c;
+  --color-info-border-default: #04207c;
+  --ds-color-info-border-strong: #000667;
+  --color-info-border-strong: #000667;
+  --ds-color-info-text-subtle: #04207c;
+  --color-info-text-subtle: #04207c;
+  --ds-color-info-text-default: #000667;
+  --color-info-text-default: #000667;
+  --ds-color-info-base-default: #000667;
+  --color-info-base-default: #000667;
+  --ds-color-info-base-hover: #002b84;
+  --color-info-base-hover: #002b84;
+  --ds-color-info-base-active: #004a9d;
+  --color-info-base-active: #004a9d;
+  --ds-color-info-base-contrast-subtle: #a9e5fb;
+  --color-info-base-contrast-subtle: #a9e5fb;
+  --ds-color-info-base-contrast-default: #ffffff;
+  --color-info-base-contrast-default: #ffffff;
+  --ds-color-warning-background-default: #ffffff;
+  --color-warning-background-default: #ffffff;
+  --ds-color-warning-background-tinted: #fcf2e2;
+  --color-warning-background-tinted: #fcf2e2;
+  --ds-color-warning-surface-default: #ffffff;
+  --color-warning-surface-default: #ffffff;
+  --ds-color-warning-surface-tinted: #fae6c6;
+  --color-warning-surface-tinted: #fae6c6;
+  --ds-color-warning-surface-hover: #f6d5a0;
+  --color-warning-surface-hover: #f6d5a0;
+  --ds-color-warning-surface-active: #f2c275;
+  --color-warning-surface-active: #f2c275;
+  --ds-color-warning-border-subtle: #eeb04c;
+  --color-warning-border-subtle: #eeb04c;
+  --ds-color-warning-border-default: #a56d13;
+  --color-warning-border-default: #a56d13;
+  --ds-color-warning-border-strong: #80540f;
+  --color-warning-border-strong: #80540f;
+  --ds-color-warning-text-subtle: #80540f;
+  --color-warning-text-subtle: #80540f;
+  --ds-color-warning-text-default: #3c2807;
+  --color-warning-text-default: #3c2807;
+  --ds-color-warning-base-default: #EA9B1B;
+  --color-warning-base-default: #EA9B1B;
+  --ds-color-warning-base-hover: #cd8818;
+  --color-warning-base-hover: #cd8818;
+  --ds-color-warning-base-active: #b27614;
+  --color-warning-base-active: #b27614;
+  --ds-color-warning-base-contrast-subtle: #271a04;
+  --color-warning-base-contrast-subtle: #271a04;
+  --ds-color-warning-base-contrast-default: #000000;
+  --color-warning-base-contrast-default: #000000;
+  --ds-color-focus-inner: #ffffff;
+  --color-focus-inner: #ffffff;
+  --ds-color-focus-outer: #000667;
+  --color-focus-outer: #000667;
+  --ds-link-color-visited: #663299;
+  --link-color-visited: #663299;
+
+  color-scheme: light;
+}
+
+}
+
+}
+
+@layer ds.theme.typography.secondary {
+[data-typography="secondary"] {
+  --ds-line-height-sm: 1.3;
+  --line-height-sm: 1.3;
+  --ds-line-height-md: 1.5;
+  --line-height-md: 1.5;
+  --ds-line-height-lg: 1.7;
+  --line-height-lg: 1.7;
+  --ds-font-size-1: 0.6875rem;
+  --font-size-1: 0.6875rem;
+  --ds-font-size-2: 0.8125rem;
+  --font-size-2: 0.8125rem;
+  --ds-font-size-3: 0.875rem;
+  --font-size-3: 0.875rem;
+  --ds-font-size-4: 1rem;
+  --font-size-4: 1rem;
+  --ds-font-size-5: 1.125rem;
+  --font-size-5: 1.125rem;
+  --ds-font-size-6: 1.3125rem;
+  --font-size-6: 1.3125rem;
+  --ds-font-size-7: 1.5rem;
+  --font-size-7: 1.5rem;
+  --ds-font-size-8: 1.875rem;
+  --font-size-8: 1.875rem;
+  --ds-font-size-9: 2.25rem;
+  --font-size-9: 2.25rem;
+  --ds-font-size-10: 3rem;
+  --font-size-10: 3rem;
+  --ds-letter-spacing-1: -1%;
+  --letter-spacing-1: -1%;
+  --ds-letter-spacing-2: -0.5%;
+  --letter-spacing-2: -0.5%;
+  --ds-letter-spacing-3: -0.25%;
+  --letter-spacing-3: -0.25%;
+  --ds-letter-spacing-4: -0.15%;
+  --letter-spacing-4: -0.15%;
+  --ds-letter-spacing-5: 0%;
+  --letter-spacing-5: 0%;
+  --ds-letter-spacing-6: 0.15%;
+  --letter-spacing-6: 0.15%;
+  --ds-letter-spacing-7: 0.25%;
+  --letter-spacing-7: 0.25%;
+  --ds-letter-spacing-8: 0.5%;
+  --letter-spacing-8: 0.5%;
+  --ds-letter-spacing-9: 1.5%;
+  --letter-spacing-9: 1.5%;
+  --ds-font-family: Museo sans;
+  --font-family: Museo sans;
+  --ds-font-weight-medium: 500;
+  --font-weight-medium: 500;
+  --ds-font-weight-semibold: 700;
+  --font-weight-semibold: 700;
+  --ds-font-weight-regular: 300;
+  --font-weight-regular: 300;
+  --ds-heading-2xl-font-weight: 500;
+  --heading-2xl-font-weight: 500;
+  --ds-heading-2xl-line-height: 1.3;
+  --heading-2xl-line-height: 1.3;
+  --ds-heading-2xl-font-size: 3rem;
+  --heading-2xl-font-size: 3rem;
+  --ds-heading-2xl-letter-spacing: -1%;
+  --heading-2xl-letter-spacing: -1%;
+  --ds-heading-xl-font-weight: 500;
+  --heading-xl-font-weight: 500;
+  --ds-heading-xl-line-height: 1.3;
+  --heading-xl-line-height: 1.3;
+  --ds-heading-xl-font-size: 2.25rem;
+  --heading-xl-font-size: 2.25rem;
+  --ds-heading-xl-letter-spacing: -1%;
+  --heading-xl-letter-spacing: -1%;
+  --ds-heading-lg-font-weight: 500;
+  --heading-lg-font-weight: 500;
+  --ds-heading-lg-line-height: 1.3;
+  --heading-lg-line-height: 1.3;
+  --ds-heading-lg-font-size: 1.875rem;
+  --heading-lg-font-size: 1.875rem;
+  --ds-heading-lg-letter-spacing: -0.5%;
+  --heading-lg-letter-spacing: -0.5%;
+  --ds-heading-md-font-weight: 500;
+  --heading-md-font-weight: 500;
+  --ds-heading-md-line-height: 1.3;
+  --heading-md-line-height: 1.3;
+  --ds-heading-md-font-size: 1.5rem;
+  --heading-md-font-size: 1.5rem;
+  --ds-heading-md-letter-spacing: -0.25%;
+  --heading-md-letter-spacing: -0.25%;
+  --ds-heading-sm-font-weight: 500;
+  --heading-sm-font-weight: 500;
+  --ds-heading-sm-line-height: 1.3;
+  --heading-sm-line-height: 1.3;
+  --ds-heading-sm-font-size: 1.3125rem;
+  --heading-sm-font-size: 1.3125rem;
+  --ds-heading-sm-letter-spacing: 0%;
+  --heading-sm-letter-spacing: 0%;
+  --ds-heading-xs-font-weight: 500;
+  --heading-xs-font-weight: 500;
+  --ds-heading-xs-line-height: 1.3;
+  --heading-xs-line-height: 1.3;
+  --ds-heading-xs-font-size: 1.125rem;
+  --heading-xs-font-size: 1.125rem;
+  --ds-heading-xs-letter-spacing: 0.15%;
+  --heading-xs-letter-spacing: 0.15%;
+  --ds-heading-2xs-font-weight: 500;
+  --heading-2xs-font-weight: 500;
+  --ds-heading-2xs-line-height: 1.3;
+  --heading-2xs-line-height: 1.3;
+  --ds-heading-2xs-font-size: 1rem;
+  --heading-2xs-font-size: 1rem;
+  --ds-heading-2xs-letter-spacing: 0.15%;
+  --heading-2xs-letter-spacing: 0.15%;
+  --ds-body-xl-font-weight: 300;
+  --body-xl-font-weight: 300;
+  --ds-body-xl-line-height: 1.5;
+  --body-xl-line-height: 1.5;
+  --ds-body-xl-font-size: 1.3125rem;
+  --body-xl-font-size: 1.3125rem;
+  --ds-body-xl-letter-spacing: 0.5%;
+  --body-xl-letter-spacing: 0.5%;
+  --ds-body-lg-font-weight: 300;
+  --body-lg-font-weight: 300;
+  --ds-body-lg-line-height: 1.5;
+  --body-lg-line-height: 1.5;
+  --ds-body-lg-font-size: 1.125rem;
+  --body-lg-font-size: 1.125rem;
+  --ds-body-lg-letter-spacing: 0.5%;
+  --body-lg-letter-spacing: 0.5%;
+  --ds-body-md-font-weight: 300;
+  --body-md-font-weight: 300;
+  --ds-body-md-line-height: 1.5;
+  --body-md-line-height: 1.5;
+  --ds-body-md-font-size: 1rem;
+  --body-md-font-size: 1rem;
+  --ds-body-md-letter-spacing: 0.5%;
+  --body-md-letter-spacing: 0.5%;
+  --ds-body-sm-font-weight: 300;
+  --body-sm-font-weight: 300;
+  --ds-body-sm-line-height: 1.5;
+  --body-sm-line-height: 1.5;
+  --ds-body-sm-font-size: 0.875rem;
+  --body-sm-font-size: 0.875rem;
+  --ds-body-sm-letter-spacing: 0.25%;
+  --body-sm-letter-spacing: 0.25%;
+  --ds-body-xs-font-weight: 300;
+  --body-xs-font-weight: 300;
+  --ds-body-xs-line-height: 1.5;
+  --body-xs-line-height: 1.5;
+  --ds-body-xs-font-size: 0.8125rem;
+  --body-xs-font-size: 0.8125rem;
+  --ds-body-xs-letter-spacing: 0.15%;
+  --body-xs-letter-spacing: 0.15%;
+  --ds-body-short-xl-font-weight: 300;
+  --body-short-xl-font-weight: 300;
+  --ds-body-short-xl-line-height: 1.3;
+  --body-short-xl-line-height: 1.3;
+  --ds-body-short-xl-font-size: 1.3125rem;
+  --body-short-xl-font-size: 1.3125rem;
+  --ds-body-short-xl-letter-spacing: 0.5%;
+  --body-short-xl-letter-spacing: 0.5%;
+  --ds-body-short-lg-font-weight: 300;
+  --body-short-lg-font-weight: 300;
+  --ds-body-short-lg-line-height: 1.3;
+  --body-short-lg-line-height: 1.3;
+  --ds-body-short-lg-font-size: 1.125rem;
+  --body-short-lg-font-size: 1.125rem;
+  --ds-body-short-lg-letter-spacing: 0.5%;
+  --body-short-lg-letter-spacing: 0.5%;
+  --ds-body-short-md-font-weight: 300;
+  --body-short-md-font-weight: 300;
+  --ds-body-short-md-line-height: 1.3;
+  --body-short-md-line-height: 1.3;
+  --ds-body-short-md-font-size: 1rem;
+  --body-short-md-font-size: 1rem;
+  --ds-body-short-md-letter-spacing: 0.5%;
+  --body-short-md-letter-spacing: 0.5%;
+  --ds-body-short-sm-font-weight: 300;
+  --body-short-sm-font-weight: 300;
+  --ds-body-short-sm-line-height: 1.3;
+  --body-short-sm-line-height: 1.3;
+  --ds-body-short-sm-font-size: 0.875rem;
+  --body-short-sm-font-size: 0.875rem;
+  --ds-body-short-sm-letter-spacing: 0.25%;
+  --body-short-sm-letter-spacing: 0.25%;
+  --ds-body-short-xs-font-weight: 300;
+  --body-short-xs-font-weight: 300;
+  --ds-body-short-xs-line-height: 1.3;
+  --body-short-xs-line-height: 1.3;
+  --ds-body-short-xs-font-size: 0.8125rem;
+  --body-short-xs-font-size: 0.8125rem;
+  --ds-body-short-xs-letter-spacing: 0.15%;
+  --body-short-xs-letter-spacing: 0.15%;
+  --ds-body-long-xl-font-weight: 300;
+  --body-long-xl-font-weight: 300;
+  --ds-body-long-xl-line-height: 1.7;
+  --body-long-xl-line-height: 1.7;
+  --ds-body-long-xl-font-size: 1.3125rem;
+  --body-long-xl-font-size: 1.3125rem;
+  --ds-body-long-xl-letter-spacing: 0.5%;
+  --body-long-xl-letter-spacing: 0.5%;
+  --ds-body-long-lg-font-weight: 300;
+  --body-long-lg-font-weight: 300;
+  --ds-body-long-lg-line-height: 1.7;
+  --body-long-lg-line-height: 1.7;
+  --ds-body-long-lg-font-size: 1.125rem;
+  --body-long-lg-font-size: 1.125rem;
+  --ds-body-long-lg-letter-spacing: 0.5%;
+  --body-long-lg-letter-spacing: 0.5%;
+  --ds-body-long-md-font-weight: 300;
+  --body-long-md-font-weight: 300;
+  --ds-body-long-md-line-height: 1.7;
+  --body-long-md-line-height: 1.7;
+  --ds-body-long-md-font-size: 1rem;
+  --body-long-md-font-size: 1rem;
+  --ds-body-long-md-letter-spacing: 0.5%;
+  --body-long-md-letter-spacing: 0.5%;
+  --ds-body-long-sm-font-weight: 300;
+  --body-long-sm-font-weight: 300;
+  --ds-body-long-sm-line-height: 1.7;
+  --body-long-sm-line-height: 1.7;
+  --ds-body-long-sm-font-size: 0.875rem;
+  --body-long-sm-font-size: 0.875rem;
+  --ds-body-long-sm-letter-spacing: 0.25%;
+  --body-long-sm-letter-spacing: 0.25%;
+  --ds-body-long-xs-font-weight: 300;
+  --body-long-xs-font-weight: 300;
+  --ds-body-long-xs-line-height: 1.7;
+  --body-long-xs-line-height: 1.7;
+  --ds-body-long-xs-font-size: 0.8125rem;
+  --body-long-xs-font-size: 0.8125rem;
+  --ds-body-long-xs-letter-spacing: 0.15%;
+  --body-long-xs-letter-spacing: 0.15%;
+}
+}
+@layer ds.theme.semantic {
+:root {
+  --ds-size-base: 18;
+  --size-base: 18;
+  --ds-size-step: 4;
+  --size-step: 4;
+  --ds-border-radius-base: 0.125rem;
+  --border-radius-base: 0.125rem;
+  --ds-border-radius-scale: 0.25rem;
+  --border-radius-scale: 0.25rem;
+  --ds-border-radius-sm: min(var(--ds-border-radius-base)*0.5,var(--ds-border-radius-scale));
+  --border-radius-sm: min(var(--border-radius-base)*0.5,var(--border-radius-scale));
+  --ds-border-radius-md: min(var(--ds-border-radius-base),var(--ds-border-radius-scale)*2);
+  --border-radius-md: min(var(--border-radius-base),var(--border-radius-scale)*2);
+  --ds-border-radius-lg: min(var(--ds-border-radius-base)*2,var(--ds-border-radius-scale)*5);
+  --border-radius-lg: min(var(--border-radius-base)*2,var(--border-radius-scale)*5);
+  --ds-border-radius-xl: min(var(--ds-border-radius-base)*3,var(--ds-border-radius-scale)*7);
+  --border-radius-xl: min(var(--border-radius-base)*3,var(--border-radius-scale)*7);
+  --ds-border-radius-default: min(var(--ds-border-radius-base),var(--ds-border-radius-scale)*2);
+  --border-radius-default: min(var(--border-radius-base),var(--border-radius-scale)*2);
+  --ds-border-radius-full: 624.9375rem;
+  --border-radius-full: 624.9375rem;
+  --ds-border-width-default: 1px;
+  --border-width-default: 1px;
+  --ds-border-width-focus: 3px;
+  --border-width-focus: 3px;
+  --ds-shadow-xs: 0 0 1px 0 rgba(0,0,0,0.16), 0 1px 2px 0 rgba(0,0,0,0.12);
+  --shadow-xs: 0 0 1px 0 rgba(0,0,0,0.16), 0 1px 2px 0 rgba(0,0,0,0.12);
+  --ds-shadow-sm: 0 0 1px 0 rgba(0,0,0,0.15), 0 1px 2px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.1);
+  --shadow-sm: 0 0 1px 0 rgba(0,0,0,0.15), 0 1px 2px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.1);
+  --ds-shadow-md: 0 0 1px 0 rgba(0,0,0,0.14), 0 2px 4px 0 rgba(0,0,0,0.12), 0 4px 8px 0 rgba(0,0,0,0.12);
+  --shadow-md: 0 0 1px 0 rgba(0,0,0,0.14), 0 2px 4px 0 rgba(0,0,0,0.12), 0 4px 8px 0 rgba(0,0,0,0.12);
+  --ds-shadow-lg: 0 0 1px 0 rgba(0,0,0,0.13), 0 3px 5px 0 rgba(0,0,0,0.13), 0 6px 12px 0 rgba(0,0,0,0.14);
+  --shadow-lg: 0 0 1px 0 rgba(0,0,0,0.13), 0 3px 5px 0 rgba(0,0,0,0.13), 0 6px 12px 0 rgba(0,0,0,0.14);
+  --ds-shadow-xl: 0 0 1px 0 rgba(0,0,0,0.12), 0 4px 8px 0 rgba(0,0,0,0.16), 0 12px 24px 0 rgba(0,0,0,0.16);
+  --shadow-xl: 0 0 1px 0 rgba(0,0,0,0.12), 0 4px 8px 0 rgba(0,0,0,0.16), 0 12px 24px 0 rgba(0,0,0,0.16);
+  --ds-opacity-disabled: 30%;
+  --opacity-disabled: 30%;
+
+  --ds-size-0:  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *0);
+  --size-0:  calc(var(--size-step) / var(--size-base) * 1em *0);
+  --ds-size-1:  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *1);
+  --size-1:  calc(var(--size-step) / var(--size-base) * 1em *1);
+  --ds-size-2:  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *2);
+  --size-2:  calc(var(--size-step) / var(--size-base) * 1em *2);
+  --ds-size-3:  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *3);
+  --size-3:  calc(var(--size-step) / var(--size-base) * 1em *3);
+  --ds-size-4:  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *4);
+  --size-4:  calc(var(--size-step) / var(--size-base) * 1em *4);
+  --ds-size-5:  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *5);
+  --size-5:  calc(var(--size-step) / var(--size-base) * 1em *5);
+  --ds-size-6:  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *6);
+  --size-6:  calc(var(--size-step) / var(--size-base) * 1em *6);
+  --ds-size-7:  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *7);
+  --size-7:  calc(var(--size-step) / var(--size-base) * 1em *7);
+  --ds-size-8:  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *8);
+  --size-8:  calc(var(--size-step) / var(--size-base) * 1em *8);
+  --ds-size-9:  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *9);
+  --size-9:  calc(var(--size-step) / var(--size-base) * 1em *9);
+  --ds-size-10:  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *10);
+  --size-10:  calc(var(--size-step) / var(--size-base) * 1em *10);
+  --ds-size-11:  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *11);
+  --size-11:  calc(var(--size-step) / var(--size-base) * 1em *11);
+  --ds-size-12:  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *12);
+  --size-12:  calc(var(--size-step) / var(--size-base) * 1em *12);
+  --ds-size-13:  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *13);
+  --size-13:  calc(var(--size-step) / var(--size-base) * 1em *13);
+  --ds-size-14:  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *14);
+  --size-14:  calc(var(--size-step) / var(--size-base) * 1em *14);
+  --ds-size-15:  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *15);
+  --size-15:  calc(var(--size-step) / var(--size-base) * 1em *15);
+  --ds-size-18:  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *18);
+  --size-18:  calc(var(--size-step) / var(--size-base) * 1em *18);
+  --ds-size-22:  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *22);
+  --size-22:  calc(var(--size-step) / var(--size-base) * 1em *22);
+  --ds-size-26:  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *26);
+  --size-26:  calc(var(--size-step) / var(--size-base) * 1em *26);
+  --ds-size-30:  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *30);
+  --size-30:  calc(var(--size-step) / var(--size-base) * 1em *30);
+
+  @supports (width: round(down, .1em, 1px)) {
+  --ds-size-0: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *0), 0.0625rem);
+  --size-0: round(down,  calc(var(--size-step) / var(--size-base) * 1em *0), 0.0625rem);
+  --ds-size-1: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *1), 0.0625rem);
+  --size-1: round(down,  calc(var(--size-step) / var(--size-base) * 1em *1), 0.0625rem);
+  --ds-size-2: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *2), 0.0625rem);
+  --size-2: round(down,  calc(var(--size-step) / var(--size-base) * 1em *2), 0.0625rem);
+  --ds-size-3: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *3), 0.0625rem);
+  --size-3: round(down,  calc(var(--size-step) / var(--size-base) * 1em *3), 0.0625rem);
+  --ds-size-4: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *4), 0.0625rem);
+  --size-4: round(down,  calc(var(--size-step) / var(--size-base) * 1em *4), 0.0625rem);
+  --ds-size-5: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *5), 0.0625rem);
+  --size-5: round(down,  calc(var(--size-step) / var(--size-base) * 1em *5), 0.0625rem);
+  --ds-size-6: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *6), 0.0625rem);
+  --size-6: round(down,  calc(var(--size-step) / var(--size-base) * 1em *6), 0.0625rem);
+  --ds-size-7: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *7), 0.0625rem);
+  --size-7: round(down,  calc(var(--size-step) / var(--size-base) * 1em *7), 0.0625rem);
+  --ds-size-8: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *8), 0.0625rem);
+  --size-8: round(down,  calc(var(--size-step) / var(--size-base) * 1em *8), 0.0625rem);
+  --ds-size-9: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *9), 0.0625rem);
+  --size-9: round(down,  calc(var(--size-step) / var(--size-base) * 1em *9), 0.0625rem);
+  --ds-size-10: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *10), 0.0625rem);
+  --size-10: round(down,  calc(var(--size-step) / var(--size-base) * 1em *10), 0.0625rem);
+  --ds-size-11: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *11), 0.0625rem);
+  --size-11: round(down,  calc(var(--size-step) / var(--size-base) * 1em *11), 0.0625rem);
+  --ds-size-12: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *12), 0.0625rem);
+  --size-12: round(down,  calc(var(--size-step) / var(--size-base) * 1em *12), 0.0625rem);
+  --ds-size-13: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *13), 0.0625rem);
+  --size-13: round(down,  calc(var(--size-step) / var(--size-base) * 1em *13), 0.0625rem);
+  --ds-size-14: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *14), 0.0625rem);
+  --size-14: round(down,  calc(var(--size-step) / var(--size-base) * 1em *14), 0.0625rem);
+  --ds-size-15: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *15), 0.0625rem);
+  --size-15: round(down,  calc(var(--size-step) / var(--size-base) * 1em *15), 0.0625rem);
+  --ds-size-18: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *18), 0.0625rem);
+  --size-18: round(down,  calc(var(--size-step) / var(--size-base) * 1em *18), 0.0625rem);
+  --ds-size-22: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *22), 0.0625rem);
+  --size-22: round(down,  calc(var(--size-step) / var(--size-base) * 1em *22), 0.0625rem);
+  --ds-size-26: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *26), 0.0625rem);
+  --size-26: round(down,  calc(var(--size-step) / var(--size-base) * 1em *26), 0.0625rem);
+  --ds-size-30: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *30), 0.0625rem);
+  --size-30: round(down,  calc(var(--size-step) / var(--size-base) * 1em *30), 0.0625rem);
+  }
+}
+
+}
+
+@layer ds.theme.color-scheme.dark {
+[data-color-scheme="dark"] {
+  --ds-color-primary-background-default: #031344;
+  --color-primary-background-default: #031344;
+  --ds-color-primary-background-tinted: #071a54;
+  --color-primary-background-tinted: #071a54;
+  --ds-color-primary-surface-default: #11235b;
+  --color-primary-surface-default: #11235b;
+  --ds-color-primary-surface-tinted: #192a60;
+  --color-primary-surface-tinted: #192a60;
+  --ds-color-primary-surface-hover: #213266;
+  --color-primary-surface-hover: #213266;
+  --ds-color-primary-surface-active: #314171;
+  --color-primary-surface-active: #314171;
+  --ds-color-primary-border-subtle: #404e7b;
+  --color-primary-border-subtle: #404e7b;
+  --ds-color-primary-border-default: #7681a1;
+  --color-primary-border-default: #7681a1;
+  --ds-color-primary-border-strong: #a0a7be;
+  --color-primary-border-strong: #a0a7be;
+  --ds-color-primary-text-subtle: #a0a7be;
+  --color-primary-text-subtle: #a0a7be;
+  --ds-color-primary-text-default: #ebecf1;
+  --color-primary-text-default: #ebecf1;
+  --ds-color-primary-base-default: #a7a9ca;
+  --color-primary-base-default: #a7a9ca;
+  --ds-color-primary-base-hover: #9093bd;
+  --color-primary-base-hover: #9093bd;
+  --ds-color-primary-base-active: #7a7db0;
+  --color-primary-base-active: #7a7db0;
+  --ds-color-primary-base-contrast-subtle: #1b1c21;
+  --color-primary-base-contrast-subtle: #1b1c21;
+  --ds-color-primary-base-contrast-default: #000000;
+  --color-primary-base-contrast-default: #000000;
+  --ds-color-accent-background-default: #0e1923;
+  --color-accent-background-default: #0e1923;
+  --ds-color-accent-background-tinted: #12212e;
+  --color-accent-background-tinted: #12212e;
+  --ds-color-accent-surface-default: #17293b;
+  --color-accent-surface-default: #17293b;
+  --ds-color-accent-surface-tinted: #1a2f43;
+  --color-accent-surface-tinted: #1a2f43;
+  --ds-color-accent-surface-hover: #1e374f;
+  --color-accent-surface-hover: #1e374f;
+  --ds-color-accent-surface-active: #264563;
+  --color-accent-surface-active: #264563;
+  --ds-color-accent-border-subtle: #2d5376;
+  --color-accent-border-subtle: #2d5376;
+  --ds-color-accent-border-default: #4985be;
+  --color-accent-border-default: #4985be;
+  --ds-color-accent-border-strong: #76ade0;
+  --color-accent-border-strong: #76ade0;
+  --ds-color-accent-text-subtle: #76ade0;
+  --color-accent-text-subtle: #76ade0;
+  --ds-color-accent-text-default: #e2eef8;
+  --color-accent-text-default: #e2eef8;
+  --ds-color-accent-base-default: #135f9a;
+  --color-accent-base-default: #135f9a;
+  --ds-color-accent-base-hover: #0f4c7a;
+  --color-accent-base-hover: #0f4c7a;
+  --ds-color-accent-base-active: #0b395d;
+  --color-accent-base-active: #0b395d;
+  --ds-color-accent-base-contrast-subtle: #fbfcfd;
+  --color-accent-base-contrast-subtle: #fbfcfd;
+  --ds-color-accent-base-contrast-default: #ffffff;
+  --color-accent-base-contrast-default: #ffffff;
+  --ds-color-neutral-background-default: #13181f;
+  --color-neutral-background-default: #13181f;
+  --ds-color-neutral-background-tinted: #192029;
+  --color-neutral-background-tinted: #192029;
+  --ds-color-neutral-surface-default: #202834;
+  --color-neutral-surface-default: #202834;
+  --ds-color-neutral-surface-tinted: #262e3a;
+  --color-neutral-surface-tinted: #262e3a;
+  --ds-color-neutral-surface-hover: #2e3641;
+  --color-neutral-surface-hover: #2e3641;
+  --ds-color-neutral-surface-active: #3c444e;
+  --color-neutral-surface-active: #3c444e;
+  --ds-color-neutral-border-subtle: #49515a;
+  --color-neutral-border-subtle: #49515a;
+  --ds-color-neutral-border-default: #7c8289;
+  --color-neutral-border-default: #7c8289;
+  --ds-color-neutral-border-strong: #a4a8ad;
+  --color-neutral-border-strong: #a4a8ad;
+  --ds-color-neutral-text-subtle: #a4a8ad;
+  --color-neutral-text-subtle: #a4a8ad;
+  --ds-color-neutral-text-default: #ebeced;
+  --color-neutral-text-default: #ebeced;
+  --ds-color-neutral-base-default: #a6acb2;
+  --color-neutral-base-default: #a6acb2;
+  --ds-color-neutral-base-hover: #90979f;
+  --color-neutral-base-hover: #90979f;
+  --ds-color-neutral-base-active: #7a828c;
+  --color-neutral-base-active: #7a828c;
+  --ds-color-neutral-base-contrast-subtle: #1b1c1d;
+  --color-neutral-base-contrast-subtle: #1b1c1d;
+  --ds-color-neutral-base-contrast-default: #000000;
+  --color-neutral-base-contrast-default: #000000;
+  --ds-color-extra1-background-default: #241313;
+  --color-extra1-background-default: #241313;
+  --ds-color-extra1-background-tinted: #301919;
+  --color-extra1-background-tinted: #301919;
+  --ds-color-extra1-surface-default: #3c2020;
+  --color-extra1-surface-default: #3c2020;
+  --ds-color-extra1-surface-tinted: #452524;
+  --color-extra1-surface-tinted: #452524;
+  --ds-color-extra1-surface-hover: #502b2a;
+  --color-extra1-surface-hover: #502b2a;
+  --ds-color-extra1-surface-active: #653635;
+  --color-extra1-surface-active: #653635;
+  --ds-color-extra1-border-subtle: #78403f;
+  --color-extra1-border-subtle: #78403f;
+  --ds-color-extra1-border-default: #c16766;
+  --color-extra1-border-default: #c16766;
+  --ds-color-extra1-border-strong: #e39291;
+  --color-extra1-border-strong: #e39291;
+  --ds-color-extra1-text-subtle: #e39291;
+  --color-extra1-text-subtle: #e39291;
+  --ds-color-extra1-text-default: #f9e8e8;
+  --color-extra1-text-default: #f9e8e8;
+  --ds-color-extra1-base-default: #9f3e41;
+  --color-extra1-base-default: #9f3e41;
+  --ds-color-extra1-base-hover: #7f3234;
+  --color-extra1-base-hover: #7f3234;
+  --ds-color-extra1-base-active: #612628;
+  --color-extra1-base-active: #612628;
+  --ds-color-extra1-base-contrast-subtle: #ffffff;
+  --color-extra1-base-contrast-subtle: #ffffff;
+  --ds-color-extra1-base-contrast-default: #ffffff;
+  --color-extra1-base-contrast-default: #ffffff;
+  --ds-color-extra2-background-default: #1c170d;
+  --color-extra2-background-default: #1c170d;
+  --ds-color-extra2-background-tinted: #261f11;
+  --color-extra2-background-tinted: #261f11;
+  --ds-color-extra2-surface-default: #2f2716;
+  --color-extra2-surface-default: #2f2716;
+  --ds-color-extra2-surface-tinted: #372c19;
+  --color-extra2-surface-tinted: #372c19;
+  --ds-color-extra2-surface-hover: #40341d;
+  --color-extra2-surface-hover: #40341d;
+  --ds-color-extra2-surface-active: #504124;
+  --color-extra2-surface-active: #504124;
+  --ds-color-extra2-border-subtle: #5f4e2b;
+  --color-extra2-border-subtle: #5f4e2b;
+  --ds-color-extra2-border-default: #9a7d46;
+  --color-extra2-border-default: #9a7d46;
+  --ds-color-extra2-border-strong: #c8a25b;
+  --color-extra2-border-strong: #c8a25b;
+  --ds-color-extra2-text-subtle: #c8a25b;
+  --color-extra2-text-subtle: #c8a25b;
+  --ds-color-extra2-text-default: #f5ebd8;
+  --color-extra2-text-default: #f5ebd8;
+  --ds-color-extra2-base-default: #513c0b;
+  --color-extra2-base-default: #513c0b;
+  --ds-color-extra2-base-hover: #694e0f;
+  --color-extra2-base-hover: #694e0f;
+  --ds-color-extra2-base-active: #816012;
+  --color-extra2-base-active: #816012;
+  --ds-color-extra2-base-contrast-subtle: #ddd9cf;
+  --color-extra2-base-contrast-subtle: #ddd9cf;
+  --ds-color-extra2-base-contrast-default: #ffffff;
+  --color-extra2-base-contrast-default: #ffffff;
+  --ds-color-success-background-default: #241313;
+  --color-success-background-default: #241313;
+  --ds-color-success-background-tinted: #301919;
+  --color-success-background-tinted: #301919;
+  --ds-color-success-surface-default: #3c2020;
+  --color-success-surface-default: #3c2020;
+  --ds-color-success-surface-tinted: #452524;
+  --color-success-surface-tinted: #452524;
+  --ds-color-success-surface-hover: #502b2a;
+  --color-success-surface-hover: #502b2a;
+  --ds-color-success-surface-active: #653635;
+  --color-success-surface-active: #653635;
+  --ds-color-success-border-subtle: #78403f;
+  --color-success-border-subtle: #78403f;
+  --ds-color-success-border-default: #c16766;
+  --color-success-border-default: #c16766;
+  --ds-color-success-border-strong: #e39291;
+  --color-success-border-strong: #e39291;
+  --ds-color-success-text-subtle: #e39291;
+  --color-success-text-subtle: #e39291;
+  --ds-color-success-text-default: #f9e8e8;
+  --color-success-text-default: #f9e8e8;
+  --ds-color-success-base-default: #9f3e41;
+  --color-success-base-default: #9f3e41;
+  --ds-color-success-base-hover: #7f3234;
+  --color-success-base-hover: #7f3234;
+  --ds-color-success-base-active: #612628;
+  --color-success-base-active: #612628;
+  --ds-color-success-base-contrast-subtle: #ffffff;
+  --color-success-base-contrast-subtle: #ffffff;
+  --ds-color-success-base-contrast-default: #ffffff;
+  --color-success-base-contrast-default: #ffffff;
+  --ds-color-danger-background-default: #2a100e;
+  --color-danger-background-default: #2a100e;
+  --ds-color-danger-background-tinted: #371512;
+  --color-danger-background-tinted: #371512;
+  --ds-color-danger-surface-default: #451b17;
+  --color-danger-surface-default: #451b17;
+  --ds-color-danger-surface-tinted: #4f1f1b;
+  --color-danger-surface-tinted: #4f1f1b;
+  --ds-color-danger-surface-hover: #5c241f;
+  --color-danger-surface-hover: #5c241f;
+  --ds-color-danger-surface-active: #722d27;
+  --color-danger-surface-active: #722d27;
+  --ds-color-danger-border-subtle: #88352e;
+  --color-danger-border-subtle: #88352e;
+  --ds-color-danger-border-default: #bc6b64;
+  --color-danger-border-default: #bc6b64;
+  --ds-color-danger-border-strong: #d19a96;
+  --color-danger-border-strong: #d19a96;
+  --ds-color-danger-text-subtle: #d19a96;
+  --color-danger-text-subtle: #d19a96;
+  --ds-color-danger-text-default: #f5eae9;
+  --color-danger-text-default: #f5eae9;
+  --ds-color-danger-base-default: #d76e6e;
+  --color-danger-base-default: #d76e6e;
+  --ds-color-danger-base-hover: #df8b8b;
+  --color-danger-base-hover: #df8b8b;
+  --ds-color-danger-base-active: #e7a8a8;
+  --color-danger-base-active: #e7a8a8;
+  --ds-color-danger-base-contrast-subtle: #271414;
+  --color-danger-base-contrast-subtle: #271414;
+  --ds-color-danger-base-contrast-default: #000000;
+  --color-danger-base-contrast-default: #000000;
+  --ds-color-info-background-default: #031344;
+  --color-info-background-default: #031344;
+  --ds-color-info-background-tinted: #071a54;
+  --color-info-background-tinted: #071a54;
+  --ds-color-info-surface-default: #11235b;
+  --color-info-surface-default: #11235b;
+  --ds-color-info-surface-tinted: #192a60;
+  --color-info-surface-tinted: #192a60;
+  --ds-color-info-surface-hover: #213266;
+  --color-info-surface-hover: #213266;
+  --ds-color-info-surface-active: #314171;
+  --color-info-surface-active: #314171;
+  --ds-color-info-border-subtle: #404e7b;
+  --color-info-border-subtle: #404e7b;
+  --ds-color-info-border-default: #7681a1;
+  --color-info-border-default: #7681a1;
+  --ds-color-info-border-strong: #a0a7be;
+  --color-info-border-strong: #a0a7be;
+  --ds-color-info-text-subtle: #a0a7be;
+  --color-info-text-subtle: #a0a7be;
+  --ds-color-info-text-default: #ebecf1;
+  --color-info-text-default: #ebecf1;
+  --ds-color-info-base-default: #a7a9ca;
+  --color-info-base-default: #a7a9ca;
+  --ds-color-info-base-hover: #9093bd;
+  --color-info-base-hover: #9093bd;
+  --ds-color-info-base-active: #7a7db0;
+  --color-info-base-active: #7a7db0;
+  --ds-color-info-base-contrast-subtle: #1b1c21;
+  --color-info-base-contrast-subtle: #1b1c21;
+  --ds-color-info-base-contrast-default: #000000;
+  --color-info-base-contrast-default: #000000;
+  --ds-color-warning-background-default: #1e160d;
+  --color-warning-background-default: #1e160d;
+  --ds-color-warning-background-tinted: #281e11;
+  --color-warning-background-tinted: #281e11;
+  --ds-color-warning-surface-default: #322616;
+  --color-warning-surface-default: #322616;
+  --ds-color-warning-surface-tinted: #3a2b19;
+  --color-warning-surface-tinted: #3a2b19;
+  --ds-color-warning-surface-hover: #43321d;
+  --color-warning-surface-hover: #43321d;
+  --ds-color-warning-surface-active: #543f24;
+  --color-warning-surface-active: #543f24;
+  --ds-color-warning-border-subtle: #654b2b;
+  --color-warning-border-subtle: #654b2b;
+  --ds-color-warning-border-default: #a37a46;
+  --color-warning-border-default: #a37a46;
+  --ds-color-warning-border-strong: #d39e5b;
+  --color-warning-border-strong: #d39e5b;
+  --ds-color-warning-text-subtle: #d39e5b;
+  --color-warning-text-subtle: #d39e5b;
+  --ds-color-warning-text-default: #f7ebdb;
+  --color-warning-text-default: #f7ebdb;
+  --ds-color-warning-base-default: #60400b;
+  --color-warning-base-default: #60400b;
+  --ds-color-warning-base-hover: #7a510e;
+  --color-warning-base-hover: #7a510e;
+  --ds-color-warning-base-active: #946211;
+  --color-warning-base-active: #946211;
+  --ds-color-warning-base-contrast-subtle: #e6e2d9;
+  --color-warning-base-contrast-subtle: #e6e2d9;
+  --ds-color-warning-base-contrast-default: #ffffff;
+  --color-warning-base-contrast-default: #ffffff;
+  --ds-color-focus-inner: #13181f;
+  --color-focus-inner: #13181f;
+  --ds-color-focus-outer: #a7a9ca;
+  --color-focus-outer: #a7a9ca;
+  --ds-link-color-visited: #b49acd;
+  --link-color-visited: #b49acd;
+
+  color-scheme: dark;
+}
+ 
+@media (prefers-color-scheme: dark) {
+  [data-color-scheme="auto"] {
+  --ds-color-primary-background-default: #031344;
+  --color-primary-background-default: #031344;
+  --ds-color-primary-background-tinted: #071a54;
+  --color-primary-background-tinted: #071a54;
+  --ds-color-primary-surface-default: #11235b;
+  --color-primary-surface-default: #11235b;
+  --ds-color-primary-surface-tinted: #192a60;
+  --color-primary-surface-tinted: #192a60;
+  --ds-color-primary-surface-hover: #213266;
+  --color-primary-surface-hover: #213266;
+  --ds-color-primary-surface-active: #314171;
+  --color-primary-surface-active: #314171;
+  --ds-color-primary-border-subtle: #404e7b;
+  --color-primary-border-subtle: #404e7b;
+  --ds-color-primary-border-default: #7681a1;
+  --color-primary-border-default: #7681a1;
+  --ds-color-primary-border-strong: #a0a7be;
+  --color-primary-border-strong: #a0a7be;
+  --ds-color-primary-text-subtle: #a0a7be;
+  --color-primary-text-subtle: #a0a7be;
+  --ds-color-primary-text-default: #ebecf1;
+  --color-primary-text-default: #ebecf1;
+  --ds-color-primary-base-default: #a7a9ca;
+  --color-primary-base-default: #a7a9ca;
+  --ds-color-primary-base-hover: #9093bd;
+  --color-primary-base-hover: #9093bd;
+  --ds-color-primary-base-active: #7a7db0;
+  --color-primary-base-active: #7a7db0;
+  --ds-color-primary-base-contrast-subtle: #1b1c21;
+  --color-primary-base-contrast-subtle: #1b1c21;
+  --ds-color-primary-base-contrast-default: #000000;
+  --color-primary-base-contrast-default: #000000;
+  --ds-color-accent-background-default: #0e1923;
+  --color-accent-background-default: #0e1923;
+  --ds-color-accent-background-tinted: #12212e;
+  --color-accent-background-tinted: #12212e;
+  --ds-color-accent-surface-default: #17293b;
+  --color-accent-surface-default: #17293b;
+  --ds-color-accent-surface-tinted: #1a2f43;
+  --color-accent-surface-tinted: #1a2f43;
+  --ds-color-accent-surface-hover: #1e374f;
+  --color-accent-surface-hover: #1e374f;
+  --ds-color-accent-surface-active: #264563;
+  --color-accent-surface-active: #264563;
+  --ds-color-accent-border-subtle: #2d5376;
+  --color-accent-border-subtle: #2d5376;
+  --ds-color-accent-border-default: #4985be;
+  --color-accent-border-default: #4985be;
+  --ds-color-accent-border-strong: #76ade0;
+  --color-accent-border-strong: #76ade0;
+  --ds-color-accent-text-subtle: #76ade0;
+  --color-accent-text-subtle: #76ade0;
+  --ds-color-accent-text-default: #e2eef8;
+  --color-accent-text-default: #e2eef8;
+  --ds-color-accent-base-default: #135f9a;
+  --color-accent-base-default: #135f9a;
+  --ds-color-accent-base-hover: #0f4c7a;
+  --color-accent-base-hover: #0f4c7a;
+  --ds-color-accent-base-active: #0b395d;
+  --color-accent-base-active: #0b395d;
+  --ds-color-accent-base-contrast-subtle: #fbfcfd;
+  --color-accent-base-contrast-subtle: #fbfcfd;
+  --ds-color-accent-base-contrast-default: #ffffff;
+  --color-accent-base-contrast-default: #ffffff;
+  --ds-color-neutral-background-default: #13181f;
+  --color-neutral-background-default: #13181f;
+  --ds-color-neutral-background-tinted: #192029;
+  --color-neutral-background-tinted: #192029;
+  --ds-color-neutral-surface-default: #202834;
+  --color-neutral-surface-default: #202834;
+  --ds-color-neutral-surface-tinted: #262e3a;
+  --color-neutral-surface-tinted: #262e3a;
+  --ds-color-neutral-surface-hover: #2e3641;
+  --color-neutral-surface-hover: #2e3641;
+  --ds-color-neutral-surface-active: #3c444e;
+  --color-neutral-surface-active: #3c444e;
+  --ds-color-neutral-border-subtle: #49515a;
+  --color-neutral-border-subtle: #49515a;
+  --ds-color-neutral-border-default: #7c8289;
+  --color-neutral-border-default: #7c8289;
+  --ds-color-neutral-border-strong: #a4a8ad;
+  --color-neutral-border-strong: #a4a8ad;
+  --ds-color-neutral-text-subtle: #a4a8ad;
+  --color-neutral-text-subtle: #a4a8ad;
+  --ds-color-neutral-text-default: #ebeced;
+  --color-neutral-text-default: #ebeced;
+  --ds-color-neutral-base-default: #a6acb2;
+  --color-neutral-base-default: #a6acb2;
+  --ds-color-neutral-base-hover: #90979f;
+  --color-neutral-base-hover: #90979f;
+  --ds-color-neutral-base-active: #7a828c;
+  --color-neutral-base-active: #7a828c;
+  --ds-color-neutral-base-contrast-subtle: #1b1c1d;
+  --color-neutral-base-contrast-subtle: #1b1c1d;
+  --ds-color-neutral-base-contrast-default: #000000;
+  --color-neutral-base-contrast-default: #000000;
+  --ds-color-extra1-background-default: #241313;
+  --color-extra1-background-default: #241313;
+  --ds-color-extra1-background-tinted: #301919;
+  --color-extra1-background-tinted: #301919;
+  --ds-color-extra1-surface-default: #3c2020;
+  --color-extra1-surface-default: #3c2020;
+  --ds-color-extra1-surface-tinted: #452524;
+  --color-extra1-surface-tinted: #452524;
+  --ds-color-extra1-surface-hover: #502b2a;
+  --color-extra1-surface-hover: #502b2a;
+  --ds-color-extra1-surface-active: #653635;
+  --color-extra1-surface-active: #653635;
+  --ds-color-extra1-border-subtle: #78403f;
+  --color-extra1-border-subtle: #78403f;
+  --ds-color-extra1-border-default: #c16766;
+  --color-extra1-border-default: #c16766;
+  --ds-color-extra1-border-strong: #e39291;
+  --color-extra1-border-strong: #e39291;
+  --ds-color-extra1-text-subtle: #e39291;
+  --color-extra1-text-subtle: #e39291;
+  --ds-color-extra1-text-default: #f9e8e8;
+  --color-extra1-text-default: #f9e8e8;
+  --ds-color-extra1-base-default: #9f3e41;
+  --color-extra1-base-default: #9f3e41;
+  --ds-color-extra1-base-hover: #7f3234;
+  --color-extra1-base-hover: #7f3234;
+  --ds-color-extra1-base-active: #612628;
+  --color-extra1-base-active: #612628;
+  --ds-color-extra1-base-contrast-subtle: #ffffff;
+  --color-extra1-base-contrast-subtle: #ffffff;
+  --ds-color-extra1-base-contrast-default: #ffffff;
+  --color-extra1-base-contrast-default: #ffffff;
+  --ds-color-extra2-background-default: #1c170d;
+  --color-extra2-background-default: #1c170d;
+  --ds-color-extra2-background-tinted: #261f11;
+  --color-extra2-background-tinted: #261f11;
+  --ds-color-extra2-surface-default: #2f2716;
+  --color-extra2-surface-default: #2f2716;
+  --ds-color-extra2-surface-tinted: #372c19;
+  --color-extra2-surface-tinted: #372c19;
+  --ds-color-extra2-surface-hover: #40341d;
+  --color-extra2-surface-hover: #40341d;
+  --ds-color-extra2-surface-active: #504124;
+  --color-extra2-surface-active: #504124;
+  --ds-color-extra2-border-subtle: #5f4e2b;
+  --color-extra2-border-subtle: #5f4e2b;
+  --ds-color-extra2-border-default: #9a7d46;
+  --color-extra2-border-default: #9a7d46;
+  --ds-color-extra2-border-strong: #c8a25b;
+  --color-extra2-border-strong: #c8a25b;
+  --ds-color-extra2-text-subtle: #c8a25b;
+  --color-extra2-text-subtle: #c8a25b;
+  --ds-color-extra2-text-default: #f5ebd8;
+  --color-extra2-text-default: #f5ebd8;
+  --ds-color-extra2-base-default: #513c0b;
+  --color-extra2-base-default: #513c0b;
+  --ds-color-extra2-base-hover: #694e0f;
+  --color-extra2-base-hover: #694e0f;
+  --ds-color-extra2-base-active: #816012;
+  --color-extra2-base-active: #816012;
+  --ds-color-extra2-base-contrast-subtle: #ddd9cf;
+  --color-extra2-base-contrast-subtle: #ddd9cf;
+  --ds-color-extra2-base-contrast-default: #ffffff;
+  --color-extra2-base-contrast-default: #ffffff;
+  --ds-color-success-background-default: #241313;
+  --color-success-background-default: #241313;
+  --ds-color-success-background-tinted: #301919;
+  --color-success-background-tinted: #301919;
+  --ds-color-success-surface-default: #3c2020;
+  --color-success-surface-default: #3c2020;
+  --ds-color-success-surface-tinted: #452524;
+  --color-success-surface-tinted: #452524;
+  --ds-color-success-surface-hover: #502b2a;
+  --color-success-surface-hover: #502b2a;
+  --ds-color-success-surface-active: #653635;
+  --color-success-surface-active: #653635;
+  --ds-color-success-border-subtle: #78403f;
+  --color-success-border-subtle: #78403f;
+  --ds-color-success-border-default: #c16766;
+  --color-success-border-default: #c16766;
+  --ds-color-success-border-strong: #e39291;
+  --color-success-border-strong: #e39291;
+  --ds-color-success-text-subtle: #e39291;
+  --color-success-text-subtle: #e39291;
+  --ds-color-success-text-default: #f9e8e8;
+  --color-success-text-default: #f9e8e8;
+  --ds-color-success-base-default: #9f3e41;
+  --color-success-base-default: #9f3e41;
+  --ds-color-success-base-hover: #7f3234;
+  --color-success-base-hover: #7f3234;
+  --ds-color-success-base-active: #612628;
+  --color-success-base-active: #612628;
+  --ds-color-success-base-contrast-subtle: #ffffff;
+  --color-success-base-contrast-subtle: #ffffff;
+  --ds-color-success-base-contrast-default: #ffffff;
+  --color-success-base-contrast-default: #ffffff;
+  --ds-color-danger-background-default: #2a100e;
+  --color-danger-background-default: #2a100e;
+  --ds-color-danger-background-tinted: #371512;
+  --color-danger-background-tinted: #371512;
+  --ds-color-danger-surface-default: #451b17;
+  --color-danger-surface-default: #451b17;
+  --ds-color-danger-surface-tinted: #4f1f1b;
+  --color-danger-surface-tinted: #4f1f1b;
+  --ds-color-danger-surface-hover: #5c241f;
+  --color-danger-surface-hover: #5c241f;
+  --ds-color-danger-surface-active: #722d27;
+  --color-danger-surface-active: #722d27;
+  --ds-color-danger-border-subtle: #88352e;
+  --color-danger-border-subtle: #88352e;
+  --ds-color-danger-border-default: #bc6b64;
+  --color-danger-border-default: #bc6b64;
+  --ds-color-danger-border-strong: #d19a96;
+  --color-danger-border-strong: #d19a96;
+  --ds-color-danger-text-subtle: #d19a96;
+  --color-danger-text-subtle: #d19a96;
+  --ds-color-danger-text-default: #f5eae9;
+  --color-danger-text-default: #f5eae9;
+  --ds-color-danger-base-default: #d76e6e;
+  --color-danger-base-default: #d76e6e;
+  --ds-color-danger-base-hover: #df8b8b;
+  --color-danger-base-hover: #df8b8b;
+  --ds-color-danger-base-active: #e7a8a8;
+  --color-danger-base-active: #e7a8a8;
+  --ds-color-danger-base-contrast-subtle: #271414;
+  --color-danger-base-contrast-subtle: #271414;
+  --ds-color-danger-base-contrast-default: #000000;
+  --color-danger-base-contrast-default: #000000;
+  --ds-color-info-background-default: #031344;
+  --color-info-background-default: #031344;
+  --ds-color-info-background-tinted: #071a54;
+  --color-info-background-tinted: #071a54;
+  --ds-color-info-surface-default: #11235b;
+  --color-info-surface-default: #11235b;
+  --ds-color-info-surface-tinted: #192a60;
+  --color-info-surface-tinted: #192a60;
+  --ds-color-info-surface-hover: #213266;
+  --color-info-surface-hover: #213266;
+  --ds-color-info-surface-active: #314171;
+  --color-info-surface-active: #314171;
+  --ds-color-info-border-subtle: #404e7b;
+  --color-info-border-subtle: #404e7b;
+  --ds-color-info-border-default: #7681a1;
+  --color-info-border-default: #7681a1;
+  --ds-color-info-border-strong: #a0a7be;
+  --color-info-border-strong: #a0a7be;
+  --ds-color-info-text-subtle: #a0a7be;
+  --color-info-text-subtle: #a0a7be;
+  --ds-color-info-text-default: #ebecf1;
+  --color-info-text-default: #ebecf1;
+  --ds-color-info-base-default: #a7a9ca;
+  --color-info-base-default: #a7a9ca;
+  --ds-color-info-base-hover: #9093bd;
+  --color-info-base-hover: #9093bd;
+  --ds-color-info-base-active: #7a7db0;
+  --color-info-base-active: #7a7db0;
+  --ds-color-info-base-contrast-subtle: #1b1c21;
+  --color-info-base-contrast-subtle: #1b1c21;
+  --ds-color-info-base-contrast-default: #000000;
+  --color-info-base-contrast-default: #000000;
+  --ds-color-warning-background-default: #1e160d;
+  --color-warning-background-default: #1e160d;
+  --ds-color-warning-background-tinted: #281e11;
+  --color-warning-background-tinted: #281e11;
+  --ds-color-warning-surface-default: #322616;
+  --color-warning-surface-default: #322616;
+  --ds-color-warning-surface-tinted: #3a2b19;
+  --color-warning-surface-tinted: #3a2b19;
+  --ds-color-warning-surface-hover: #43321d;
+  --color-warning-surface-hover: #43321d;
+  --ds-color-warning-surface-active: #543f24;
+  --color-warning-surface-active: #543f24;
+  --ds-color-warning-border-subtle: #654b2b;
+  --color-warning-border-subtle: #654b2b;
+  --ds-color-warning-border-default: #a37a46;
+  --color-warning-border-default: #a37a46;
+  --ds-color-warning-border-strong: #d39e5b;
+  --color-warning-border-strong: #d39e5b;
+  --ds-color-warning-text-subtle: #d39e5b;
+  --color-warning-text-subtle: #d39e5b;
+  --ds-color-warning-text-default: #f7ebdb;
+  --color-warning-text-default: #f7ebdb;
+  --ds-color-warning-base-default: #60400b;
+  --color-warning-base-default: #60400b;
+  --ds-color-warning-base-hover: #7a510e;
+  --color-warning-base-hover: #7a510e;
+  --ds-color-warning-base-active: #946211;
+  --color-warning-base-active: #946211;
+  --ds-color-warning-base-contrast-subtle: #e6e2d9;
+  --color-warning-base-contrast-subtle: #e6e2d9;
+  --ds-color-warning-base-contrast-default: #ffffff;
+  --color-warning-base-contrast-default: #ffffff;
+  --ds-color-focus-inner: #13181f;
+  --color-focus-inner: #13181f;
+  --ds-color-focus-outer: #a7a9ca;
+  --color-focus-outer: #a7a9ca;
+  --ds-link-color-visited: #b49acd;
+  --link-color-visited: #b49acd;
+
+  color-scheme: dark;
+}
+
+}
+
+}
+
+@layer ds.theme.typography.primary {
+:root, [data-typography="primary"] {
+  --ds-line-height-sm: 1.3;
+  --line-height-sm: 1.3;
+  --ds-line-height-md: 1.5;
+  --line-height-md: 1.5;
+  --ds-line-height-lg: 1.7;
+  --line-height-lg: 1.7;
+  --ds-font-size-1: 0.6875rem;
+  --font-size-1: 0.6875rem;
+  --ds-font-size-2: 0.8125rem;
+  --font-size-2: 0.8125rem;
+  --ds-font-size-3: 0.875rem;
+  --font-size-3: 0.875rem;
+  --ds-font-size-4: 1rem;
+  --font-size-4: 1rem;
+  --ds-font-size-5: 1.125rem;
+  --font-size-5: 1.125rem;
+  --ds-font-size-6: 1.3125rem;
+  --font-size-6: 1.3125rem;
+  --ds-font-size-7: 1.5rem;
+  --font-size-7: 1.5rem;
+  --ds-font-size-8: 1.875rem;
+  --font-size-8: 1.875rem;
+  --ds-font-size-9: 2.25rem;
+  --font-size-9: 2.25rem;
+  --ds-font-size-10: 3rem;
+  --font-size-10: 3rem;
+  --ds-letter-spacing-1: -1%;
+  --letter-spacing-1: -1%;
+  --ds-letter-spacing-2: -0.5%;
+  --letter-spacing-2: -0.5%;
+  --ds-letter-spacing-3: -0.25%;
+  --letter-spacing-3: -0.25%;
+  --ds-letter-spacing-4: -0.15%;
+  --letter-spacing-4: -0.15%;
+  --ds-letter-spacing-5: 0%;
+  --letter-spacing-5: 0%;
+  --ds-letter-spacing-6: 0.15%;
+  --letter-spacing-6: 0.15%;
+  --ds-letter-spacing-7: 0.25%;
+  --letter-spacing-7: 0.25%;
+  --ds-letter-spacing-8: 0.5%;
+  --letter-spacing-8: 0.5%;
+  --ds-letter-spacing-9: 1.5%;
+  --letter-spacing-9: 1.5%;
+  --ds-font-family: Museo sans;
+  --font-family: Museo sans;
+  --ds-font-weight-medium: 500;
+  --font-weight-medium: 500;
+  --ds-font-weight-semibold: 700;
+  --font-weight-semibold: 700;
+  --ds-font-weight-regular: 300;
+  --font-weight-regular: 300;
+  --ds-heading-2xl-font-weight: 500;
+  --heading-2xl-font-weight: 500;
+  --ds-heading-2xl-line-height: 1.3;
+  --heading-2xl-line-height: 1.3;
+  --ds-heading-2xl-font-size: 3rem;
+  --heading-2xl-font-size: 3rem;
+  --ds-heading-2xl-letter-spacing: -1%;
+  --heading-2xl-letter-spacing: -1%;
+  --ds-heading-xl-font-weight: 500;
+  --heading-xl-font-weight: 500;
+  --ds-heading-xl-line-height: 1.3;
+  --heading-xl-line-height: 1.3;
+  --ds-heading-xl-font-size: 2.25rem;
+  --heading-xl-font-size: 2.25rem;
+  --ds-heading-xl-letter-spacing: -1%;
+  --heading-xl-letter-spacing: -1%;
+  --ds-heading-lg-font-weight: 500;
+  --heading-lg-font-weight: 500;
+  --ds-heading-lg-line-height: 1.3;
+  --heading-lg-line-height: 1.3;
+  --ds-heading-lg-font-size: 1.875rem;
+  --heading-lg-font-size: 1.875rem;
+  --ds-heading-lg-letter-spacing: -0.5%;
+  --heading-lg-letter-spacing: -0.5%;
+  --ds-heading-md-font-weight: 500;
+  --heading-md-font-weight: 500;
+  --ds-heading-md-line-height: 1.3;
+  --heading-md-line-height: 1.3;
+  --ds-heading-md-font-size: 1.5rem;
+  --heading-md-font-size: 1.5rem;
+  --ds-heading-md-letter-spacing: -0.25%;
+  --heading-md-letter-spacing: -0.25%;
+  --ds-heading-sm-font-weight: 500;
+  --heading-sm-font-weight: 500;
+  --ds-heading-sm-line-height: 1.3;
+  --heading-sm-line-height: 1.3;
+  --ds-heading-sm-font-size: 1.3125rem;
+  --heading-sm-font-size: 1.3125rem;
+  --ds-heading-sm-letter-spacing: 0%;
+  --heading-sm-letter-spacing: 0%;
+  --ds-heading-xs-font-weight: 500;
+  --heading-xs-font-weight: 500;
+  --ds-heading-xs-line-height: 1.3;
+  --heading-xs-line-height: 1.3;
+  --ds-heading-xs-font-size: 1.125rem;
+  --heading-xs-font-size: 1.125rem;
+  --ds-heading-xs-letter-spacing: 0.15%;
+  --heading-xs-letter-spacing: 0.15%;
+  --ds-heading-2xs-font-weight: 500;
+  --heading-2xs-font-weight: 500;
+  --ds-heading-2xs-line-height: 1.3;
+  --heading-2xs-line-height: 1.3;
+  --ds-heading-2xs-font-size: 1rem;
+  --heading-2xs-font-size: 1rem;
+  --ds-heading-2xs-letter-spacing: 0.15%;
+  --heading-2xs-letter-spacing: 0.15%;
+  --ds-body-xl-font-weight: 300;
+  --body-xl-font-weight: 300;
+  --ds-body-xl-line-height: 1.5;
+  --body-xl-line-height: 1.5;
+  --ds-body-xl-font-size: 1.3125rem;
+  --body-xl-font-size: 1.3125rem;
+  --ds-body-xl-letter-spacing: 0.5%;
+  --body-xl-letter-spacing: 0.5%;
+  --ds-body-lg-font-weight: 300;
+  --body-lg-font-weight: 300;
+  --ds-body-lg-line-height: 1.5;
+  --body-lg-line-height: 1.5;
+  --ds-body-lg-font-size: 1.125rem;
+  --body-lg-font-size: 1.125rem;
+  --ds-body-lg-letter-spacing: 0.5%;
+  --body-lg-letter-spacing: 0.5%;
+  --ds-body-md-font-weight: 300;
+  --body-md-font-weight: 300;
+  --ds-body-md-line-height: 1.5;
+  --body-md-line-height: 1.5;
+  --ds-body-md-font-size: 1rem;
+  --body-md-font-size: 1rem;
+  --ds-body-md-letter-spacing: 0.5%;
+  --body-md-letter-spacing: 0.5%;
+  --ds-body-sm-font-weight: 300;
+  --body-sm-font-weight: 300;
+  --ds-body-sm-line-height: 1.5;
+  --body-sm-line-height: 1.5;
+  --ds-body-sm-font-size: 0.875rem;
+  --body-sm-font-size: 0.875rem;
+  --ds-body-sm-letter-spacing: 0.25%;
+  --body-sm-letter-spacing: 0.25%;
+  --ds-body-xs-font-weight: 300;
+  --body-xs-font-weight: 300;
+  --ds-body-xs-line-height: 1.5;
+  --body-xs-line-height: 1.5;
+  --ds-body-xs-font-size: 0.8125rem;
+  --body-xs-font-size: 0.8125rem;
+  --ds-body-xs-letter-spacing: 0.15%;
+  --body-xs-letter-spacing: 0.15%;
+  --ds-body-short-xl-font-weight: 300;
+  --body-short-xl-font-weight: 300;
+  --ds-body-short-xl-line-height: 1.3;
+  --body-short-xl-line-height: 1.3;
+  --ds-body-short-xl-font-size: 1.3125rem;
+  --body-short-xl-font-size: 1.3125rem;
+  --ds-body-short-xl-letter-spacing: 0.5%;
+  --body-short-xl-letter-spacing: 0.5%;
+  --ds-body-short-lg-font-weight: 300;
+  --body-short-lg-font-weight: 300;
+  --ds-body-short-lg-line-height: 1.3;
+  --body-short-lg-line-height: 1.3;
+  --ds-body-short-lg-font-size: 1.125rem;
+  --body-short-lg-font-size: 1.125rem;
+  --ds-body-short-lg-letter-spacing: 0.5%;
+  --body-short-lg-letter-spacing: 0.5%;
+  --ds-body-short-md-font-weight: 300;
+  --body-short-md-font-weight: 300;
+  --ds-body-short-md-line-height: 1.3;
+  --body-short-md-line-height: 1.3;
+  --ds-body-short-md-font-size: 1rem;
+  --body-short-md-font-size: 1rem;
+  --ds-body-short-md-letter-spacing: 0.5%;
+  --body-short-md-letter-spacing: 0.5%;
+  --ds-body-short-sm-font-weight: 300;
+  --body-short-sm-font-weight: 300;
+  --ds-body-short-sm-line-height: 1.3;
+  --body-short-sm-line-height: 1.3;
+  --ds-body-short-sm-font-size: 0.875rem;
+  --body-short-sm-font-size: 0.875rem;
+  --ds-body-short-sm-letter-spacing: 0.25%;
+  --body-short-sm-letter-spacing: 0.25%;
+  --ds-body-short-xs-font-weight: 300;
+  --body-short-xs-font-weight: 300;
+  --ds-body-short-xs-line-height: 1.3;
+  --body-short-xs-line-height: 1.3;
+  --ds-body-short-xs-font-size: 0.8125rem;
+  --body-short-xs-font-size: 0.8125rem;
+  --ds-body-short-xs-letter-spacing: 0.15%;
+  --body-short-xs-letter-spacing: 0.15%;
+  --ds-body-long-xl-font-weight: 300;
+  --body-long-xl-font-weight: 300;
+  --ds-body-long-xl-line-height: 1.7;
+  --body-long-xl-line-height: 1.7;
+  --ds-body-long-xl-font-size: 1.3125rem;
+  --body-long-xl-font-size: 1.3125rem;
+  --ds-body-long-xl-letter-spacing: 0.5%;
+  --body-long-xl-letter-spacing: 0.5%;
+  --ds-body-long-lg-font-weight: 300;
+  --body-long-lg-font-weight: 300;
+  --ds-body-long-lg-line-height: 1.7;
+  --body-long-lg-line-height: 1.7;
+  --ds-body-long-lg-font-size: 1.125rem;
+  --body-long-lg-font-size: 1.125rem;
+  --ds-body-long-lg-letter-spacing: 0.5%;
+  --body-long-lg-letter-spacing: 0.5%;
+  --ds-body-long-md-font-weight: 300;
+  --body-long-md-font-weight: 300;
+  --ds-body-long-md-line-height: 1.7;
+  --body-long-md-line-height: 1.7;
+  --ds-body-long-md-font-size: 1rem;
+  --body-long-md-font-size: 1rem;
+  --ds-body-long-md-letter-spacing: 0.5%;
+  --body-long-md-letter-spacing: 0.5%;
+  --ds-body-long-sm-font-weight: 300;
+  --body-long-sm-font-weight: 300;
+  --ds-body-long-sm-line-height: 1.7;
+  --body-long-sm-line-height: 1.7;
+  --ds-body-long-sm-font-size: 0.875rem;
+  --body-long-sm-font-size: 0.875rem;
+  --ds-body-long-sm-letter-spacing: 0.25%;
+  --body-long-sm-letter-spacing: 0.25%;
+  --ds-body-long-xs-font-weight: 300;
+  --body-long-xs-font-weight: 300;
+  --ds-body-long-xs-line-height: 1.7;
+  --body-long-xs-line-height: 1.7;
+  --ds-body-long-xs-font-size: 0.8125rem;
+  --body-long-xs-font-size: 0.8125rem;
+  --ds-body-long-xs-letter-spacing: 0.15%;
+  --body-long-xs-letter-spacing: 0.15%;
+}
+}
+@layer ds.theme.color {
+[data-color="accent"], [data-color-scheme][data-color="accent"] {
+  --ds-color-background-default: var(--ds-color-accent-background-default);
+  --color-background-default: var(--color-accent-background-default);
+  --ds-color-background-tinted: var(--ds-color-accent-background-tinted);
+  --color-background-tinted: var(--color-accent-background-tinted);
+  --ds-color-surface-default: var(--ds-color-accent-surface-default);
+  --color-surface-default: var(--color-accent-surface-default);
+  --ds-color-surface-tinted: var(--ds-color-accent-surface-tinted);
+  --color-surface-tinted: var(--color-accent-surface-tinted);
+  --ds-color-surface-hover: var(--ds-color-accent-surface-hover);
+  --color-surface-hover: var(--color-accent-surface-hover);
+  --ds-color-surface-active: var(--ds-color-accent-surface-active);
+  --color-surface-active: var(--color-accent-surface-active);
+  --ds-color-border-subtle: var(--ds-color-accent-border-subtle);
+  --color-border-subtle: var(--color-accent-border-subtle);
+  --ds-color-border-default: var(--ds-color-accent-border-default);
+  --color-border-default: var(--color-accent-border-default);
+  --ds-color-border-strong: var(--ds-color-accent-border-strong);
+  --color-border-strong: var(--color-accent-border-strong);
+  --ds-color-text-subtle: var(--ds-color-accent-text-subtle);
+  --color-text-subtle: var(--color-accent-text-subtle);
+  --ds-color-text-default: var(--ds-color-accent-text-default);
+  --color-text-default: var(--color-accent-text-default);
+  --ds-color-base-default: var(--ds-color-accent-base-default);
+  --color-base-default: var(--color-accent-base-default);
+  --ds-color-base-hover: var(--ds-color-accent-base-hover);
+  --color-base-hover: var(--color-accent-base-hover);
+  --ds-color-base-active: var(--ds-color-accent-base-active);
+  --color-base-active: var(--color-accent-base-active);
+  --ds-color-base-contrast-subtle: var(--ds-color-accent-base-contrast-subtle);
+  --color-base-contrast-subtle: var(--color-accent-base-contrast-subtle);
+  --ds-color-base-contrast-default: var(--ds-color-accent-base-contrast-default);
+  --color-base-contrast-default: var(--color-accent-base-contrast-default);
+}
+
+}
+
+@layer ds.theme.color {
+[data-color="danger"], [data-color-scheme][data-color="danger"] {
+  --ds-color-background-default: var(--ds-color-danger-background-default);
+  --color-background-default: var(--color-danger-background-default);
+  --ds-color-background-tinted: var(--ds-color-danger-background-tinted);
+  --color-background-tinted: var(--color-danger-background-tinted);
+  --ds-color-surface-default: var(--ds-color-danger-surface-default);
+  --color-surface-default: var(--color-danger-surface-default);
+  --ds-color-surface-tinted: var(--ds-color-danger-surface-tinted);
+  --color-surface-tinted: var(--color-danger-surface-tinted);
+  --ds-color-surface-hover: var(--ds-color-danger-surface-hover);
+  --color-surface-hover: var(--color-danger-surface-hover);
+  --ds-color-surface-active: var(--ds-color-danger-surface-active);
+  --color-surface-active: var(--color-danger-surface-active);
+  --ds-color-border-subtle: var(--ds-color-danger-border-subtle);
+  --color-border-subtle: var(--color-danger-border-subtle);
+  --ds-color-border-default: var(--ds-color-danger-border-default);
+  --color-border-default: var(--color-danger-border-default);
+  --ds-color-border-strong: var(--ds-color-danger-border-strong);
+  --color-border-strong: var(--color-danger-border-strong);
+  --ds-color-text-subtle: var(--ds-color-danger-text-subtle);
+  --color-text-subtle: var(--color-danger-text-subtle);
+  --ds-color-text-default: var(--ds-color-danger-text-default);
+  --color-text-default: var(--color-danger-text-default);
+  --ds-color-base-default: var(--ds-color-danger-base-default);
+  --color-base-default: var(--color-danger-base-default);
+  --ds-color-base-hover: var(--ds-color-danger-base-hover);
+  --color-base-hover: var(--color-danger-base-hover);
+  --ds-color-base-active: var(--ds-color-danger-base-active);
+  --color-base-active: var(--color-danger-base-active);
+  --ds-color-base-contrast-subtle: var(--ds-color-danger-base-contrast-subtle);
+  --color-base-contrast-subtle: var(--color-danger-base-contrast-subtle);
+  --ds-color-base-contrast-default: var(--ds-color-danger-base-contrast-default);
+  --color-base-contrast-default: var(--color-danger-base-contrast-default);
+}
+
+}
+
+@layer ds.theme.color {
+[data-color="extra1"], [data-color-scheme][data-color="extra1"] {
+  --ds-color-background-default: var(--ds-color-extra1-background-default);
+  --color-background-default: var(--color-extra1-background-default);
+  --ds-color-background-tinted: var(--ds-color-extra1-background-tinted);
+  --color-background-tinted: var(--color-extra1-background-tinted);
+  --ds-color-surface-default: var(--ds-color-extra1-surface-default);
+  --color-surface-default: var(--color-extra1-surface-default);
+  --ds-color-surface-tinted: var(--ds-color-extra1-surface-tinted);
+  --color-surface-tinted: var(--color-extra1-surface-tinted);
+  --ds-color-surface-hover: var(--ds-color-extra1-surface-hover);
+  --color-surface-hover: var(--color-extra1-surface-hover);
+  --ds-color-surface-active: var(--ds-color-extra1-surface-active);
+  --color-surface-active: var(--color-extra1-surface-active);
+  --ds-color-border-subtle: var(--ds-color-extra1-border-subtle);
+  --color-border-subtle: var(--color-extra1-border-subtle);
+  --ds-color-border-default: var(--ds-color-extra1-border-default);
+  --color-border-default: var(--color-extra1-border-default);
+  --ds-color-border-strong: var(--ds-color-extra1-border-strong);
+  --color-border-strong: var(--color-extra1-border-strong);
+  --ds-color-text-subtle: var(--ds-color-extra1-text-subtle);
+  --color-text-subtle: var(--color-extra1-text-subtle);
+  --ds-color-text-default: var(--ds-color-extra1-text-default);
+  --color-text-default: var(--color-extra1-text-default);
+  --ds-color-base-default: var(--ds-color-extra1-base-default);
+  --color-base-default: var(--color-extra1-base-default);
+  --ds-color-base-hover: var(--ds-color-extra1-base-hover);
+  --color-base-hover: var(--color-extra1-base-hover);
+  --ds-color-base-active: var(--ds-color-extra1-base-active);
+  --color-base-active: var(--color-extra1-base-active);
+  --ds-color-base-contrast-subtle: var(--ds-color-extra1-base-contrast-subtle);
+  --color-base-contrast-subtle: var(--color-extra1-base-contrast-subtle);
+  --ds-color-base-contrast-default: var(--ds-color-extra1-base-contrast-default);
+  --color-base-contrast-default: var(--color-extra1-base-contrast-default);
+}
+
+}
+
+@layer ds.theme.color {
+[data-color="extra2"], [data-color-scheme][data-color="extra2"] {
+  --ds-color-background-default: var(--ds-color-extra2-background-default);
+  --color-background-default: var(--color-extra2-background-default);
+  --ds-color-background-tinted: var(--ds-color-extra2-background-tinted);
+  --color-background-tinted: var(--color-extra2-background-tinted);
+  --ds-color-surface-default: var(--ds-color-extra2-surface-default);
+  --color-surface-default: var(--color-extra2-surface-default);
+  --ds-color-surface-tinted: var(--ds-color-extra2-surface-tinted);
+  --color-surface-tinted: var(--color-extra2-surface-tinted);
+  --ds-color-surface-hover: var(--ds-color-extra2-surface-hover);
+  --color-surface-hover: var(--color-extra2-surface-hover);
+  --ds-color-surface-active: var(--ds-color-extra2-surface-active);
+  --color-surface-active: var(--color-extra2-surface-active);
+  --ds-color-border-subtle: var(--ds-color-extra2-border-subtle);
+  --color-border-subtle: var(--color-extra2-border-subtle);
+  --ds-color-border-default: var(--ds-color-extra2-border-default);
+  --color-border-default: var(--color-extra2-border-default);
+  --ds-color-border-strong: var(--ds-color-extra2-border-strong);
+  --color-border-strong: var(--color-extra2-border-strong);
+  --ds-color-text-subtle: var(--ds-color-extra2-text-subtle);
+  --color-text-subtle: var(--color-extra2-text-subtle);
+  --ds-color-text-default: var(--ds-color-extra2-text-default);
+  --color-text-default: var(--color-extra2-text-default);
+  --ds-color-base-default: var(--ds-color-extra2-base-default);
+  --color-base-default: var(--color-extra2-base-default);
+  --ds-color-base-hover: var(--ds-color-extra2-base-hover);
+  --color-base-hover: var(--color-extra2-base-hover);
+  --ds-color-base-active: var(--ds-color-extra2-base-active);
+  --color-base-active: var(--color-extra2-base-active);
+  --ds-color-base-contrast-subtle: var(--ds-color-extra2-base-contrast-subtle);
+  --color-base-contrast-subtle: var(--color-extra2-base-contrast-subtle);
+  --ds-color-base-contrast-default: var(--ds-color-extra2-base-contrast-default);
+  --color-base-contrast-default: var(--color-extra2-base-contrast-default);
+}
+
+}
+
+@layer ds.theme.color {
+[data-color="info"], [data-color-scheme][data-color="info"] {
+  --ds-color-background-default: var(--ds-color-info-background-default);
+  --color-background-default: var(--color-info-background-default);
+  --ds-color-background-tinted: var(--ds-color-info-background-tinted);
+  --color-background-tinted: var(--color-info-background-tinted);
+  --ds-color-surface-default: var(--ds-color-info-surface-default);
+  --color-surface-default: var(--color-info-surface-default);
+  --ds-color-surface-tinted: var(--ds-color-info-surface-tinted);
+  --color-surface-tinted: var(--color-info-surface-tinted);
+  --ds-color-surface-hover: var(--ds-color-info-surface-hover);
+  --color-surface-hover: var(--color-info-surface-hover);
+  --ds-color-surface-active: var(--ds-color-info-surface-active);
+  --color-surface-active: var(--color-info-surface-active);
+  --ds-color-border-subtle: var(--ds-color-info-border-subtle);
+  --color-border-subtle: var(--color-info-border-subtle);
+  --ds-color-border-default: var(--ds-color-info-border-default);
+  --color-border-default: var(--color-info-border-default);
+  --ds-color-border-strong: var(--ds-color-info-border-strong);
+  --color-border-strong: var(--color-info-border-strong);
+  --ds-color-text-subtle: var(--ds-color-info-text-subtle);
+  --color-text-subtle: var(--color-info-text-subtle);
+  --ds-color-text-default: var(--ds-color-info-text-default);
+  --color-text-default: var(--color-info-text-default);
+  --ds-color-base-default: var(--ds-color-info-base-default);
+  --color-base-default: var(--color-info-base-default);
+  --ds-color-base-hover: var(--ds-color-info-base-hover);
+  --color-base-hover: var(--color-info-base-hover);
+  --ds-color-base-active: var(--ds-color-info-base-active);
+  --color-base-active: var(--color-info-base-active);
+  --ds-color-base-contrast-subtle: var(--ds-color-info-base-contrast-subtle);
+  --color-base-contrast-subtle: var(--color-info-base-contrast-subtle);
+  --ds-color-base-contrast-default: var(--ds-color-info-base-contrast-default);
+  --color-base-contrast-default: var(--color-info-base-contrast-default);
+}
+
+}
+
+@layer ds.theme.color {
+[data-color="neutral"], [data-color-scheme][data-color="neutral"] {
+  --ds-color-background-default: var(--ds-color-neutral-background-default);
+  --color-background-default: var(--color-neutral-background-default);
+  --ds-color-background-tinted: var(--ds-color-neutral-background-tinted);
+  --color-background-tinted: var(--color-neutral-background-tinted);
+  --ds-color-surface-default: var(--ds-color-neutral-surface-default);
+  --color-surface-default: var(--color-neutral-surface-default);
+  --ds-color-surface-tinted: var(--ds-color-neutral-surface-tinted);
+  --color-surface-tinted: var(--color-neutral-surface-tinted);
+  --ds-color-surface-hover: var(--ds-color-neutral-surface-hover);
+  --color-surface-hover: var(--color-neutral-surface-hover);
+  --ds-color-surface-active: var(--ds-color-neutral-surface-active);
+  --color-surface-active: var(--color-neutral-surface-active);
+  --ds-color-border-subtle: var(--ds-color-neutral-border-subtle);
+  --color-border-subtle: var(--color-neutral-border-subtle);
+  --ds-color-border-default: var(--ds-color-neutral-border-default);
+  --color-border-default: var(--color-neutral-border-default);
+  --ds-color-border-strong: var(--ds-color-neutral-border-strong);
+  --color-border-strong: var(--color-neutral-border-strong);
+  --ds-color-text-subtle: var(--ds-color-neutral-text-subtle);
+  --color-text-subtle: var(--color-neutral-text-subtle);
+  --ds-color-text-default: var(--ds-color-neutral-text-default);
+  --color-text-default: var(--color-neutral-text-default);
+  --ds-color-base-default: var(--ds-color-neutral-base-default);
+  --color-base-default: var(--color-neutral-base-default);
+  --ds-color-base-hover: var(--ds-color-neutral-base-hover);
+  --color-base-hover: var(--color-neutral-base-hover);
+  --ds-color-base-active: var(--ds-color-neutral-base-active);
+  --color-base-active: var(--color-neutral-base-active);
+  --ds-color-base-contrast-subtle: var(--ds-color-neutral-base-contrast-subtle);
+  --color-base-contrast-subtle: var(--color-neutral-base-contrast-subtle);
+  --ds-color-base-contrast-default: var(--ds-color-neutral-base-contrast-default);
+  --color-base-contrast-default: var(--color-neutral-base-contrast-default);
+}
+
+}
+
+@layer ds.theme.color {
+:root, [data-color-scheme], [data-color="primary"] {
+  --ds-color-background-default: var(--ds-color-primary-background-default);
+  --color-background-default: var(--color-primary-background-default);
+  --ds-color-background-tinted: var(--ds-color-primary-background-tinted);
+  --color-background-tinted: var(--color-primary-background-tinted);
+  --ds-color-surface-default: var(--ds-color-primary-surface-default);
+  --color-surface-default: var(--color-primary-surface-default);
+  --ds-color-surface-tinted: var(--ds-color-primary-surface-tinted);
+  --color-surface-tinted: var(--color-primary-surface-tinted);
+  --ds-color-surface-hover: var(--ds-color-primary-surface-hover);
+  --color-surface-hover: var(--color-primary-surface-hover);
+  --ds-color-surface-active: var(--ds-color-primary-surface-active);
+  --color-surface-active: var(--color-primary-surface-active);
+  --ds-color-border-subtle: var(--ds-color-primary-border-subtle);
+  --color-border-subtle: var(--color-primary-border-subtle);
+  --ds-color-border-default: var(--ds-color-primary-border-default);
+  --color-border-default: var(--color-primary-border-default);
+  --ds-color-border-strong: var(--ds-color-primary-border-strong);
+  --color-border-strong: var(--color-primary-border-strong);
+  --ds-color-text-subtle: var(--ds-color-primary-text-subtle);
+  --color-text-subtle: var(--color-primary-text-subtle);
+  --ds-color-text-default: var(--ds-color-primary-text-default);
+  --color-text-default: var(--color-primary-text-default);
+  --ds-color-base-default: var(--ds-color-primary-base-default);
+  --color-base-default: var(--color-primary-base-default);
+  --ds-color-base-hover: var(--ds-color-primary-base-hover);
+  --color-base-hover: var(--color-primary-base-hover);
+  --ds-color-base-active: var(--ds-color-primary-base-active);
+  --color-base-active: var(--color-primary-base-active);
+  --ds-color-base-contrast-subtle: var(--ds-color-primary-base-contrast-subtle);
+  --color-base-contrast-subtle: var(--color-primary-base-contrast-subtle);
+  --ds-color-base-contrast-default: var(--ds-color-primary-base-contrast-default);
+  --color-base-contrast-default: var(--color-primary-base-contrast-default);
+}
+
+}
+
+@layer ds.theme.color {
+[data-color="success"], [data-color-scheme][data-color="success"] {
+  --ds-color-background-default: var(--ds-color-success-background-default);
+  --color-background-default: var(--color-success-background-default);
+  --ds-color-background-tinted: var(--ds-color-success-background-tinted);
+  --color-background-tinted: var(--color-success-background-tinted);
+  --ds-color-surface-default: var(--ds-color-success-surface-default);
+  --color-surface-default: var(--color-success-surface-default);
+  --ds-color-surface-tinted: var(--ds-color-success-surface-tinted);
+  --color-surface-tinted: var(--color-success-surface-tinted);
+  --ds-color-surface-hover: var(--ds-color-success-surface-hover);
+  --color-surface-hover: var(--color-success-surface-hover);
+  --ds-color-surface-active: var(--ds-color-success-surface-active);
+  --color-surface-active: var(--color-success-surface-active);
+  --ds-color-border-subtle: var(--ds-color-success-border-subtle);
+  --color-border-subtle: var(--color-success-border-subtle);
+  --ds-color-border-default: var(--ds-color-success-border-default);
+  --color-border-default: var(--color-success-border-default);
+  --ds-color-border-strong: var(--ds-color-success-border-strong);
+  --color-border-strong: var(--color-success-border-strong);
+  --ds-color-text-subtle: var(--ds-color-success-text-subtle);
+  --color-text-subtle: var(--color-success-text-subtle);
+  --ds-color-text-default: var(--ds-color-success-text-default);
+  --color-text-default: var(--color-success-text-default);
+  --ds-color-base-default: var(--ds-color-success-base-default);
+  --color-base-default: var(--color-success-base-default);
+  --ds-color-base-hover: var(--ds-color-success-base-hover);
+  --color-base-hover: var(--color-success-base-hover);
+  --ds-color-base-active: var(--ds-color-success-base-active);
+  --color-base-active: var(--color-success-base-active);
+  --ds-color-base-contrast-subtle: var(--ds-color-success-base-contrast-subtle);
+  --color-base-contrast-subtle: var(--color-success-base-contrast-subtle);
+  --ds-color-base-contrast-default: var(--ds-color-success-base-contrast-default);
+  --color-base-contrast-default: var(--color-success-base-contrast-default);
+}
+
+}
+
+@layer ds.theme.color {
+[data-color="warning"], [data-color-scheme][data-color="warning"] {
+  --ds-color-background-default: var(--ds-color-warning-background-default);
+  --color-background-default: var(--color-warning-background-default);
+  --ds-color-background-tinted: var(--ds-color-warning-background-tinted);
+  --color-background-tinted: var(--color-warning-background-tinted);
+  --ds-color-surface-default: var(--ds-color-warning-surface-default);
+  --color-surface-default: var(--color-warning-surface-default);
+  --ds-color-surface-tinted: var(--ds-color-warning-surface-tinted);
+  --color-surface-tinted: var(--color-warning-surface-tinted);
+  --ds-color-surface-hover: var(--ds-color-warning-surface-hover);
+  --color-surface-hover: var(--color-warning-surface-hover);
+  --ds-color-surface-active: var(--ds-color-warning-surface-active);
+  --color-surface-active: var(--color-warning-surface-active);
+  --ds-color-border-subtle: var(--ds-color-warning-border-subtle);
+  --color-border-subtle: var(--color-warning-border-subtle);
+  --ds-color-border-default: var(--ds-color-warning-border-default);
+  --color-border-default: var(--color-warning-border-default);
+  --ds-color-border-strong: var(--ds-color-warning-border-strong);
+  --color-border-strong: var(--color-warning-border-strong);
+  --ds-color-text-subtle: var(--ds-color-warning-text-subtle);
+  --color-text-subtle: var(--color-warning-text-subtle);
+  --ds-color-text-default: var(--ds-color-warning-text-default);
+  --color-text-default: var(--color-warning-text-default);
+  --ds-color-base-default: var(--ds-color-warning-base-default);
+  --color-base-default: var(--color-warning-base-default);
+  --ds-color-base-hover: var(--ds-color-warning-base-hover);
+  --color-base-hover: var(--color-warning-base-hover);
+  --ds-color-base-active: var(--ds-color-warning-base-active);
+  --color-base-active: var(--color-warning-base-active);
+  --ds-color-base-contrast-subtle: var(--ds-color-warning-base-contrast-subtle);
+  --color-base-contrast-subtle: var(--color-warning-base-contrast-subtle);
+  --ds-color-base-contrast-default: var(--ds-color-warning-base-contrast-default);
+  --color-base-contrast-default: var(--color-warning-base-contrast-default);
+}
+
+}
+
+:root {
+  --spacing-0: 0px;
+  --spacing-2: 2px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-112: 112px;
+  --spacing-128: 128px;
+}
+
+    </style>
+    <style>
+      body {
+        padding: 40px;
+      }
+      .color-table {
+        width: auto;
+        border-collapse: separate;
+        border-spacing: 5px;
+      }
+      .color-table th {
+        width: 1%;
+      }
+      .color-table td {
+        width: 96px;
+        height: 48px;
+        border: 1px solid #ccc;
+        text-align: center;
+      }
+      .color-table th {
+        width: 40px;
+        height: 64px;
+        font-weight: normal;
+        background-color: #eee;
+        border: 1px solid #ddd;
+        color: #666;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>styrbord-tokens</h1>
+    <h2>Colors</h2>
+    <table class="color-table">
+      <tbody>
+        <tr className="color-strip">
+    <th></th>
+    <th>background-default</th><th>background-tinted</th><th>surface-default</th><th>surface-tinted</th><th>surface-hover</th><th>surface-active</th><th>border-subtle</th><th>border-default</th><th>border-strong</th><th>text-subtle</th><th>text-default</th><th>base-default</th><th>base-hover</th><th>base-active</th><th>base-contrast-subtle</th><th>base-contrast-default</th>
+  </tr><tr className="color-strip">
+    <th>primary</th>
+    <td style="background-color: var(--ds-color-primary-background-default);"></td><td style="background-color: var(--ds-color-primary-background-tinted);"></td><td style="background-color: var(--ds-color-primary-surface-default);"></td><td style="background-color: var(--ds-color-primary-surface-tinted);"></td><td style="background-color: var(--ds-color-primary-surface-hover);"></td><td style="background-color: var(--ds-color-primary-surface-active);"></td><td style="background-color: var(--ds-color-primary-border-subtle);"></td><td style="background-color: var(--ds-color-primary-border-default);"></td><td style="background-color: var(--ds-color-primary-border-strong);"></td><td style="background-color: var(--ds-color-primary-text-subtle);"></td><td style="background-color: var(--ds-color-primary-text-default);"></td><td style="background-color: var(--ds-color-primary-base-default);"></td><td style="background-color: var(--ds-color-primary-base-hover);"></td><td style="background-color: var(--ds-color-primary-base-active);"></td><td style="background-color: var(--ds-color-primary-base-contrast-subtle);"></td><td style="background-color: var(--ds-color-primary-base-contrast-default);"></td>
+  </tr>
+<tr className="color-strip">
+    <th>accent</th>
+    <td style="background-color: var(--ds-color-accent-background-default);"></td><td style="background-color: var(--ds-color-accent-background-tinted);"></td><td style="background-color: var(--ds-color-accent-surface-default);"></td><td style="background-color: var(--ds-color-accent-surface-tinted);"></td><td style="background-color: var(--ds-color-accent-surface-hover);"></td><td style="background-color: var(--ds-color-accent-surface-active);"></td><td style="background-color: var(--ds-color-accent-border-subtle);"></td><td style="background-color: var(--ds-color-accent-border-default);"></td><td style="background-color: var(--ds-color-accent-border-strong);"></td><td style="background-color: var(--ds-color-accent-text-subtle);"></td><td style="background-color: var(--ds-color-accent-text-default);"></td><td style="background-color: var(--ds-color-accent-base-default);"></td><td style="background-color: var(--ds-color-accent-base-hover);"></td><td style="background-color: var(--ds-color-accent-base-active);"></td><td style="background-color: var(--ds-color-accent-base-contrast-subtle);"></td><td style="background-color: var(--ds-color-accent-base-contrast-default);"></td>
+  </tr>
+<tr className="color-strip">
+    <th>extra1</th>
+    <td style="background-color: var(--ds-color-extra1-background-default);"></td><td style="background-color: var(--ds-color-extra1-background-tinted);"></td><td style="background-color: var(--ds-color-extra1-surface-default);"></td><td style="background-color: var(--ds-color-extra1-surface-tinted);"></td><td style="background-color: var(--ds-color-extra1-surface-hover);"></td><td style="background-color: var(--ds-color-extra1-surface-active);"></td><td style="background-color: var(--ds-color-extra1-border-subtle);"></td><td style="background-color: var(--ds-color-extra1-border-default);"></td><td style="background-color: var(--ds-color-extra1-border-strong);"></td><td style="background-color: var(--ds-color-extra1-text-subtle);"></td><td style="background-color: var(--ds-color-extra1-text-default);"></td><td style="background-color: var(--ds-color-extra1-base-default);"></td><td style="background-color: var(--ds-color-extra1-base-hover);"></td><td style="background-color: var(--ds-color-extra1-base-active);"></td><td style="background-color: var(--ds-color-extra1-base-contrast-subtle);"></td><td style="background-color: var(--ds-color-extra1-base-contrast-default);"></td>
+  </tr>
+<tr className="color-strip">
+    <th>neutral</th>
+    <td style="background-color: var(--ds-color-neutral-background-default);"></td><td style="background-color: var(--ds-color-neutral-background-tinted);"></td><td style="background-color: var(--ds-color-neutral-surface-default);"></td><td style="background-color: var(--ds-color-neutral-surface-tinted);"></td><td style="background-color: var(--ds-color-neutral-surface-hover);"></td><td style="background-color: var(--ds-color-neutral-surface-active);"></td><td style="background-color: var(--ds-color-neutral-border-subtle);"></td><td style="background-color: var(--ds-color-neutral-border-default);"></td><td style="background-color: var(--ds-color-neutral-border-strong);"></td><td style="background-color: var(--ds-color-neutral-text-subtle);"></td><td style="background-color: var(--ds-color-neutral-text-default);"></td><td style="background-color: var(--ds-color-neutral-base-default);"></td><td style="background-color: var(--ds-color-neutral-base-hover);"></td><td style="background-color: var(--ds-color-neutral-base-active);"></td><td style="background-color: var(--ds-color-neutral-base-contrast-subtle);"></td><td style="background-color: var(--ds-color-neutral-base-contrast-default);"></td>
+  </tr>
+<tr className="color-strip">
+    <th>info</th>
+    <td style="background-color: var(--ds-color-info-background-default);"></td><td style="background-color: var(--ds-color-info-background-tinted);"></td><td style="background-color: var(--ds-color-info-surface-default);"></td><td style="background-color: var(--ds-color-info-surface-tinted);"></td><td style="background-color: var(--ds-color-info-surface-hover);"></td><td style="background-color: var(--ds-color-info-surface-active);"></td><td style="background-color: var(--ds-color-info-border-subtle);"></td><td style="background-color: var(--ds-color-info-border-default);"></td><td style="background-color: var(--ds-color-info-border-strong);"></td><td style="background-color: var(--ds-color-info-text-subtle);"></td><td style="background-color: var(--ds-color-info-text-default);"></td><td style="background-color: var(--ds-color-info-base-default);"></td><td style="background-color: var(--ds-color-info-base-hover);"></td><td style="background-color: var(--ds-color-info-base-active);"></td><td style="background-color: var(--ds-color-info-base-contrast-subtle);"></td><td style="background-color: var(--ds-color-info-base-contrast-default);"></td>
+  </tr>
+<tr className="color-strip">
+    <th>success</th>
+    <td style="background-color: var(--ds-color-success-background-default);"></td><td style="background-color: var(--ds-color-success-background-tinted);"></td><td style="background-color: var(--ds-color-success-surface-default);"></td><td style="background-color: var(--ds-color-success-surface-tinted);"></td><td style="background-color: var(--ds-color-success-surface-hover);"></td><td style="background-color: var(--ds-color-success-surface-active);"></td><td style="background-color: var(--ds-color-success-border-subtle);"></td><td style="background-color: var(--ds-color-success-border-default);"></td><td style="background-color: var(--ds-color-success-border-strong);"></td><td style="background-color: var(--ds-color-success-text-subtle);"></td><td style="background-color: var(--ds-color-success-text-default);"></td><td style="background-color: var(--ds-color-success-base-default);"></td><td style="background-color: var(--ds-color-success-base-hover);"></td><td style="background-color: var(--ds-color-success-base-active);"></td><td style="background-color: var(--ds-color-success-base-contrast-subtle);"></td><td style="background-color: var(--ds-color-success-base-contrast-default);"></td>
+  </tr>
+<tr className="color-strip">
+    <th>warning</th>
+    <td style="background-color: var(--ds-color-warning-background-default);"></td><td style="background-color: var(--ds-color-warning-background-tinted);"></td><td style="background-color: var(--ds-color-warning-surface-default);"></td><td style="background-color: var(--ds-color-warning-surface-tinted);"></td><td style="background-color: var(--ds-color-warning-surface-hover);"></td><td style="background-color: var(--ds-color-warning-surface-active);"></td><td style="background-color: var(--ds-color-warning-border-subtle);"></td><td style="background-color: var(--ds-color-warning-border-default);"></td><td style="background-color: var(--ds-color-warning-border-strong);"></td><td style="background-color: var(--ds-color-warning-text-subtle);"></td><td style="background-color: var(--ds-color-warning-text-default);"></td><td style="background-color: var(--ds-color-warning-base-default);"></td><td style="background-color: var(--ds-color-warning-base-hover);"></td><td style="background-color: var(--ds-color-warning-base-active);"></td><td style="background-color: var(--ds-color-warning-base-contrast-subtle);"></td><td style="background-color: var(--ds-color-warning-base-contrast-default);"></td>
+  </tr>
+<tr className="color-strip">
+    <th>danger</th>
+    <td style="background-color: var(--ds-color-danger-background-default);"></td><td style="background-color: var(--ds-color-danger-background-tinted);"></td><td style="background-color: var(--ds-color-danger-surface-default);"></td><td style="background-color: var(--ds-color-danger-surface-tinted);"></td><td style="background-color: var(--ds-color-danger-surface-hover);"></td><td style="background-color: var(--ds-color-danger-surface-active);"></td><td style="background-color: var(--ds-color-danger-border-subtle);"></td><td style="background-color: var(--ds-color-danger-border-default);"></td><td style="background-color: var(--ds-color-danger-border-strong);"></td><td style="background-color: var(--ds-color-danger-text-subtle);"></td><td style="background-color: var(--ds-color-danger-text-default);"></td><td style="background-color: var(--ds-color-danger-base-default);"></td><td style="background-color: var(--ds-color-danger-base-hover);"></td><td style="background-color: var(--ds-color-danger-base-active);"></td><td style="background-color: var(--ds-color-danger-base-contrast-subtle);"></td><td style="background-color: var(--ds-color-danger-base-contrast-default);"></td>
+  </tr>
+      </tbody>
+    </table>
+    <h2>Typography</h2>
+    <div>
+      <div style="font-size: var(--ds-body-xs-font-size);font-weight: var(--ds-body-xs-font-weight);letter-spacing: var(--ds-body-xs-letter-spacing);line-height: var(--ds-body-xs-line-height);">body xs</div><div style="font-size: var(--ds-body-sm-font-size);font-weight: var(--ds-body-sm-font-weight);letter-spacing: var(--ds-body-sm-letter-spacing);line-height: var(--ds-body-sm-line-height);">body sm</div><div style="font-size: var(--ds-body-md-font-size);font-weight: var(--ds-body-md-font-weight);letter-spacing: var(--ds-body-md-letter-spacing);line-height: var(--ds-body-md-line-height);">body md</div><div style="font-size: var(--ds-body-lg-font-size);font-weight: var(--ds-body-lg-font-weight);letter-spacing: var(--ds-body-lg-letter-spacing);line-height: var(--ds-body-lg-line-height);">body lg</div><div style="font-size: var(--ds-body-xl-font-size);font-weight: var(--ds-body-xl-font-weight);letter-spacing: var(--ds-body-xl-letter-spacing);line-height: var(--ds-body-xl-line-height);">body xl</div>
+    </div>
 <div>
-<h3>design-tokens/primitives/modes/color-scheme/light/kystverket.json</h3>
+      <div style="font-size: var(--ds-body-short-xs-font-size);font-weight: var(--ds-body-short-xs-font-weight);letter-spacing: var(--ds-body-short-xs-letter-spacing);line-height: var(--ds-body-short-xs-line-height);">body-short xs</div><div style="font-size: var(--ds-body-short-sm-font-size);font-weight: var(--ds-body-short-sm-font-weight);letter-spacing: var(--ds-body-short-sm-letter-spacing);line-height: var(--ds-body-short-sm-line-height);">body-short sm</div><div style="font-size: var(--ds-body-short-md-font-size);font-weight: var(--ds-body-short-md-font-weight);letter-spacing: var(--ds-body-short-md-letter-spacing);line-height: var(--ds-body-short-md-line-height);">body-short md</div><div style="font-size: var(--ds-body-short-lg-font-size);font-weight: var(--ds-body-short-lg-font-weight);letter-spacing: var(--ds-body-short-lg-letter-spacing);line-height: var(--ds-body-short-lg-line-height);">body-short lg</div><div style="font-size: var(--ds-body-short-xl-font-size);font-weight: var(--ds-body-short-xl-font-weight);letter-spacing: var(--ds-body-short-xl-letter-spacing);line-height: var(--ds-body-short-xl-line-height);">body-short xl</div>
+    </div>
 <div>
-<table>
-<tr>
-<td></td>
-<td colspan="2" style="padding: 8px; text-align: center; font-family: monospace; border-left: 1px solid #000;border-right: 1px solid #000;">Background</td>
-<td colspan="4" style="padding: 8px; text-align: center; font-family: monospace; border-left: 1px solid #000;border-right: 1px solid #000;">Surface</td>
-<td colspan="3" style="padding: 8px; text-align: center; font-family: monospace; border-left: 1px solid #000;border-right: 1px solid #000;">Border</td>
-<td colspan="2" style="padding: 8px; text-align: center; font-family: monospace; border-left: 1px solid #000;border-right: 1px solid #000;">Text</td>
-<td colspan="5" style="padding: 8px; text-align: center; font-family: monospace; border-left: 1px solid #000;border-right: 1px solid #000;">Base</td>
-</tr>
-<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px; border-top: 1px solid #000;">primary</td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #eff4fe; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #e0eaff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #c9dbff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #b1cbff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #a0bcf5; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #507ad9; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #365db9; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #365db9; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #031f7a; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #000667; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #132a8a; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #244bae; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #82aaff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-</tr>
-<tr>
-<td></td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#eff4fe</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#e0eaff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#c9dbff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#b1cbff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#a0bcf5</td>
-<td style="padding: 8px 16px; font-family: monospace;">#507ad9</td>
-<td style="padding: 8px 16px; font-family: monospace;">#365db9</td>
-<td style="padding: 8px 16px; font-family: monospace;">#365db9</td>
-<td style="padding: 8px 16px; font-family: monospace;">#031f7a</td>
-<td style="padding: 8px 16px; font-family: monospace;">#000667</td>
-<td style="padding: 8px 16px; font-family: monospace;">#132a8a</td>
-<td style="padding: 8px 16px; font-family: monospace;">#244bae</td>
-<td style="padding: 8px 16px; font-family: monospace;">#82aaff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-</tr>
-<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px; border-top: 1px solid #000;">accent</td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #fff0ed; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffe2dc; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffcfc5; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffb9ab; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffa492; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #df3c1b; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ad2f15; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ad2f15; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #53160a; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #FF451F; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ff7559; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ff9a86; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #2e0c06; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #000000; border: 1px solid #000;"></td>
-</tr>
-<tr>
-<td></td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#fff0ed</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffe2dc</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffcfc5</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffb9ab</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffa492</td>
-<td style="padding: 8px 16px; font-family: monospace;">#df3c1b</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ad2f15</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ad2f15</td>
-<td style="padding: 8px 16px; font-family: monospace;">#53160a</td>
-<td style="padding: 8px 16px; font-family: monospace;">#FF451F</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ff7559</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ff9a86</td>
-<td style="padding: 8px 16px; font-family: monospace;">#2e0c06</td>
-<td style="padding: 8px 16px; font-family: monospace;">#000000</td>
-</tr>
-<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px; border-top: 1px solid #000;">extra1</td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #e4f7fe; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #c9effd; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #a9e5fb; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #77d6f9; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #4bc9f7; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #1882a8; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #136582; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #136582; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #092f3d; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #23bdf5; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #1fa6d7; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #0596cb; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #06222c; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #000000; border: 1px solid #000;"></td>
-</tr>
-<tr>
-<td></td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#e4f7fe</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#c9effd</td>
-<td style="padding: 8px 16px; font-family: monospace;">#a9e5fb</td>
-<td style="padding: 8px 16px; font-family: monospace;">#77d6f9</td>
-<td style="padding: 8px 16px; font-family: monospace;">#4bc9f7</td>
-<td style="padding: 8px 16px; font-family: monospace;">#1882a8</td>
-<td style="padding: 8px 16px; font-family: monospace;">#136582</td>
-<td style="padding: 8px 16px; font-family: monospace;">#136582</td>
-<td style="padding: 8px 16px; font-family: monospace;">#092f3d</td>
-<td style="padding: 8px 16px; font-family: monospace;">#23bdf5</td>
-<td style="padding: 8px 16px; font-family: monospace;">#1fa6d7</td>
-<td style="padding: 8px 16px; font-family: monospace;">#0596cb</td>
-<td style="padding: 8px 16px; font-family: monospace;">#06222c</td>
-<td style="padding: 8px 16px; font-family: monospace;">#000000</td>
-</tr>
-<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px; border-top: 1px solid #000;">extra2</td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ecf6ef; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #d9ede0; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #c0e2cc; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #a5d5b6; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #8bc9a1; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #318950; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #266a3e; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #266a3e; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #12311d; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #3ba460; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #64b781; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #8ccaa2; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #000101; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #000000; border: 1px solid #000;"></td>
-</tr>
-<tr>
-<td></td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ecf6ef</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#d9ede0</td>
-<td style="padding: 8px 16px; font-family: monospace;">#c0e2cc</td>
-<td style="padding: 8px 16px; font-family: monospace;">#a5d5b6</td>
-<td style="padding: 8px 16px; font-family: monospace;">#8bc9a1</td>
-<td style="padding: 8px 16px; font-family: monospace;">#318950</td>
-<td style="padding: 8px 16px; font-family: monospace;">#266a3e</td>
-<td style="padding: 8px 16px; font-family: monospace;">#266a3e</td>
-<td style="padding: 8px 16px; font-family: monospace;">#12311d</td>
-<td style="padding: 8px 16px; font-family: monospace;">#3ba460</td>
-<td style="padding: 8px 16px; font-family: monospace;">#64b781</td>
-<td style="padding: 8px 16px; font-family: monospace;">#8ccaa2</td>
-<td style="padding: 8px 16px; font-family: monospace;">#000101</td>
-<td style="padding: 8px 16px; font-family: monospace;">#000000</td>
-</tr>
-<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px; border-top: 1px solid #000;">neutral</td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #f9f6f3; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ebe8e5; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #dcd9d7; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #cecbc9; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #bdbbb9; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #807e7d; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #5d5d5d; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #5d5d5d; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #2c2b2b; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #1c1b1b; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #2d2c2c; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #3e3d3d; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #adacab; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-</tr>
-<tr>
-<td></td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#f9f6f3</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ebe8e5</td>
-<td style="padding: 8px 16px; font-family: monospace;">#dcd9d7</td>
-<td style="padding: 8px 16px; font-family: monospace;">#cecbc9</td>
-<td style="padding: 8px 16px; font-family: monospace;">#bdbbb9</td>
-<td style="padding: 8px 16px; font-family: monospace;">#807e7d</td>
-<td style="padding: 8px 16px; font-family: monospace;">#5d5d5d</td>
-<td style="padding: 8px 16px; font-family: monospace;">#5d5d5d</td>
-<td style="padding: 8px 16px; font-family: monospace;">#2c2b2b</td>
-<td style="padding: 8px 16px; font-family: monospace;">#1c1b1b</td>
-<td style="padding: 8px 16px; font-family: monospace;">#2d2c2c</td>
-<td style="padding: 8px 16px; font-family: monospace;">#3e3d3d</td>
-<td style="padding: 8px 16px; font-family: monospace;">#adacab</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-</tr>
-</table>
-</div>
-</div>
+      <div style="font-size: var(--ds-body-long-xs-font-size);font-weight: var(--ds-body-long-xs-font-weight);letter-spacing: var(--ds-body-long-xs-letter-spacing);line-height: var(--ds-body-long-xs-line-height);">body-long xs</div><div style="font-size: var(--ds-body-long-sm-font-size);font-weight: var(--ds-body-long-sm-font-weight);letter-spacing: var(--ds-body-long-sm-letter-spacing);line-height: var(--ds-body-long-sm-line-height);">body-long sm</div><div style="font-size: var(--ds-body-long-md-font-size);font-weight: var(--ds-body-long-md-font-weight);letter-spacing: var(--ds-body-long-md-letter-spacing);line-height: var(--ds-body-long-md-line-height);">body-long md</div><div style="font-size: var(--ds-body-long-lg-font-size);font-weight: var(--ds-body-long-lg-font-weight);letter-spacing: var(--ds-body-long-lg-letter-spacing);line-height: var(--ds-body-long-lg-line-height);">body-long lg</div><div style="font-size: var(--ds-body-long-xl-font-size);font-weight: var(--ds-body-long-xl-font-weight);letter-spacing: var(--ds-body-long-xl-letter-spacing);line-height: var(--ds-body-long-xl-line-height);">body-long xl</div>
+    </div>
 <div>
-<h3>design-tokens/primitives/modes/color-scheme/light/global.json</h3>
-<div>
-<table>
-<tr>
-<td></td>
-<td colspan="2" style="padding: 8px; text-align: center; font-family: monospace; border-left: 1px solid #000;border-right: 1px solid #000;">Background</td>
-<td colspan="4" style="padding: 8px; text-align: center; font-family: monospace; border-left: 1px solid #000;border-right: 1px solid #000;">Surface</td>
-<td colspan="3" style="padding: 8px; text-align: center; font-family: monospace; border-left: 1px solid #000;border-right: 1px solid #000;">Border</td>
-<td colspan="2" style="padding: 8px; text-align: center; font-family: monospace; border-left: 1px solid #000;border-right: 1px solid #000;">Text</td>
-<td colspan="5" style="padding: 8px; text-align: center; font-family: monospace; border-left: 1px solid #000;border-right: 1px solid #000;">Base</td>
-</tr>
-<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px; border-top: 1px solid #000;">blue</td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #edf5fa; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #dcebf6; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #c5ddf0; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #abcfe9; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #94c1e3; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #1f7dc5; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #0860a3; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #0860a3; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #042d4d; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #0A71C0; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #085d9f; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #074a7e; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #82aaff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-</tr>
-<tr>
-<td></td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#edf5fa</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#dcebf6</td>
-<td style="padding: 8px 16px; font-family: monospace;">#c5ddf0</td>
-<td style="padding: 8px 16px; font-family: monospace;">#abcfe9</td>
-<td style="padding: 8px 16px; font-family: monospace;">#94c1e3</td>
-<td style="padding: 8px 16px; font-family: monospace;">#1f7dc5</td>
-<td style="padding: 8px 16px; font-family: monospace;">#0860a3</td>
-<td style="padding: 8px 16px; font-family: monospace;">#0860a3</td>
-<td style="padding: 8px 16px; font-family: monospace;">#042d4d</td>
-<td style="padding: 8px 16px; font-family: monospace;">#0A71C0</td>
-<td style="padding: 8px 16px; font-family: monospace;">#085d9f</td>
-<td style="padding: 8px 16px; font-family: monospace;">#074a7e</td>
-<td style="padding: 8px 16px; font-family: monospace;">#82aaff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-</tr>
-<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px; border-top: 1px solid #000;">green</td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ecf6ee; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #daeddd; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #c3e2c7; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #a8d5ae; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #8fc997; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #108c22; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #056d13; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #056d13; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #023409; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #068718; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #057014; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #045a10; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #fafdfb; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-</tr>
-<tr>
-<td></td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ecf6ee</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#daeddd</td>
-<td style="padding: 8px 16px; font-family: monospace;">#c3e2c7</td>
-<td style="padding: 8px 16px; font-family: monospace;">#a8d5ae</td>
-<td style="padding: 8px 16px; font-family: monospace;">#8fc997</td>
-<td style="padding: 8px 16px; font-family: monospace;">#108c22</td>
-<td style="padding: 8px 16px; font-family: monospace;">#056d13</td>
-<td style="padding: 8px 16px; font-family: monospace;">#056d13</td>
-<td style="padding: 8px 16px; font-family: monospace;">#023409</td>
-<td style="padding: 8px 16px; font-family: monospace;">#068718</td>
-<td style="padding: 8px 16px; font-family: monospace;">#057014</td>
-<td style="padding: 8px 16px; font-family: monospace;">#045a10</td>
-<td style="padding: 8px 16px; font-family: monospace;">#fafdfb</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-</tr>
-<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px; border-top: 1px solid #000;">orange</td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #fcf2e2; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #fae6c6; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #f6d5a0; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #f2c275; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #eeb04c; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #a56d13; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #80540f; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #80540f; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #3c2807; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #EA9B1B; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #cd8818; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #b27614; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #271a04; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #000000; border: 1px solid #000;"></td>
-</tr>
-<tr>
-<td></td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#fcf2e2</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#fae6c6</td>
-<td style="padding: 8px 16px; font-family: monospace;">#f6d5a0</td>
-<td style="padding: 8px 16px; font-family: monospace;">#f2c275</td>
-<td style="padding: 8px 16px; font-family: monospace;">#eeb04c</td>
-<td style="padding: 8px 16px; font-family: monospace;">#a56d13</td>
-<td style="padding: 8px 16px; font-family: monospace;">#80540f</td>
-<td style="padding: 8px 16px; font-family: monospace;">#80540f</td>
-<td style="padding: 8px 16px; font-family: monospace;">#3c2807</td>
-<td style="padding: 8px 16px; font-family: monospace;">#EA9B1B</td>
-<td style="padding: 8px 16px; font-family: monospace;">#cd8818</td>
-<td style="padding: 8px 16px; font-family: monospace;">#b27614</td>
-<td style="padding: 8px 16px; font-family: monospace;">#271a04</td>
-<td style="padding: 8px 16px; font-family: monospace;">#000000</td>
-</tr>
-<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px; border-top: 1px solid #000;">purple</td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #f6f2f9; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ece6f3; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #e0d6eb; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #d3c4e2; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #c7b4da; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #8e68b4; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #7647a3; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #7647a3; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #3a1d57; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #663299; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #4f2776; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #371b53; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #eee8f3; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-</tr>
-<tr>
-<td></td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#f6f2f9</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ece6f3</td>
-<td style="padding: 8px 16px; font-family: monospace;">#e0d6eb</td>
-<td style="padding: 8px 16px; font-family: monospace;">#d3c4e2</td>
-<td style="padding: 8px 16px; font-family: monospace;">#c7b4da</td>
-<td style="padding: 8px 16px; font-family: monospace;">#8e68b4</td>
-<td style="padding: 8px 16px; font-family: monospace;">#7647a3</td>
-<td style="padding: 8px 16px; font-family: monospace;">#7647a3</td>
-<td style="padding: 8px 16px; font-family: monospace;">#3a1d57</td>
-<td style="padding: 8px 16px; font-family: monospace;">#663299</td>
-<td style="padding: 8px 16px; font-family: monospace;">#4f2776</td>
-<td style="padding: 8px 16px; font-family: monospace;">#371b53</td>
-<td style="padding: 8px 16px; font-family: monospace;">#eee8f3</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-</tr>
-<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px; border-top: 1px solid #000;">red</td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #fbf1f1; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #f8e4e4; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #f3d2d2; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #edbfbf; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #e8adad; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ce4d4d; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #b81a1a; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #b81a1a; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #590d0d; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #C01B1B; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #9b1616; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #791111; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #f7e1e1; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-</tr>
-<tr>
-<td></td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#fbf1f1</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#f8e4e4</td>
-<td style="padding: 8px 16px; font-family: monospace;">#f3d2d2</td>
-<td style="padding: 8px 16px; font-family: monospace;">#edbfbf</td>
-<td style="padding: 8px 16px; font-family: monospace;">#e8adad</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ce4d4d</td>
-<td style="padding: 8px 16px; font-family: monospace;">#b81a1a</td>
-<td style="padding: 8px 16px; font-family: monospace;">#b81a1a</td>
-<td style="padding: 8px 16px; font-family: monospace;">#590d0d</td>
-<td style="padding: 8px 16px; font-family: monospace;">#C01B1B</td>
-<td style="padding: 8px 16px; font-family: monospace;">#9b1616</td>
-<td style="padding: 8px 16px; font-family: monospace;">#791111</td>
-<td style="padding: 8px 16px; font-family: monospace;">#f7e1e1</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-</tr>
-</table>
-</div>
-</div>
-<div>
-<h3>design-tokens/primitives/modes/color-scheme/dark/kystverket.json</h3>
-<div>
-<table>
-<tr>
-<td></td>
-<td colspan="2" style="padding: 8px; text-align: center; font-family: monospace; border-left: 1px solid #000;border-right: 1px solid #000;">Background</td>
-<td colspan="4" style="padding: 8px; text-align: center; font-family: monospace; border-left: 1px solid #000;border-right: 1px solid #000;">Surface</td>
-<td colspan="3" style="padding: 8px; text-align: center; font-family: monospace; border-left: 1px solid #000;border-right: 1px solid #000;">Border</td>
-<td colspan="2" style="padding: 8px; text-align: center; font-family: monospace; border-left: 1px solid #000;border-right: 1px solid #000;">Text</td>
-<td colspan="5" style="padding: 8px; text-align: center; font-family: monospace; border-left: 1px solid #000;border-right: 1px solid #000;">Base</td>
-</tr>
-<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px; border-top: 1px solid #000;">primary</td>
-<td style="width: 72px; height: 64px; background-color: #031344; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #071a54; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #11235b; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #192a60; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #213266; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #314171; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #404e7b; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #7681a1; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #a0a7be; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #a0a7be; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ebecf1; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #a7a9ca; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #9093bd; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #7a7db0; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #1b1c21; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #000000; border: 1px solid #000;"></td>
-</tr>
-<tr>
-<td></td>
-<td style="padding: 8px 16px; font-family: monospace;">#031344</td>
-<td style="padding: 8px 16px; font-family: monospace;">#071a54</td>
-<td style="padding: 8px 16px; font-family: monospace;">#11235b</td>
-<td style="padding: 8px 16px; font-family: monospace;">#192a60</td>
-<td style="padding: 8px 16px; font-family: monospace;">#213266</td>
-<td style="padding: 8px 16px; font-family: monospace;">#314171</td>
-<td style="padding: 8px 16px; font-family: monospace;">#404e7b</td>
-<td style="padding: 8px 16px; font-family: monospace;">#7681a1</td>
-<td style="padding: 8px 16px; font-family: monospace;">#a0a7be</td>
-<td style="padding: 8px 16px; font-family: monospace;">#a0a7be</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ebecf1</td>
-<td style="padding: 8px 16px; font-family: monospace;">#a7a9ca</td>
-<td style="padding: 8px 16px; font-family: monospace;">#9093bd</td>
-<td style="padding: 8px 16px; font-family: monospace;">#7a7db0</td>
-<td style="padding: 8px 16px; font-family: monospace;">#1b1c21</td>
-<td style="padding: 8px 16px; font-family: monospace;">#000000</td>
-</tr>
-<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px; border-top: 1px solid #000;">accent</td>
-<td style="width: 72px; height: 64px; background-color: #0e1923; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #12212e; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #17293b; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #1a2f43; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #1e374f; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #264563; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #2d5376; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #4985be; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #76ade0; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #76ade0; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #e2eef8; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #135f9a; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #0f4c7a; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #0b395d; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #fbfcfd; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-</tr>
-<tr>
-<td></td>
-<td style="padding: 8px 16px; font-family: monospace;">#0e1923</td>
-<td style="padding: 8px 16px; font-family: monospace;">#12212e</td>
-<td style="padding: 8px 16px; font-family: monospace;">#17293b</td>
-<td style="padding: 8px 16px; font-family: monospace;">#1a2f43</td>
-<td style="padding: 8px 16px; font-family: monospace;">#1e374f</td>
-<td style="padding: 8px 16px; font-family: monospace;">#264563</td>
-<td style="padding: 8px 16px; font-family: monospace;">#2d5376</td>
-<td style="padding: 8px 16px; font-family: monospace;">#4985be</td>
-<td style="padding: 8px 16px; font-family: monospace;">#76ade0</td>
-<td style="padding: 8px 16px; font-family: monospace;">#76ade0</td>
-<td style="padding: 8px 16px; font-family: monospace;">#e2eef8</td>
-<td style="padding: 8px 16px; font-family: monospace;">#135f9a</td>
-<td style="padding: 8px 16px; font-family: monospace;">#0f4c7a</td>
-<td style="padding: 8px 16px; font-family: monospace;">#0b395d</td>
-<td style="padding: 8px 16px; font-family: monospace;">#fbfcfd</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-</tr>
-<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px; border-top: 1px solid #000;">extra1</td>
-<td style="width: 72px; height: 64px; background-color: #241313; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #301919; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #3c2020; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #452524; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #502b2a; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #653635; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #78403f; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #c16766; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #e39291; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #e39291; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #f9e8e8; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #9f3e41; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #7f3234; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #612628; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-</tr>
-<tr>
-<td></td>
-<td style="padding: 8px 16px; font-family: monospace;">#241313</td>
-<td style="padding: 8px 16px; font-family: monospace;">#301919</td>
-<td style="padding: 8px 16px; font-family: monospace;">#3c2020</td>
-<td style="padding: 8px 16px; font-family: monospace;">#452524</td>
-<td style="padding: 8px 16px; font-family: monospace;">#502b2a</td>
-<td style="padding: 8px 16px; font-family: monospace;">#653635</td>
-<td style="padding: 8px 16px; font-family: monospace;">#78403f</td>
-<td style="padding: 8px 16px; font-family: monospace;">#c16766</td>
-<td style="padding: 8px 16px; font-family: monospace;">#e39291</td>
-<td style="padding: 8px 16px; font-family: monospace;">#e39291</td>
-<td style="padding: 8px 16px; font-family: monospace;">#f9e8e8</td>
-<td style="padding: 8px 16px; font-family: monospace;">#9f3e41</td>
-<td style="padding: 8px 16px; font-family: monospace;">#7f3234</td>
-<td style="padding: 8px 16px; font-family: monospace;">#612628</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-</tr>
-<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px; border-top: 1px solid #000;">extra2</td>
-<td style="width: 72px; height: 64px; background-color: #1c170d; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #261f11; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #2f2716; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #372c19; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #40341d; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #504124; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #5f4e2b; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #9a7d46; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #c8a25b; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #c8a25b; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #f5ebd8; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #513c0b; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #694e0f; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #816012; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ddd9cf; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-</tr>
-<tr>
-<td></td>
-<td style="padding: 8px 16px; font-family: monospace;">#1c170d</td>
-<td style="padding: 8px 16px; font-family: monospace;">#261f11</td>
-<td style="padding: 8px 16px; font-family: monospace;">#2f2716</td>
-<td style="padding: 8px 16px; font-family: monospace;">#372c19</td>
-<td style="padding: 8px 16px; font-family: monospace;">#40341d</td>
-<td style="padding: 8px 16px; font-family: monospace;">#504124</td>
-<td style="padding: 8px 16px; font-family: monospace;">#5f4e2b</td>
-<td style="padding: 8px 16px; font-family: monospace;">#9a7d46</td>
-<td style="padding: 8px 16px; font-family: monospace;">#c8a25b</td>
-<td style="padding: 8px 16px; font-family: monospace;">#c8a25b</td>
-<td style="padding: 8px 16px; font-family: monospace;">#f5ebd8</td>
-<td style="padding: 8px 16px; font-family: monospace;">#513c0b</td>
-<td style="padding: 8px 16px; font-family: monospace;">#694e0f</td>
-<td style="padding: 8px 16px; font-family: monospace;">#816012</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ddd9cf</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-</tr>
-<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px; border-top: 1px solid #000;">neutral</td>
-<td style="width: 72px; height: 64px; background-color: #13181f; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #192029; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #202834; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #262e3a; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #2e3641; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #3c444e; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #49515a; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #7c8289; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #a4a8ad; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #a4a8ad; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ebeced; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #a6acb2; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #90979f; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #7a828c; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #1b1c1d; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #000000; border: 1px solid #000;"></td>
-</tr>
-<tr>
-<td></td>
-<td style="padding: 8px 16px; font-family: monospace;">#13181f</td>
-<td style="padding: 8px 16px; font-family: monospace;">#192029</td>
-<td style="padding: 8px 16px; font-family: monospace;">#202834</td>
-<td style="padding: 8px 16px; font-family: monospace;">#262e3a</td>
-<td style="padding: 8px 16px; font-family: monospace;">#2e3641</td>
-<td style="padding: 8px 16px; font-family: monospace;">#3c444e</td>
-<td style="padding: 8px 16px; font-family: monospace;">#49515a</td>
-<td style="padding: 8px 16px; font-family: monospace;">#7c8289</td>
-<td style="padding: 8px 16px; font-family: monospace;">#a4a8ad</td>
-<td style="padding: 8px 16px; font-family: monospace;">#a4a8ad</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ebeced</td>
-<td style="padding: 8px 16px; font-family: monospace;">#a6acb2</td>
-<td style="padding: 8px 16px; font-family: monospace;">#90979f</td>
-<td style="padding: 8px 16px; font-family: monospace;">#7a828c</td>
-<td style="padding: 8px 16px; font-family: monospace;">#1b1c1d</td>
-<td style="padding: 8px 16px; font-family: monospace;">#000000</td>
-</tr>
-</table>
-</div>
-</div>
-<div>
-<h3>design-tokens/primitives/modes/color-scheme/dark/global.json</h3>
-<div>
-<table>
-<tr>
-<td></td>
-<td colspan="2" style="padding: 8px; text-align: center; font-family: monospace; border-left: 1px solid #000;border-right: 1px solid #000;">Background</td>
-<td colspan="4" style="padding: 8px; text-align: center; font-family: monospace; border-left: 1px solid #000;border-right: 1px solid #000;">Surface</td>
-<td colspan="3" style="padding: 8px; text-align: center; font-family: monospace; border-left: 1px solid #000;border-right: 1px solid #000;">Border</td>
-<td colspan="2" style="padding: 8px; text-align: center; font-family: monospace; border-left: 1px solid #000;border-right: 1px solid #000;">Text</td>
-<td colspan="5" style="padding: 8px; text-align: center; font-family: monospace; border-left: 1px solid #000;border-right: 1px solid #000;">Base</td>
-</tr>
-<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px; border-top: 1px solid #000;">blue</td>
-<td style="width: 72px; height: 64px; background-color: #0d1925; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #112130; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #15293d; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #182f46; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #1c3751; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #234566; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #2a537a; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #5585b4; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #8aabcb; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #8aabcb; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #e6edf4; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #2d85c9; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #519ad2; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #77b0dc; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #050e15; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #000000; border: 1px solid #000;"></td>
-</tr>
-<tr>
-<td></td>
-<td style="padding: 8px 16px; font-family: monospace;">#0d1925</td>
-<td style="padding: 8px 16px; font-family: monospace;">#112130</td>
-<td style="padding: 8px 16px; font-family: monospace;">#15293d</td>
-<td style="padding: 8px 16px; font-family: monospace;">#182f46</td>
-<td style="padding: 8px 16px; font-family: monospace;">#1c3751</td>
-<td style="padding: 8px 16px; font-family: monospace;">#234566</td>
-<td style="padding: 8px 16px; font-family: monospace;">#2a537a</td>
-<td style="padding: 8px 16px; font-family: monospace;">#5585b4</td>
-<td style="padding: 8px 16px; font-family: monospace;">#8aabcb</td>
-<td style="padding: 8px 16px; font-family: monospace;">#8aabcb</td>
-<td style="padding: 8px 16px; font-family: monospace;">#e6edf4</td>
-<td style="padding: 8px 16px; font-family: monospace;">#2d85c9</td>
-<td style="padding: 8px 16px; font-family: monospace;">#519ad2</td>
-<td style="padding: 8px 16px; font-family: monospace;">#77b0dc</td>
-<td style="padding: 8px 16px; font-family: monospace;">#050e15</td>
-<td style="padding: 8px 16px; font-family: monospace;">#000000</td>
-</tr>
-<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px; border-top: 1px solid #000;">green</td>
-<td style="width: 72px; height: 64px; background-color: #0d1b0d; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #112411; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #152d15; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #183418; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #1c3c1c; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #244c24; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #2b5a2b; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #528f52; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #89b289; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #89b289; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #e6efe6; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #138d24; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #3ca14b; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #66b571; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #010501; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #000000; border: 1px solid #000;"></td>
-</tr>
-<tr>
-<td></td>
-<td style="padding: 8px 16px; font-family: monospace;">#0d1b0d</td>
-<td style="padding: 8px 16px; font-family: monospace;">#112411</td>
-<td style="padding: 8px 16px; font-family: monospace;">#152d15</td>
-<td style="padding: 8px 16px; font-family: monospace;">#183418</td>
-<td style="padding: 8px 16px; font-family: monospace;">#1c3c1c</td>
-<td style="padding: 8px 16px; font-family: monospace;">#244c24</td>
-<td style="padding: 8px 16px; font-family: monospace;">#2b5a2b</td>
-<td style="padding: 8px 16px; font-family: monospace;">#528f52</td>
-<td style="padding: 8px 16px; font-family: monospace;">#89b289</td>
-<td style="padding: 8px 16px; font-family: monospace;">#89b289</td>
-<td style="padding: 8px 16px; font-family: monospace;">#e6efe6</td>
-<td style="padding: 8px 16px; font-family: monospace;">#138d24</td>
-<td style="padding: 8px 16px; font-family: monospace;">#3ca14b</td>
-<td style="padding: 8px 16px; font-family: monospace;">#66b571</td>
-<td style="padding: 8px 16px; font-family: monospace;">#010501</td>
-<td style="padding: 8px 16px; font-family: monospace;">#000000</td>
-</tr>
-<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px; border-top: 1px solid #000;">orange</td>
-<td style="width: 72px; height: 64px; background-color: #1e160d; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #281e11; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #322616; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #3a2b19; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #43321d; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #543f24; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #654b2b; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #a37a46; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #d39e5b; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #d39e5b; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #f7ebdb; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #60400b; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #7a510e; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #946211; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #e6e2d9; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #ffffff; border: 1px solid #000;"></td>
-</tr>
-<tr>
-<td></td>
-<td style="padding: 8px 16px; font-family: monospace;">#1e160d</td>
-<td style="padding: 8px 16px; font-family: monospace;">#281e11</td>
-<td style="padding: 8px 16px; font-family: monospace;">#322616</td>
-<td style="padding: 8px 16px; font-family: monospace;">#3a2b19</td>
-<td style="padding: 8px 16px; font-family: monospace;">#43321d</td>
-<td style="padding: 8px 16px; font-family: monospace;">#543f24</td>
-<td style="padding: 8px 16px; font-family: monospace;">#654b2b</td>
-<td style="padding: 8px 16px; font-family: monospace;">#a37a46</td>
-<td style="padding: 8px 16px; font-family: monospace;">#d39e5b</td>
-<td style="padding: 8px 16px; font-family: monospace;">#d39e5b</td>
-<td style="padding: 8px 16px; font-family: monospace;">#f7ebdb</td>
-<td style="padding: 8px 16px; font-family: monospace;">#60400b</td>
-<td style="padding: 8px 16px; font-family: monospace;">#7a510e</td>
-<td style="padding: 8px 16px; font-family: monospace;">#946211</td>
-<td style="padding: 8px 16px; font-family: monospace;">#e6e2d9</td>
-<td style="padding: 8px 16px; font-family: monospace;">#ffffff</td>
-</tr>
-<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px; border-top: 1px solid #000;">purple</td>
-<td style="width: 72px; height: 64px; background-color: #1d1328; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #261a35; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #312043; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #38254d; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #412b59; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #513670; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #614185; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #8e78a8; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #b1a2c3; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #b1a2c3; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #eeebf2; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #b49acd; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #a282c1; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #906ab5; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #18151c; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #000000; border: 1px solid #000;"></td>
-</tr>
-<tr>
-<td></td>
-<td style="padding: 8px 16px; font-family: monospace;">#1d1328</td>
-<td style="padding: 8px 16px; font-family: monospace;">#261a35</td>
-<td style="padding: 8px 16px; font-family: monospace;">#312043</td>
-<td style="padding: 8px 16px; font-family: monospace;">#38254d</td>
-<td style="padding: 8px 16px; font-family: monospace;">#412b59</td>
-<td style="padding: 8px 16px; font-family: monospace;">#513670</td>
-<td style="padding: 8px 16px; font-family: monospace;">#614185</td>
-<td style="padding: 8px 16px; font-family: monospace;">#8e78a8</td>
-<td style="padding: 8px 16px; font-family: monospace;">#b1a2c3</td>
-<td style="padding: 8px 16px; font-family: monospace;">#b1a2c3</td>
-<td style="padding: 8px 16px; font-family: monospace;">#eeebf2</td>
-<td style="padding: 8px 16px; font-family: monospace;">#b49acd</td>
-<td style="padding: 8px 16px; font-family: monospace;">#a282c1</td>
-<td style="padding: 8px 16px; font-family: monospace;">#906ab5</td>
-<td style="padding: 8px 16px; font-family: monospace;">#18151c</td>
-<td style="padding: 8px 16px; font-family: monospace;">#000000</td>
-</tr>
-<td style="padding: 8px 0px; text-align: center; font-family: monospace; min-width: 72px; border-top: 1px solid #000;">red</td>
-<td style="width: 72px; height: 64px; background-color: #2a100e; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #371512; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #451b17; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #4f1f1b; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #5c241f; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #722d27; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #88352e; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #bc6b64; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #d19a96; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #d19a96; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #f5eae9; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #d76e6e; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #df8b8b; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #e7a8a8; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #271414; border: 1px solid #000;"></td>
-<td style="width: 72px; height: 64px; background-color: #000000; border: 1px solid #000;"></td>
-</tr>
-<tr>
-<td></td>
-<td style="padding: 8px 16px; font-family: monospace;">#2a100e</td>
-<td style="padding: 8px 16px; font-family: monospace;">#371512</td>
-<td style="padding: 8px 16px; font-family: monospace;">#451b17</td>
-<td style="padding: 8px 16px; font-family: monospace;">#4f1f1b</td>
-<td style="padding: 8px 16px; font-family: monospace;">#5c241f</td>
-<td style="padding: 8px 16px; font-family: monospace;">#722d27</td>
-<td style="padding: 8px 16px; font-family: monospace;">#88352e</td>
-<td style="padding: 8px 16px; font-family: monospace;">#bc6b64</td>
-<td style="padding: 8px 16px; font-family: monospace;">#d19a96</td>
-<td style="padding: 8px 16px; font-family: monospace;">#d19a96</td>
-<td style="padding: 8px 16px; font-family: monospace;">#f5eae9</td>
-<td style="padding: 8px 16px; font-family: monospace;">#d76e6e</td>
-<td style="padding: 8px 16px; font-family: monospace;">#df8b8b</td>
-<td style="padding: 8px 16px; font-family: monospace;">#e7a8a8</td>
-<td style="padding: 8px 16px; font-family: monospace;">#271414</td>
-<td style="padding: 8px 16px; font-family: monospace;">#000000</td>
-</tr>
-</table>
-</div>
-</div>
-</body>
+      <div style="font-size: var(--ds-heading-2xs-font-size);font-weight: var(--ds-heading-2xs-font-weight);letter-spacing: var(--ds-heading-2xs-letter-spacing);line-height: var(--ds-heading-2xs-line-height);">heading 2xs</div><div style="font-size: var(--ds-heading-xs-font-size);font-weight: var(--ds-heading-xs-font-weight);letter-spacing: var(--ds-heading-xs-letter-spacing);line-height: var(--ds-heading-xs-line-height);">heading xs</div><div style="font-size: var(--ds-heading-sm-font-size);font-weight: var(--ds-heading-sm-font-weight);letter-spacing: var(--ds-heading-sm-letter-spacing);line-height: var(--ds-heading-sm-line-height);">heading sm</div><div style="font-size: var(--ds-heading-md-font-size);font-weight: var(--ds-heading-md-font-weight);letter-spacing: var(--ds-heading-md-letter-spacing);line-height: var(--ds-heading-md-line-height);">heading md</div><div style="font-size: var(--ds-heading-lg-font-size);font-weight: var(--ds-heading-lg-font-weight);letter-spacing: var(--ds-heading-lg-letter-spacing);line-height: var(--ds-heading-lg-line-height);">heading lg</div><div style="font-size: var(--ds-heading-xl-font-size);font-weight: var(--ds-heading-xl-font-weight);letter-spacing: var(--ds-heading-xl-letter-spacing);line-height: var(--ds-heading-xl-line-height);">heading xl</div><div style="font-size: var(--ds-heading-2xl-font-size);font-weight: var(--ds-heading-2xl-font-weight);letter-spacing: var(--ds-heading-2xl-letter-spacing);line-height: var(--ds-heading-2xl-line-height);">heading 2xl</div>
+    </div>
+  </body>
 </html>

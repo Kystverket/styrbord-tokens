@@ -8,7 +8,7 @@
     <style>
       @charset "UTF-8";
 /*
-build: v1.0.8
+build: v1.1.0
 design-tokens: v[object Object]
 */
 
@@ -20,14 +20,14 @@ design-tokens: v[object Object]
   --color-primary-background-tinted: #e4f7fe;
   --ds-color-primary-surface-default: #ffffff;
   --color-primary-surface-default: #ffffff;
-  --ds-color-primary-surface-tinted: #a9e5fb;
-  --color-primary-surface-tinted: #a9e5fb;
-  --ds-color-primary-surface-hover: #77d6f9;
-  --color-primary-surface-hover: #77d6f9;
-  --ds-color-primary-surface-active: #4bc9f7;
-  --color-primary-surface-active: #4bc9f7;
-  --ds-color-primary-border-subtle: #41bfed;
-  --color-primary-border-subtle: #41bfed;
+  --ds-color-primary-surface-tinted: #d4f2fd;
+  --color-primary-surface-tinted: #d4f2fd;
+  --ds-color-primary-surface-hover: #a9e5fb;
+  --color-primary-surface-hover: #a9e5fb;
+  --ds-color-primary-surface-active: #77d6f9;
+  --color-primary-surface-active: #77d6f9;
+  --ds-color-primary-border-subtle: #4bc9f7;
+  --color-primary-border-subtle: #4bc9f7;
   --ds-color-primary-border-default: #04207c;
   --color-primary-border-default: #04207c;
   --ds-color-primary-border-strong: #000667;
@@ -244,14 +244,14 @@ design-tokens: v[object Object]
   --color-info-background-tinted: #e4f7fe;
   --ds-color-info-surface-default: #ffffff;
   --color-info-surface-default: #ffffff;
-  --ds-color-info-surface-tinted: #a9e5fb;
-  --color-info-surface-tinted: #a9e5fb;
-  --ds-color-info-surface-hover: #77d6f9;
-  --color-info-surface-hover: #77d6f9;
-  --ds-color-info-surface-active: #4bc9f7;
-  --color-info-surface-active: #4bc9f7;
-  --ds-color-info-border-subtle: #41bfed;
-  --color-info-border-subtle: #41bfed;
+  --ds-color-info-surface-tinted: #d4f2fd;
+  --color-info-surface-tinted: #d4f2fd;
+  --ds-color-info-surface-hover: #a9e5fb;
+  --color-info-surface-hover: #a9e5fb;
+  --ds-color-info-surface-active: #77d6f9;
+  --color-info-surface-active: #77d6f9;
+  --ds-color-info-border-subtle: #4bc9f7;
+  --color-info-border-subtle: #4bc9f7;
   --ds-color-info-border-default: #04207c;
   --color-info-border-default: #04207c;
   --ds-color-info-border-strong: #000667;
@@ -320,14 +320,14 @@ design-tokens: v[object Object]
   --color-primary-background-tinted: #e4f7fe;
   --ds-color-primary-surface-default: #ffffff;
   --color-primary-surface-default: #ffffff;
-  --ds-color-primary-surface-tinted: #a9e5fb;
-  --color-primary-surface-tinted: #a9e5fb;
-  --ds-color-primary-surface-hover: #77d6f9;
-  --color-primary-surface-hover: #77d6f9;
-  --ds-color-primary-surface-active: #4bc9f7;
-  --color-primary-surface-active: #4bc9f7;
-  --ds-color-primary-border-subtle: #41bfed;
-  --color-primary-border-subtle: #41bfed;
+  --ds-color-primary-surface-tinted: #d4f2fd;
+  --color-primary-surface-tinted: #d4f2fd;
+  --ds-color-primary-surface-hover: #a9e5fb;
+  --color-primary-surface-hover: #a9e5fb;
+  --ds-color-primary-surface-active: #77d6f9;
+  --color-primary-surface-active: #77d6f9;
+  --ds-color-primary-border-subtle: #4bc9f7;
+  --color-primary-border-subtle: #4bc9f7;
   --ds-color-primary-border-default: #04207c;
   --color-primary-border-default: #04207c;
   --ds-color-primary-border-strong: #000667;
@@ -544,14 +544,14 @@ design-tokens: v[object Object]
   --color-info-background-tinted: #e4f7fe;
   --ds-color-info-surface-default: #ffffff;
   --color-info-surface-default: #ffffff;
-  --ds-color-info-surface-tinted: #a9e5fb;
-  --color-info-surface-tinted: #a9e5fb;
-  --ds-color-info-surface-hover: #77d6f9;
-  --color-info-surface-hover: #77d6f9;
-  --ds-color-info-surface-active: #4bc9f7;
-  --color-info-surface-active: #4bc9f7;
-  --ds-color-info-border-subtle: #41bfed;
-  --color-info-border-subtle: #41bfed;
+  --ds-color-info-surface-tinted: #d4f2fd;
+  --color-info-surface-tinted: #d4f2fd;
+  --ds-color-info-surface-hover: #a9e5fb;
+  --color-info-surface-hover: #a9e5fb;
+  --ds-color-info-surface-active: #77d6f9;
+  --color-info-surface-active: #77d6f9;
+  --ds-color-info-border-subtle: #4bc9f7;
+  --color-info-border-subtle: #4bc9f7;
   --ds-color-info-border-default: #04207c;
   --color-info-border-default: #04207c;
   --ds-color-info-border-strong: #000667;
@@ -929,46 +929,46 @@ design-tokens: v[object Object]
   --size-30:  calc(var(--size-step) / var(--size-base) * 1em *30);
 
   @supports (width: round(down, .1em, 1px)) {
-  --ds-size-0: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *0), 0.0625rem);
-  --size-0: round(down,  calc(var(--size-step) / var(--size-base) * 1em *0), 0.0625rem);
-  --ds-size-1: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *1), 0.0625rem);
-  --size-1: round(down,  calc(var(--size-step) / var(--size-base) * 1em *1), 0.0625rem);
-  --ds-size-2: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *2), 0.0625rem);
-  --size-2: round(down,  calc(var(--size-step) / var(--size-base) * 1em *2), 0.0625rem);
-  --ds-size-3: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *3), 0.0625rem);
-  --size-3: round(down,  calc(var(--size-step) / var(--size-base) * 1em *3), 0.0625rem);
-  --ds-size-4: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *4), 0.0625rem);
-  --size-4: round(down,  calc(var(--size-step) / var(--size-base) * 1em *4), 0.0625rem);
-  --ds-size-5: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *5), 0.0625rem);
-  --size-5: round(down,  calc(var(--size-step) / var(--size-base) * 1em *5), 0.0625rem);
-  --ds-size-6: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *6), 0.0625rem);
-  --size-6: round(down,  calc(var(--size-step) / var(--size-base) * 1em *6), 0.0625rem);
-  --ds-size-7: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *7), 0.0625rem);
-  --size-7: round(down,  calc(var(--size-step) / var(--size-base) * 1em *7), 0.0625rem);
-  --ds-size-8: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *8), 0.0625rem);
-  --size-8: round(down,  calc(var(--size-step) / var(--size-base) * 1em *8), 0.0625rem);
-  --ds-size-9: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *9), 0.0625rem);
-  --size-9: round(down,  calc(var(--size-step) / var(--size-base) * 1em *9), 0.0625rem);
-  --ds-size-10: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *10), 0.0625rem);
-  --size-10: round(down,  calc(var(--size-step) / var(--size-base) * 1em *10), 0.0625rem);
-  --ds-size-11: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *11), 0.0625rem);
-  --size-11: round(down,  calc(var(--size-step) / var(--size-base) * 1em *11), 0.0625rem);
-  --ds-size-12: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *12), 0.0625rem);
-  --size-12: round(down,  calc(var(--size-step) / var(--size-base) * 1em *12), 0.0625rem);
-  --ds-size-13: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *13), 0.0625rem);
-  --size-13: round(down,  calc(var(--size-step) / var(--size-base) * 1em *13), 0.0625rem);
-  --ds-size-14: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *14), 0.0625rem);
-  --size-14: round(down,  calc(var(--size-step) / var(--size-base) * 1em *14), 0.0625rem);
-  --ds-size-15: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *15), 0.0625rem);
-  --size-15: round(down,  calc(var(--size-step) / var(--size-base) * 1em *15), 0.0625rem);
-  --ds-size-18: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *18), 0.0625rem);
-  --size-18: round(down,  calc(var(--size-step) / var(--size-base) * 1em *18), 0.0625rem);
-  --ds-size-22: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *22), 0.0625rem);
-  --size-22: round(down,  calc(var(--size-step) / var(--size-base) * 1em *22), 0.0625rem);
-  --ds-size-26: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *26), 0.0625rem);
-  --size-26: round(down,  calc(var(--size-step) / var(--size-base) * 1em *26), 0.0625rem);
-  --ds-size-30: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *30), 0.0625rem);
-  --size-30: round(down,  calc(var(--size-step) / var(--size-base) * 1em *30), 0.0625rem);
+  --ds-size-0: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *0), 1px);
+  --size-0: round(down,  calc(var(--size-step) / var(--size-base) * 1em *0), 1px);
+  --ds-size-1: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *1), 1px);
+  --size-1: round(down,  calc(var(--size-step) / var(--size-base) * 1em *1), 1px);
+  --ds-size-2: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *2), 1px);
+  --size-2: round(down,  calc(var(--size-step) / var(--size-base) * 1em *2), 1px);
+  --ds-size-3: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *3), 1px);
+  --size-3: round(down,  calc(var(--size-step) / var(--size-base) * 1em *3), 1px);
+  --ds-size-4: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *4), 1px);
+  --size-4: round(down,  calc(var(--size-step) / var(--size-base) * 1em *4), 1px);
+  --ds-size-5: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *5), 1px);
+  --size-5: round(down,  calc(var(--size-step) / var(--size-base) * 1em *5), 1px);
+  --ds-size-6: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *6), 1px);
+  --size-6: round(down,  calc(var(--size-step) / var(--size-base) * 1em *6), 1px);
+  --ds-size-7: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *7), 1px);
+  --size-7: round(down,  calc(var(--size-step) / var(--size-base) * 1em *7), 1px);
+  --ds-size-8: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *8), 1px);
+  --size-8: round(down,  calc(var(--size-step) / var(--size-base) * 1em *8), 1px);
+  --ds-size-9: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *9), 1px);
+  --size-9: round(down,  calc(var(--size-step) / var(--size-base) * 1em *9), 1px);
+  --ds-size-10: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *10), 1px);
+  --size-10: round(down,  calc(var(--size-step) / var(--size-base) * 1em *10), 1px);
+  --ds-size-11: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *11), 1px);
+  --size-11: round(down,  calc(var(--size-step) / var(--size-base) * 1em *11), 1px);
+  --ds-size-12: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *12), 1px);
+  --size-12: round(down,  calc(var(--size-step) / var(--size-base) * 1em *12), 1px);
+  --ds-size-13: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *13), 1px);
+  --size-13: round(down,  calc(var(--size-step) / var(--size-base) * 1em *13), 1px);
+  --ds-size-14: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *14), 1px);
+  --size-14: round(down,  calc(var(--size-step) / var(--size-base) * 1em *14), 1px);
+  --ds-size-15: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *15), 1px);
+  --size-15: round(down,  calc(var(--size-step) / var(--size-base) * 1em *15), 1px);
+  --ds-size-18: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *18), 1px);
+  --size-18: round(down,  calc(var(--size-step) / var(--size-base) * 1em *18), 1px);
+  --ds-size-22: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *22), 1px);
+  --size-22: round(down,  calc(var(--size-step) / var(--size-base) * 1em *22), 1px);
+  --ds-size-26: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *26), 1px);
+  --size-26: round(down,  calc(var(--size-step) / var(--size-base) * 1em *26), 1px);
+  --ds-size-30: round(down,  calc(var(--ds-size-step) / var(--ds-size-base) * 1em *30), 1px);
+  --size-30: round(down,  calc(var(--size-step) / var(--size-base) * 1em *30), 1px);
   }
 }
 

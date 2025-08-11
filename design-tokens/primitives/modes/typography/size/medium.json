@@ -58,39 +58,39 @@
   "letter-spacing": {
     "1": {
       "$type": "letterSpacing",
-      "$value": "-0.01em"
+      "$value": "-1%"
     },
     "2": {
       "$type": "letterSpacing",
-      "$value": "-0.005em"
+      "$value": "-0.5%"
     },
     "3": {
       "$type": "letterSpacing",
-      "$value": "-0.0025em"
+      "$value": "-0.25%"
     },
     "4": {
       "$type": "letterSpacing",
-      "$value": "-0.0015em"
+      "$value": "-0.15%"
     },
     "5": {
       "$type": "letterSpacing",
-      "$value": "0em"
+      "$value": "0%"
     },
     "6": {
       "$type": "letterSpacing",
-      "$value": "0.0015em"
+      "$value": "0.15%"
     },
     "7": {
       "$type": "letterSpacing",
-      "$value": "0.0025em"
+      "$value": "0.25%"
     },
     "8": {
       "$type": "letterSpacing",
-      "$value": "0.005em"
+      "$value": "0.5%"
     },
     "9": {
       "$type": "letterSpacing",
-      "$value": "0.015em"
+      "$value": "1.5%"
     }
   }
 }

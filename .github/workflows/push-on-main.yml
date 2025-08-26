@@ -1,4 +1,4 @@
-name: Automatisk versjonsbump og publisering til GitHub Packages
+name: Automatisk versjonsbump og publisering til GitHub Packages og NPMJS
 
 on:
   push:
@@ -48,3 +48,23 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
       - run: npm run build
       - run: npm publish
+  publish-to-npmjs:
+    needs: [bump-version]
+    permissions:
+      packages: write
+      contents: write
+    name: 'Publish to NPMJS'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          registry-url: 'https://npm.pkg.github.com'
+          # Defaults to the user or organization that owns the workflow file
+          scope: '@kystverket'
+      - run: npm ci
+      - run: npm run build
+      - uses: JS-DevTools/npm-publish@v3
+        with:
+          token: ${{ secrets.NPM_TOKEN }}

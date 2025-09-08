@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - design-tokens/**
-      - token-demo-builder/index.ts
+      - ds-demo-builder/**
       - .github/workflows/make-gh-pages.yml
   workflow_dispatch:
 

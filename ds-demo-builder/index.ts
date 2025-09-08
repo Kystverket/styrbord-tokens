@@ -58,11 +58,25 @@ function htmlFontRow(name: string, sizes: string[]): string {
     </div>`;
 }
 
+const borderRadiusSizes: string[] = ['sm', 'md', 'lg', 'xl', 'default', 'full'];
+
+function htmlBorderRadiusRow(name: string, sizes: string[]): string {
+  return `<div style="display: flex; flex-direction: column; gap: 10px;">
+      ${sizes
+        .map(
+          (size) =>
+            `<div style="background-color: var(--ds-color-extra1-surface-hover); display: flex; align-items: center; justify-content: center; width: 300px; height: 100px; border-radius: var(--ds-border-radius-${size});">--ds-border-radius-${size}</div>`,
+        )
+        .join('')}
+    </div>`;
+}
+
 const replacements: Record<string, string> = {
   '/*STYLE*/': css,
   '<!-- COLOR ROWS -->':
     htmlColorHeadersRow(colorVariants) + colors.map((color) => htmlColorStripRow(color, colorVariants)).join('\n'),
   '<!-- FONT SIZES -->': fontVariants.map((fontVariant) => htmlFontRow(fontVariant[0], fontVariant[1])).join('\n'),
+  '<!-- BORDER RADIUS -->': htmlBorderRadiusRow('border-radius', borderRadiusSizes),
 };
 
 // Generate HTML file based on the ColorMap objects

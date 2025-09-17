@@ -9,7 +9,7 @@ const mainFn = async (inputFile) => {
 
   css.split('\n').forEach((line) => {
     outLines.push(line);
-    if (line.includes('--ds-')) {
+    if (line.trim().startsWith('--ds-') && line.includes(';')) {
       const newLine = line.replaceAll('--ds-', '--');
       outLines.push(newLine);
     }

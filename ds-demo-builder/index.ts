@@ -4,7 +4,7 @@ import { globSync as glob } from 'glob';
 const css = fs.readFileSync('dist/kystverket.css', 'utf-8');
 const htmlTemplate = fs.readFileSync('ds-demo-builder/template.html', 'utf-8');
 
-const colors = ['primary', 'accent', 'extra1', 'neutral', 'info', 'success', 'warning', 'danger'];
+const colors = ['primary', 'accent', 'extra1', 'extra2', 'neutral', 'info', 'success', 'warning', 'danger'];
 const colorVariants = [
   'background-default',
   'background-tinted',

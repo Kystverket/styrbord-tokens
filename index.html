@@ -56,26 +56,26 @@ build: v1.6.1
 @layer ds.theme.type-scale {
 :root, [data-size] {
   --_ds-font-size-factor: calc(var(--ds-size-mode-font-size) / (var(--ds-size-base) / 16));
-  --ds-font-size-1: calc(0.6875rem * var(--_ds-font-size-factor));
-  --font-size-1: calc(0.6875rem * var(--_ds-font-size-factor));
-  --ds-font-size-2: calc(0.8125rem * var(--_ds-font-size-factor));
-  --font-size-2: calc(0.8125rem * var(--_ds-font-size-factor));
-  --ds-font-size-3: calc(0.875rem * var(--_ds-font-size-factor));
-  --font-size-3: calc(0.875rem * var(--_ds-font-size-factor));
-  --ds-font-size-4: calc(1rem * var(--_ds-font-size-factor));
-  --font-size-4: calc(1rem * var(--_ds-font-size-factor));
-  --ds-font-size-5: calc(1.125rem * var(--_ds-font-size-factor));
-  --font-size-5: calc(1.125rem * var(--_ds-font-size-factor));
-  --ds-font-size-6: calc(1.3125rem * var(--_ds-font-size-factor));
-  --font-size-6: calc(1.3125rem * var(--_ds-font-size-factor));
-  --ds-font-size-7: calc(1.5rem * var(--_ds-font-size-factor));
-  --font-size-7: calc(1.5rem * var(--_ds-font-size-factor));
-  --ds-font-size-8: calc(1.875rem * var(--_ds-font-size-factor));
-  --font-size-8: calc(1.875rem * var(--_ds-font-size-factor));
-  --ds-font-size-9: calc(2.25rem * var(--_ds-font-size-factor));
-  --font-size-9: calc(2.25rem * var(--_ds-font-size-factor));
-  --ds-font-size-10: calc(3rem * var(--_ds-font-size-factor));
-  --font-size-10: calc(3rem * var(--_ds-font-size-factor));
+  --ds-font-size-1: calc(0.75rem * var(--_ds-font-size-factor));
+  --font-size-1: calc(0.75rem * var(--_ds-font-size-factor));
+  --ds-font-size-2: calc(0.875rem * var(--_ds-font-size-factor));
+  --font-size-2: calc(0.875rem * var(--_ds-font-size-factor));
+  --ds-font-size-3: calc(1rem * var(--_ds-font-size-factor));
+  --font-size-3: calc(1rem * var(--_ds-font-size-factor));
+  --ds-font-size-4: calc(1.125rem * var(--_ds-font-size-factor));
+  --font-size-4: calc(1.125rem * var(--_ds-font-size-factor));
+  --ds-font-size-5: calc(1.3125rem * var(--_ds-font-size-factor));
+  --font-size-5: calc(1.3125rem * var(--_ds-font-size-factor));
+  --ds-font-size-6: calc(1.5rem * var(--_ds-font-size-factor));
+  --font-size-6: calc(1.5rem * var(--_ds-font-size-factor));
+  --ds-font-size-7: calc(1.875rem * var(--_ds-font-size-factor));
+  --font-size-7: calc(1.875rem * var(--_ds-font-size-factor));
+  --ds-font-size-8: calc(2.25rem * var(--_ds-font-size-factor));
+  --font-size-8: calc(2.25rem * var(--_ds-font-size-factor));
+  --ds-font-size-9: calc(3rem * var(--_ds-font-size-factor));
+  --font-size-9: calc(3rem * var(--_ds-font-size-factor));
+  --ds-font-size-10: calc(3.75rem * var(--_ds-font-size-factor));
+  --font-size-10: calc(3.75rem * var(--_ds-font-size-factor));
   --ds-heading-2xl-font-size: var(--ds-font-size-10);
   --heading-2xl-font-size: var(--font-size-10);
   --ds-heading-xl-font-size: var(--ds-font-size-9);
@@ -122,26 +122,26 @@ build: v1.6.1
   --body-long-xs-font-size: var(--font-size-2);
 
   @supports (width: round(down, .1em, 1px)) {
-    --ds-font-size-1: round(calc(0.6875rem * var(--_ds-font-size-factor)), 1px);
-    --font-size-1: round(calc(0.6875rem * var(--_ds-font-size-factor)), 1px);
-    --ds-font-size-2: round(calc(0.8125rem * var(--_ds-font-size-factor)), 1px);
-    --font-size-2: round(calc(0.8125rem * var(--_ds-font-size-factor)), 1px);
-    --ds-font-size-3: round(calc(0.875rem * var(--_ds-font-size-factor)), 1px);
-    --font-size-3: round(calc(0.875rem * var(--_ds-font-size-factor)), 1px);
-    --ds-font-size-4: round(calc(1rem * var(--_ds-font-size-factor)), 1px);
-    --font-size-4: round(calc(1rem * var(--_ds-font-size-factor)), 1px);
-    --ds-font-size-5: round(calc(1.125rem * var(--_ds-font-size-factor)), 1px);
-    --font-size-5: round(calc(1.125rem * var(--_ds-font-size-factor)), 1px);
-    --ds-font-size-6: round(calc(1.3125rem * var(--_ds-font-size-factor)), 1px);
-    --font-size-6: round(calc(1.3125rem * var(--_ds-font-size-factor)), 1px);
-    --ds-font-size-7: round(calc(1.5rem * var(--_ds-font-size-factor)), 1px);
-    --font-size-7: round(calc(1.5rem * var(--_ds-font-size-factor)), 1px);
-    --ds-font-size-8: round(calc(1.875rem * var(--_ds-font-size-factor)), 1px);
-    --font-size-8: round(calc(1.875rem * var(--_ds-font-size-factor)), 1px);
-    --ds-font-size-9: round(calc(2.25rem * var(--_ds-font-size-factor)), 1px);
-    --font-size-9: round(calc(2.25rem * var(--_ds-font-size-factor)), 1px);
-    --ds-font-size-10: round(calc(3rem * var(--_ds-font-size-factor)), 1px);
-    --font-size-10: round(calc(3rem * var(--_ds-font-size-factor)), 1px);
+    --ds-font-size-1: round(calc(0.75rem * var(--_ds-font-size-factor)), 1px);
+    --font-size-1: round(calc(0.75rem * var(--_ds-font-size-factor)), 1px);
+    --ds-font-size-2: round(calc(0.875rem * var(--_ds-font-size-factor)), 1px);
+    --font-size-2: round(calc(0.875rem * var(--_ds-font-size-factor)), 1px);
+    --ds-font-size-3: round(calc(1rem * var(--_ds-font-size-factor)), 1px);
+    --font-size-3: round(calc(1rem * var(--_ds-font-size-factor)), 1px);
+    --ds-font-size-4: round(calc(1.125rem * var(--_ds-font-size-factor)), 1px);
+    --font-size-4: round(calc(1.125rem * var(--_ds-font-size-factor)), 1px);
+    --ds-font-size-5: round(calc(1.3125rem * var(--_ds-font-size-factor)), 1px);
+    --font-size-5: round(calc(1.3125rem * var(--_ds-font-size-factor)), 1px);
+    --ds-font-size-6: round(calc(1.5rem * var(--_ds-font-size-factor)), 1px);
+    --font-size-6: round(calc(1.5rem * var(--_ds-font-size-factor)), 1px);
+    --ds-font-size-7: round(calc(1.875rem * var(--_ds-font-size-factor)), 1px);
+    --font-size-7: round(calc(1.875rem * var(--_ds-font-size-factor)), 1px);
+    --ds-font-size-8: round(calc(2.25rem * var(--_ds-font-size-factor)), 1px);
+    --font-size-8: round(calc(2.25rem * var(--_ds-font-size-factor)), 1px);
+    --ds-font-size-9: round(calc(3rem * var(--_ds-font-size-factor)), 1px);
+    --font-size-9: round(calc(3rem * var(--_ds-font-size-factor)), 1px);
+    --ds-font-size-10: round(calc(3.75rem * var(--_ds-font-size-factor)), 1px);
+    --font-size-10: round(calc(3.75rem * var(--_ds-font-size-factor)), 1px);
   }
 }
 }

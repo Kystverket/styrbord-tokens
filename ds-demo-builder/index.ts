@@ -31,7 +31,7 @@ function htmlColorHeadersRow(colorVariants: string[]): string {
   </tr>`;
 }
 
-function htmlColorStripRow(colorName, colorVariants: string[]): string {
+function htmlColorStripRow(colorName: string, colorVariants: string[]): string {
   return `<tr className="color-strip">
     <th>${colorName}</th>
     ${colorVariants
@@ -71,12 +71,50 @@ function htmlBorderRadiusRow(name: string, sizes: string[]): string {
     </div>`;
 }
 
+const spacings: string[] = [
+  '0',
+  '2',
+  '4',
+  '6',
+  '8',
+  '12',
+  '16',
+  '20',
+  '24',
+  '28',
+  '32',
+  '36',
+  '40',
+  '44',
+  '48',
+  '64',
+  '80',
+  '96',
+  '112',
+  '128',
+];
+
+function spacingBoxes(): string {
+  return `<div style="display: flex; flex-direction: column; gap: 32px;">
+      ${spacings
+        .map(
+          (size) =>
+            '<div>' +
+            `<div style="background-color: var(--ds-color-extra2-surface-hover); display: block;  width: var(--spacing-${size}); height: var(--spacing-${size});"></div>` +
+            `--spacing-${size}` +
+            '</div>',
+        )
+        .join('')}
+    </div>`;
+}
+
 const replacements: Record<string, string> = {
   '/*STYLE*/': css,
   '<!-- COLOR ROWS -->':
     htmlColorHeadersRow(colorVariants) + colors.map((color) => htmlColorStripRow(color, colorVariants)).join('\n'),
   '<!-- FONT SIZES -->': fontVariants.map((fontVariant) => htmlFontRow(fontVariant[0], fontVariant[1])).join('\n'),
   '<!-- BORDER RADIUS -->': htmlBorderRadiusRow('border-radius', borderRadiusSizes),
+  '<!-- SPACING -->': spacingBoxes(),
 };
 
 // Generate HTML file based on the ColorMap objects

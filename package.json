@@ -1,6 +1,6 @@
 {
   "name": "@kystverket/styrbord-tokens",
-  "version": "0.2.46",
+  "version": "0.3.0",
   "description": "",
   "type": "module",
   "exports": {

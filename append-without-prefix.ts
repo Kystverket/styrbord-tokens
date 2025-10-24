@@ -3,18 +3,11 @@ import fs from 'fs';
 const inputFiles = ['dist/kystverket.css'];
 const spacingCss = fs.readFileSync('spacing.css', 'utf-8');
 
-const mainFn = async (inputFile) => {
+const mainFn = async (inputFile: string) => {
   const css = fs.readFileSync(inputFile, 'utf-8');
   const outLines: string[] = [];
 
-  css.split('\n').forEach((line) => {
-    outLines.push(line);
-    if (line.trim().startsWith('--ds-') && line.includes(';')) {
-      const newLine = line.replaceAll('--ds-', '--');
-      outLines.push(newLine);
-    }
-  });
-
+  outLines.push(css);
   outLines.push(spacingCss);
 
   fs.writeFileSync(inputFile, outLines.join('\n'), 'utf-8');

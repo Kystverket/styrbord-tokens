@@ -73,25 +73,25 @@ function htmlBorderRadiusRow(name: string, sizes: string[]): string {
 
 const spacings: string[] = [
   '0',
+  '1',
   '2',
+  '3',
   '4',
+  '5',
   '6',
+  '7',
   '8',
+  '9',
+  '10',
+  '11',
   '12',
-  '16',
-  '20',
-  '24',
-  '28',
-  '32',
-  '36',
-  '40',
-  '44',
-  '48',
-  '64',
-  '80',
-  '96',
-  '112',
-  '128',
+  '13',
+  '14',
+  '15',
+  '18',
+  '22',
+  '26',
+  '30',
 ];
 
 function spacingBoxes(): string {
@@ -100,8 +100,8 @@ function spacingBoxes(): string {
         .map(
           (size) =>
             '<div>' +
-            `<div style="background-color: var(--ds-color-extra2-surface-hover); display: block;  width: var(--spacing-${size}); height: var(--spacing-${size});"></div>` +
-            `--spacing-${size}` +
+            `<div style="background-color: var(--ds-color-extra2-surface-hover); display: block;  width: var(--ds-size-${size}); height: var(--ds-size-${size});"></div>` +
+            `--ds-size-${size}` +
             '</div>',
         )
         .join('')}
@@ -114,7 +114,7 @@ const replacements: Record<string, string> = {
     htmlColorHeadersRow(colorVariants) + colors.map((color) => htmlColorStripRow(color, colorVariants)).join('\n'),
   '<!-- FONT SIZES -->': fontVariants.map((fontVariant) => htmlFontRow(fontVariant[0], fontVariant[1])).join('\n'),
   '<!-- BORDER RADIUS -->': htmlBorderRadiusRow('border-radius', borderRadiusSizes),
-  '<!-- SPACING -->': spacingBoxes(),
+  '<!-- SIZES -->': spacingBoxes(),
 };
 
 // Generate HTML file based on the ColorMap objects

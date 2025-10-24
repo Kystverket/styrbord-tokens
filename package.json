@@ -18,8 +18,8 @@
     "dist/**/*"
   ],
   "scripts": {
-    "build": "npx @digdir/designsystemet@1.6.1 tokens build -o dist && npx tsx append-without-prefix.ts",
-    "html": "npx @digdir/designsystemet@1.6.1 tokens build -o dist && npx tsx append-without-prefix.ts && npx tsx ds-demo-builder/index.ts"
+    "build": "npx @digdir/designsystemet@1.6.1 tokens build -o dist",
+    "html": "npx @digdir/designsystemet@1.6.1 tokens build -o dist && npx tsx ds-demo-builder/index.ts"
   },
   "author": "",
   "license": "ISC",

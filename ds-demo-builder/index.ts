@@ -58,6 +58,14 @@ function htmlFontRow(name: string, sizes: string[]): string {
     </div>`;
 }
 
+function htmlFontSizeRow(size: number): string {
+  return `<tr>
+            <td style="font-size: var(--ds-font-size-${size});font-weight: var(--ds-font-weight-${size});letter-spacing: var(--ds-letter-spacing-${size});line-height: var(--ds-line-height-${size});">font size ${size}</td>
+            <td data-size="sm" style="font-size: var(--ds-font-size-${size});font-weight: var(--ds-font-weight-${size});letter-spacing: var(--ds-letter-spacing-${size});line-height: var(--ds-line-height-${size});">font size ${size}</td>
+            <td data-size="lg" style="font-size: var(--ds-font-size-${size});font-weight: var(--ds-font-weight-${size});letter-spacing: var(--ds-letter-spacing-${size});line-height: var(--ds-line-height-${size});">font size ${size}</td>
+          </tr>`;
+}
+
 const borderRadiusSizes: string[] = ['sm', 'md', 'lg', 'xl', 'default', 'full'];
 
 function htmlBorderRadiusRow(name: string, sizes: string[]): string {
@@ -113,6 +121,7 @@ const replacements: Record<string, string> = {
   '<!-- COLOR ROWS -->':
     htmlColorHeadersRow(colorVariants) + colors.map((color) => htmlColorStripRow(color, colorVariants)).join('\n'),
   '<!-- FONT SIZES -->': fontVariants.map((fontVariant) => htmlFontRow(fontVariant[0], fontVariant[1])).join('\n'),
+  '<!-- FONT SIZES 2 -->': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((v) => htmlFontSizeRow(v)).join('\n') + '</table>',
   '<!-- BORDER RADIUS -->': htmlBorderRadiusRow('border-radius', borderRadiusSizes),
   '<!-- SIZES -->': spacingBoxes(),
 };

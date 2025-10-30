@@ -49,16 +49,16 @@ build: v1.6.1
 @layer ds.theme.type-scale {
 :root, [data-size] {
   --_ds-font-size-factor: calc(var(--ds-size-mode-font-size) / (var(--ds-size-base) / 16));
-  --ds-font-size-1: calc(0.75rem * var(--_ds-font-size-factor));
-  --ds-font-size-2: calc(0.875rem * var(--_ds-font-size-factor));
-  --ds-font-size-3: calc(1rem * var(--_ds-font-size-factor));
-  --ds-font-size-4: calc(1.125rem * var(--_ds-font-size-factor));
-  --ds-font-size-5: calc(1.3125rem * var(--_ds-font-size-factor));
-  --ds-font-size-6: calc(1.5rem * var(--_ds-font-size-factor));
-  --ds-font-size-7: calc(1.875rem * var(--_ds-font-size-factor));
-  --ds-font-size-8: calc(2.25rem * var(--_ds-font-size-factor));
-  --ds-font-size-9: calc(3rem * var(--_ds-font-size-factor));
-  --ds-font-size-10: calc(3.75rem * var(--_ds-font-size-factor));
+  --ds-font-size-1: calc(0.6875rem * var(--_ds-font-size-factor));
+  --ds-font-size-2: calc(0.8125rem * var(--_ds-font-size-factor));
+  --ds-font-size-3: calc(0.875rem * var(--_ds-font-size-factor));
+  --ds-font-size-4: calc(1rem * var(--_ds-font-size-factor));
+  --ds-font-size-5: calc(1.125rem * var(--_ds-font-size-factor));
+  --ds-font-size-6: calc(1.3125rem * var(--_ds-font-size-factor));
+  --ds-font-size-7: calc(1.5rem * var(--_ds-font-size-factor));
+  --ds-font-size-8: calc(1.875rem * var(--_ds-font-size-factor));
+  --ds-font-size-9: calc(2.25rem * var(--_ds-font-size-factor));
+  --ds-font-size-10: calc(3rem * var(--_ds-font-size-factor));
   --ds-heading-2xl-font-size: var(--ds-font-size-10);
   --ds-heading-xl-font-size: var(--ds-font-size-9);
   --ds-heading-lg-font-size: var(--ds-font-size-8);
@@ -83,16 +83,16 @@ build: v1.6.1
   --ds-body-long-xs-font-size: var(--ds-font-size-2);
 
   @supports (width: round(down, .1em, 1px)) {
-    --ds-font-size-1: round(calc(0.75rem * var(--_ds-font-size-factor)), 1px);
-    --ds-font-size-2: round(calc(0.875rem * var(--_ds-font-size-factor)), 1px);
-    --ds-font-size-3: round(calc(1rem * var(--_ds-font-size-factor)), 1px);
-    --ds-font-size-4: round(calc(1.125rem * var(--_ds-font-size-factor)), 1px);
-    --ds-font-size-5: round(calc(1.3125rem * var(--_ds-font-size-factor)), 1px);
-    --ds-font-size-6: round(calc(1.5rem * var(--_ds-font-size-factor)), 1px);
-    --ds-font-size-7: round(calc(1.875rem * var(--_ds-font-size-factor)), 1px);
-    --ds-font-size-8: round(calc(2.25rem * var(--_ds-font-size-factor)), 1px);
-    --ds-font-size-9: round(calc(3rem * var(--_ds-font-size-factor)), 1px);
-    --ds-font-size-10: round(calc(3.75rem * var(--_ds-font-size-factor)), 1px);
+    --ds-font-size-1: round(calc(0.6875rem * var(--_ds-font-size-factor)), 1px);
+    --ds-font-size-2: round(calc(0.8125rem * var(--_ds-font-size-factor)), 1px);
+    --ds-font-size-3: round(calc(0.875rem * var(--_ds-font-size-factor)), 1px);
+    --ds-font-size-4: round(calc(1rem * var(--_ds-font-size-factor)), 1px);
+    --ds-font-size-5: round(calc(1.125rem * var(--_ds-font-size-factor)), 1px);
+    --ds-font-size-6: round(calc(1.3125rem * var(--_ds-font-size-factor)), 1px);
+    --ds-font-size-7: round(calc(1.5rem * var(--_ds-font-size-factor)), 1px);
+    --ds-font-size-8: round(calc(1.875rem * var(--_ds-font-size-factor)), 1px);
+    --ds-font-size-9: round(calc(2.25rem * var(--_ds-font-size-factor)), 1px);
+    --ds-font-size-10: round(calc(3rem * var(--_ds-font-size-factor)), 1px);
   }
 }
 }
@@ -494,7 +494,7 @@ build: v1.6.1
 }
 @layer ds.theme.size {
 :root, [data-size] {
-  --ds-size-base: 18;
+  --ds-size-base: 16;
   --ds-size-step: 4;
 
   --ds-size-0: calc(var(--ds-size-unit) * 0);
@@ -1250,6 +1250,63 @@ build: v1.6.1
 <div>
       <div style="font-size: var(--ds-heading-2xs-font-size);font-weight: var(--ds-heading-2xs-font-weight);letter-spacing: var(--ds-heading-2xs-letter-spacing);line-height: var(--ds-heading-2xs-line-height);">heading 2xs</div><div style="font-size: var(--ds-heading-xs-font-size);font-weight: var(--ds-heading-xs-font-weight);letter-spacing: var(--ds-heading-xs-letter-spacing);line-height: var(--ds-heading-xs-line-height);">heading xs</div><div style="font-size: var(--ds-heading-sm-font-size);font-weight: var(--ds-heading-sm-font-weight);letter-spacing: var(--ds-heading-sm-letter-spacing);line-height: var(--ds-heading-sm-line-height);">heading sm</div><div style="font-size: var(--ds-heading-md-font-size);font-weight: var(--ds-heading-md-font-weight);letter-spacing: var(--ds-heading-md-letter-spacing);line-height: var(--ds-heading-md-line-height);">heading md</div><div style="font-size: var(--ds-heading-lg-font-size);font-weight: var(--ds-heading-lg-font-weight);letter-spacing: var(--ds-heading-lg-letter-spacing);line-height: var(--ds-heading-lg-line-height);">heading lg</div><div style="font-size: var(--ds-heading-xl-font-size);font-weight: var(--ds-heading-xl-font-weight);letter-spacing: var(--ds-heading-xl-letter-spacing);line-height: var(--ds-heading-xl-line-height);">heading xl</div><div style="font-size: var(--ds-heading-2xl-font-size);font-weight: var(--ds-heading-2xl-font-weight);letter-spacing: var(--ds-heading-2xl-letter-spacing);line-height: var(--ds-heading-2xl-line-height);">heading 2xl</div>
     </div>
+    <table>
+      <tr>
+        <th>data-size=[md]</th>
+        <th>data-size=[sm]</th>
+        <th>data-size=[lg]</th>
+      </tr>
+      <tr>
+            <td style="font-size: var(--ds-font-size-1);font-weight: var(--ds-font-weight-1);letter-spacing: var(--ds-letter-spacing-1);line-height: var(--ds-line-height-1);">font size 1</td>
+            <td data-size="sm" style="font-size: var(--ds-font-size-1);font-weight: var(--ds-font-weight-1);letter-spacing: var(--ds-letter-spacing-1);line-height: var(--ds-line-height-1);">font size 1</td>
+            <td data-size="lg" style="font-size: var(--ds-font-size-1);font-weight: var(--ds-font-weight-1);letter-spacing: var(--ds-letter-spacing-1);line-height: var(--ds-line-height-1);">font size 1</td>
+          </tr>
+<tr>
+            <td style="font-size: var(--ds-font-size-2);font-weight: var(--ds-font-weight-2);letter-spacing: var(--ds-letter-spacing-2);line-height: var(--ds-line-height-2);">font size 2</td>
+            <td data-size="sm" style="font-size: var(--ds-font-size-2);font-weight: var(--ds-font-weight-2);letter-spacing: var(--ds-letter-spacing-2);line-height: var(--ds-line-height-2);">font size 2</td>
+            <td data-size="lg" style="font-size: var(--ds-font-size-2);font-weight: var(--ds-font-weight-2);letter-spacing: var(--ds-letter-spacing-2);line-height: var(--ds-line-height-2);">font size 2</td>
+          </tr>
+<tr>
+            <td style="font-size: var(--ds-font-size-3);font-weight: var(--ds-font-weight-3);letter-spacing: var(--ds-letter-spacing-3);line-height: var(--ds-line-height-3);">font size 3</td>
+            <td data-size="sm" style="font-size: var(--ds-font-size-3);font-weight: var(--ds-font-weight-3);letter-spacing: var(--ds-letter-spacing-3);line-height: var(--ds-line-height-3);">font size 3</td>
+            <td data-size="lg" style="font-size: var(--ds-font-size-3);font-weight: var(--ds-font-weight-3);letter-spacing: var(--ds-letter-spacing-3);line-height: var(--ds-line-height-3);">font size 3</td>
+          </tr>
+<tr>
+            <td style="font-size: var(--ds-font-size-4);font-weight: var(--ds-font-weight-4);letter-spacing: var(--ds-letter-spacing-4);line-height: var(--ds-line-height-4);">font size 4</td>
+            <td data-size="sm" style="font-size: var(--ds-font-size-4);font-weight: var(--ds-font-weight-4);letter-spacing: var(--ds-letter-spacing-4);line-height: var(--ds-line-height-4);">font size 4</td>
+            <td data-size="lg" style="font-size: var(--ds-font-size-4);font-weight: var(--ds-font-weight-4);letter-spacing: var(--ds-letter-spacing-4);line-height: var(--ds-line-height-4);">font size 4</td>
+          </tr>
+<tr>
+            <td style="font-size: var(--ds-font-size-5);font-weight: var(--ds-font-weight-5);letter-spacing: var(--ds-letter-spacing-5);line-height: var(--ds-line-height-5);">font size 5</td>
+            <td data-size="sm" style="font-size: var(--ds-font-size-5);font-weight: var(--ds-font-weight-5);letter-spacing: var(--ds-letter-spacing-5);line-height: var(--ds-line-height-5);">font size 5</td>
+            <td data-size="lg" style="font-size: var(--ds-font-size-5);font-weight: var(--ds-font-weight-5);letter-spacing: var(--ds-letter-spacing-5);line-height: var(--ds-line-height-5);">font size 5</td>
+          </tr>
+<tr>
+            <td style="font-size: var(--ds-font-size-6);font-weight: var(--ds-font-weight-6);letter-spacing: var(--ds-letter-spacing-6);line-height: var(--ds-line-height-6);">font size 6</td>
+            <td data-size="sm" style="font-size: var(--ds-font-size-6);font-weight: var(--ds-font-weight-6);letter-spacing: var(--ds-letter-spacing-6);line-height: var(--ds-line-height-6);">font size 6</td>
+            <td data-size="lg" style="font-size: var(--ds-font-size-6);font-weight: var(--ds-font-weight-6);letter-spacing: var(--ds-letter-spacing-6);line-height: var(--ds-line-height-6);">font size 6</td>
+          </tr>
+<tr>
+            <td style="font-size: var(--ds-font-size-7);font-weight: var(--ds-font-weight-7);letter-spacing: var(--ds-letter-spacing-7);line-height: var(--ds-line-height-7);">font size 7</td>
+            <td data-size="sm" style="font-size: var(--ds-font-size-7);font-weight: var(--ds-font-weight-7);letter-spacing: var(--ds-letter-spacing-7);line-height: var(--ds-line-height-7);">font size 7</td>
+            <td data-size="lg" style="font-size: var(--ds-font-size-7);font-weight: var(--ds-font-weight-7);letter-spacing: var(--ds-letter-spacing-7);line-height: var(--ds-line-height-7);">font size 7</td>
+          </tr>
+<tr>
+            <td style="font-size: var(--ds-font-size-8);font-weight: var(--ds-font-weight-8);letter-spacing: var(--ds-letter-spacing-8);line-height: var(--ds-line-height-8);">font size 8</td>
+            <td data-size="sm" style="font-size: var(--ds-font-size-8);font-weight: var(--ds-font-weight-8);letter-spacing: var(--ds-letter-spacing-8);line-height: var(--ds-line-height-8);">font size 8</td>
+            <td data-size="lg" style="font-size: var(--ds-font-size-8);font-weight: var(--ds-font-weight-8);letter-spacing: var(--ds-letter-spacing-8);line-height: var(--ds-line-height-8);">font size 8</td>
+          </tr>
+<tr>
+            <td style="font-size: var(--ds-font-size-9);font-weight: var(--ds-font-weight-9);letter-spacing: var(--ds-letter-spacing-9);line-height: var(--ds-line-height-9);">font size 9</td>
+            <td data-size="sm" style="font-size: var(--ds-font-size-9);font-weight: var(--ds-font-weight-9);letter-spacing: var(--ds-letter-spacing-9);line-height: var(--ds-line-height-9);">font size 9</td>
+            <td data-size="lg" style="font-size: var(--ds-font-size-9);font-weight: var(--ds-font-weight-9);letter-spacing: var(--ds-letter-spacing-9);line-height: var(--ds-line-height-9);">font size 9</td>
+          </tr>
+<tr>
+            <td style="font-size: var(--ds-font-size-10);font-weight: var(--ds-font-weight-10);letter-spacing: var(--ds-letter-spacing-10);line-height: var(--ds-line-height-10);">font size 10</td>
+            <td data-size="sm" style="font-size: var(--ds-font-size-10);font-weight: var(--ds-font-weight-10);letter-spacing: var(--ds-letter-spacing-10);line-height: var(--ds-line-height-10);">font size 10</td>
+            <td data-size="lg" style="font-size: var(--ds-font-size-10);font-weight: var(--ds-font-weight-10);letter-spacing: var(--ds-letter-spacing-10);line-height: var(--ds-line-height-10);">font size 10</td>
+          </tr></table>
+    </table>
     <h2>Border Radius</h2>
     <div style="display: flex; flex-direction: column; gap: 10px;">
       <div style="background-color: var(--ds-color-extra1-surface-hover); display: flex; align-items: center; justify-content: center; width: 300px; height: 100px; border-radius: var(--ds-border-radius-sm);">--ds-border-radius-sm</div><div style="background-color: var(--ds-color-extra1-surface-hover); display: flex; align-items: center; justify-content: center; width: 300px; height: 100px; border-radius: var(--ds-border-radius-md);">--ds-border-radius-md</div><div style="background-color: var(--ds-color-extra1-surface-hover); display: flex; align-items: center; justify-content: center; width: 300px; height: 100px; border-radius: var(--ds-border-radius-lg);">--ds-border-radius-lg</div><div style="background-color: var(--ds-color-extra1-surface-hover); display: flex; align-items: center; justify-content: center; width: 300px; height: 100px; border-radius: var(--ds-border-radius-xl);">--ds-border-radius-xl</div><div style="background-color: var(--ds-color-extra1-surface-hover); display: flex; align-items: center; justify-content: center; width: 300px; height: 100px; border-radius: var(--ds-border-radius-default);">--ds-border-radius-default</div><div style="background-color: var(--ds-color-extra1-surface-hover); display: flex; align-items: center; justify-content: center; width: 300px; height: 100px; border-radius: var(--ds-border-radius-full);">--ds-border-radius-full</div>

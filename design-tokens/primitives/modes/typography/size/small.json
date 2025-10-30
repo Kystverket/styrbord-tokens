@@ -24,7 +24,7 @@
     },
     "3": {
       "$type": "fontSizes",
-      "$value": "13"
+      "$value": "12"
     },
     "4": {
       "$type": "fontSizes",
@@ -44,15 +44,15 @@
     },
     "8": {
       "$type": "fontSizes",
-      "$value": "24"
+      "$value": "26"
     },
     "9": {
       "$type": "fontSizes",
-      "$value": "30"
+      "$value": "32"
     },
     "10": {
       "$type": "fontSizes",
-      "$value": "36"
+      "$value": "42"
     }
   },
   "letter-spacing": {

@@ -3,6 +3,10 @@
   "version": "0.3.8",
   "description": "",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kystverket/styrbord-tokens.git"
+  },
   "exports": {
     ".": {
       "style": "./dist/kystverket.css"

@@ -13,8 +13,8 @@ jobs:
     name: Pretty / Lint / Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '22.x'
       - run: npm ci
@@ -49,7 +49,13 @@ jobs:
       - run: npm run build
       - run: npm publish
       - run: rm .npmrc
-      - uses: JS-DevTools/npm-publish@v3
+      - uses: actions/setup-node@v4
         with:
-          token: ${{ secrets.NPM_TOKEN }}
-          access: 'public'
+          node-version: '22.x'
+          registry-url: 'https://registry.npmjs.org'
+          # Defaults to the user or organization that owns the workflow file
+          scope: '@kystverket'
+      - run: npm install -g npm@latest
+      - name: Clear auth token for OIDC
+        run: echo "NODE_AUTH_TOKEN=" >> $GITHUB_ENV
+      - run: npm publish --access public

@@ -22,11 +22,14 @@
     "dist/**/*"
   ],
   "scripts": {
-    "build": "npx @digdir/designsystemet@1.7.2 tokens build -o dist",
-    "html": "npx @digdir/designsystemet@1.7.2 tokens build -o dist && npx tsx ds-demo-builder/index.ts"
+    "build": "npx @digdir/designsystemet@1.9.0 tokens build -o dist",
+    "html": "npx @digdir/designsystemet@1.9.0 tokens build -o dist && npx tsx ds-demo-builder/index.ts"
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "@digdir/designsystemet-types": "1.9.0"
+  },
   "devDependencies": {
     "@types/node": "^22.14.1",
     "glob": "^11.0.2",

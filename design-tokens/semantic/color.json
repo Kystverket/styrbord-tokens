@@ -333,67 +333,67 @@
     "success": {
       "background-default": {
         "$type": "color",
-        "$value": "{color.extra1.1}"
+        "$value": "#ffffff"
       },
       "background-tinted": {
         "$type": "color",
-        "$value": "{color.extra1.2}"
+        "$value": "#ecf6ee"
       },
       "surface-default": {
         "$type": "color",
-        "$value": "{color.extra1.3}"
+        "$value": "#ffffff"
       },
       "surface-tinted": {
         "$type": "color",
-        "$value": "{color.extra1.4}"
+        "$value": "#daeddd"
       },
       "surface-hover": {
         "$type": "color",
-        "$value": "{color.extra1.5}"
+        "$value": "#c3e2c7"
       },
       "surface-active": {
         "$type": "color",
-        "$value": "{color.extra1.6}"
+        "$value": "#a8d5ae"
       },
       "border-subtle": {
         "$type": "color",
-        "$value": "{color.extra1.7}"
+        "$value": "#8fc997"
       },
       "border-default": {
         "$type": "color",
-        "$value": "{color.extra1.8}"
+        "$value": "#108c22"
       },
       "border-strong": {
         "$type": "color",
-        "$value": "{color.extra1.9}"
+        "$value": "#056d13"
       },
       "text-subtle": {
         "$type": "color",
-        "$value": "{color.extra1.10}"
+        "$value": "#056d13"
       },
       "text-default": {
         "$type": "color",
-        "$value": "{color.extra1.11}"
+        "$value": "#023409"
       },
       "base-default": {
         "$type": "color",
-        "$value": "{color.extra1.12}"
+        "$value": "#068718"
       },
       "base-hover": {
         "$type": "color",
-        "$value": "{color.extra1.13}"
+        "$value": "#057014"
       },
       "base-active": {
         "$type": "color",
-        "$value": "{color.extra1.14}"
+        "$value": "#045a10"
       },
       "base-contrast-subtle": {
         "$type": "color",
-        "$value": "{color.extra1.15}"
+        "$value": "#fafdfb"
       },
       "base-contrast-default": {
         "$type": "color",
-        "$value": "{color.extra1.16}"
+        "$value": "#ffffff"
       }
     },
     "danger": {
@@ -465,67 +465,67 @@
     "info": {
       "background-default": {
         "$type": "color",
-        "$value": "{color.primary.1}"
+        "$value": "#ffffff"
       },
       "background-tinted": {
         "$type": "color",
-        "$value": "{color.primary.2}"
+        "$value": "#edf5fa"
       },
       "surface-default": {
         "$type": "color",
-        "$value": "{color.primary.3}"
+        "$value": "#ffffff"
       },
       "surface-tinted": {
         "$type": "color",
-        "$value": "{color.primary.4}"
+        "$value": "#dcebf6"
       },
       "surface-hover": {
         "$type": "color",
-        "$value": "{color.primary.5}"
+        "$value": "#c5ddf0"
       },
       "surface-active": {
         "$type": "color",
-        "$value": "{color.primary.6}"
+        "$value": "#abcfe9"
       },
       "border-subtle": {
         "$type": "color",
-        "$value": "{color.primary.7}"
+        "$value": "#94c1e3"
       },
       "border-default": {
         "$type": "color",
-        "$value": "{color.primary.8}"
+        "$value": "#1f7dc5"
       },
       "border-strong": {
         "$type": "color",
-        "$value": "{color.primary.9}"
+        "$value": "#0860a3"
       },
       "text-subtle": {
         "$type": "color",
-        "$value": "{color.primary.10}"
+        "$value": "#0860a3"
       },
       "text-default": {
         "$type": "color",
-        "$value": "{color.primary.11}"
+        "$value": "#042d4d"
       },
       "base-default": {
         "$type": "color",
-        "$value": "{color.primary.12}"
+        "$value": "#0a71c0"
       },
       "base-hover": {
         "$type": "color",
-        "$value": "{color.primary.13}"
+        "$value": "#085d9f"
       },
       "base-active": {
         "$type": "color",
-        "$value": "{color.primary.14}"
+        "$value": "#074a7e"
       },
       "base-contrast-subtle": {
         "$type": "color",
-        "$value": "{color.primary.15}"
+        "$value": "#eff6fb"
       },
       "base-contrast-default": {
         "$type": "color",
-        "$value": "{color.primary.16}"
+        "$value": "#ffffff"
       }
     },
     "warning": {

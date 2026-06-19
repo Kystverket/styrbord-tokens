@@ -1,71 +1,49 @@
-import { fontVariants, fontSizes } from './tokens';
+const HEADING_SIZES = ['2xl', 'xl', 'lg', 'md', 'sm', 'xs', '2xs'] as const;
+const BODY_SIZES = ['xl', 'lg', 'md', 'sm', 'xs'] as const;
+
+const HEADING_SPECIMEN = 'Trygg navigasjon i norske farvann';
+const BODY_SPECIMEN =
+  'Kystverket sikrer trygg sjøtrafikk og forvalter kystinfrastruktur langs norskekysten – fra fyrlykter til trafikksentraler.';
 
 export default function TypographySection() {
   return (
-    <>
-      {fontVariants.map(([name, sizes]) => (
-        <div key={name}>
-          {sizes.map((size) => (
-            <div
-              key={size}
-              style={{
-                fontSize: `var(--ds-${name}-${size}-font-size)`,
-                fontWeight: `var(--ds-${name}-${size}-font-weight)`,
-                letterSpacing: `var(--ds-${name}-${size}-letter-spacing)`,
-                lineHeight: `var(--ds-${name}-${size}-line-height)`,
-              }}
-            >
-              {name} {size}
-            </div>
-          ))}
-        </div>
-      ))}
+    <div>
+      <p className="type-group-label">Overskriftsskala</p>
+      <div className="type-specimens">
+        {HEADING_SIZES.map((size) => (
+          <TypeRow key={size} name="heading" size={size} text={HEADING_SPECIMEN} />
+        ))}
+      </div>
 
-      <table>
-        <tbody>
-          <tr>
-            <th>data-size=[md]</th>
-            <th>data-size=[sm]</th>
-            <th>data-size=[lg]</th>
-          </tr>
-          {fontSizes.map((n) => (
-            <tr key={n}>
-              <td
-                style={{
-                  fontSize: `var(--ds-font-size-${n})`,
-                  fontWeight: `var(--ds-font-weight-${n})`,
-                  letterSpacing: `var(--ds-letter-spacing-${n})`,
-                  lineHeight: `var(--ds-line-height-${n})`,
-                }}
-              >
-                font size {n}
-              </td>
-              <td
-                data-size="sm"
-                style={{
-                  fontSize: `var(--ds-font-size-${n})`,
-                  fontWeight: `var(--ds-font-weight-${n})`,
-                  letterSpacing: `var(--ds-letter-spacing-${n})`,
-                  lineHeight: `var(--ds-line-height-${n})`,
-                }}
-              >
-                font size {n}
-              </td>
-              <td
-                data-size="lg"
-                style={{
-                  fontSize: `var(--ds-font-size-${n})`,
-                  fontWeight: `var(--ds-font-weight-${n})`,
-                  letterSpacing: `var(--ds-letter-spacing-${n})`,
-                  lineHeight: `var(--ds-line-height-${n})`,
-                }}
-              >
-                font size {n}
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </>
+      <p className="type-group-label">Brødtekstskala</p>
+      <div className="type-specimens">
+        {BODY_SIZES.map((size) => (
+          <TypeRow key={size} name="body" size={size} text={BODY_SPECIMEN} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function TypeRow({ name, size, text }: { name: string; size: string; text: string }) {
+  return (
+    <div className="type-row">
+      <span
+        className="type-sample"
+        style={{
+          fontSize: `var(--ds-${name}-${size}-font-size)`,
+          fontWeight: `var(--ds-${name}-${size}-font-weight)`,
+          letterSpacing: `var(--ds-${name}-${size}-letter-spacing)`,
+          lineHeight: `var(--ds-${name}-${size}-line-height)`,
+        }}
+      >
+        {text}
+      </span>
+      <div className="type-meta">
+        <code className="token-badge">
+          --ds-{name}-{size}
+        </code>
+      </div>
+    </div>
   );
 }

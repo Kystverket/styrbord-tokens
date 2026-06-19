@@ -22,13 +22,13 @@
     "dist/**/*"
   ],
   "scripts": {
-    "build": "npx @digdir/designsystemet@1.9.0 tokens build -o dist",
-    "html": "npx @digdir/designsystemet@1.9.0 tokens build -o dist && cd ds-demo-builder && npm install && npm run build"
+    "build": "npx @digdir/designsystemet@1.16.1 tokens build -o dist",
+    "html": "npx @digdir/designsystemet@1.16.1 tokens build -o dist && cd ds-demo-builder && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@digdir/designsystemet-types": "1.9.0"
+    "@digdir/designsystemet-types": "1.16.1"
   },
   "devDependencies": {
     "@types/node": "^22.14.1",

@@ -6,32 +6,9 @@ import SizesSection from './SizesSection';
 import ShadowSection from './ShadowSection';
 import GlobalSection from './GlobalSection';
 
-const navItems = [
-  { id: 'colors', label: 'Farger' },
-  { id: 'typography', label: 'Typografi' },
-  { id: 'border-radius', label: 'Hjørneradius' },
-  { id: 'sizes', label: 'Størrelser' },
-  { id: 'shadows', label: 'Skygger' },
-  { id: 'global', label: 'Globalt' },
-];
-
 export default function App() {
   return (
     <>
-      <header className="top-nav">
-        <span className="top-nav-brand">
-          styrbord<em>tokens</em>
-        </span>
-        <div className="top-nav-sep" />
-        <nav className="top-nav-links">
-          {navItems.map(({ id, label }) => (
-            <a key={id} href={`#${id}`} className="top-nav-link">
-              {label}
-            </a>
-          ))}
-        </nav>
-      </header>
-
       <main className="main-content">
         <div className="intro">
           <h1 className="intro-title">Kystverkets design tokens</h1>

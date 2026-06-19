@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Museo sans';
+  font-weight: 300;
+  font-style: normal;
+  src: url('/museo-sans-300.woff2') format('woff2'),
+       url('/museo-sans-300.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Museo sans';
+  font-weight: 500;
+  font-style: normal;
+  src: url('/museo-sans-500.woff2') format('woff2'),
+       url('/museo-sans-500.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Museo sans';
+  font-weight: 700;
+  font-style: normal;
+  src: url('/museo-sans-700.woff2') format('woff2'),
+       url('/museo-sans-700.woff') format('woff');
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px;
+  font-family: 'Museo sans', sans-serif;
+  font-weight: 500;
+}

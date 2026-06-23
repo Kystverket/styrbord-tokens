@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useState } from 'react';
-import { colors } from './tokens';
+import { colors, semanticColors } from './tokens';
 
 const GROUPS = [
   {
@@ -69,7 +69,7 @@ function useColorHexMap(): Record<string, string> {
   useEffect(() => {
     const style = getComputedStyle(document.documentElement);
     const map: Record<string, string> = {};
-    for (const color of colors) {
+    for (const color of [...semanticColors, ...colors]) {
       for (const group of GROUPS) {
         for (const v of group.variants) {
           const token = `--ds-color-${color}-${v.key}`;
@@ -91,6 +91,74 @@ export default function ColorSection() {
     <div className="color-table-scroll">
       <table className="color-table">
         <thead>
+          <tr>
+            <th colSpan={42} style={{ padding: '20px 0px 10px 0px' }}>
+              Semantiske farger
+            </th>
+          </tr>
+          <tr>
+            <th className="color-th-corner" />
+            {GROUPS.map((group, gi) => (
+              <Fragment key={group.label}>
+                {gi > 0 && <th className="color-th-group-spacer" />}
+                <th colSpan={group.variants.length} className="color-th-group color-th-group-cell">
+                  {group.label}
+                </th>
+              </Fragment>
+            ))}
+          </tr>
+          <tr>
+            <th className="color-th-corner" />
+            {GROUPS.map((group, gi) => (
+              <Fragment key={group.label}>
+                {gi > 0 && <th className="color-th-spacer-row" />}
+                {group.variants.map((v) => (
+                  <th key={v.key} className="color-th-variant">
+                    {v.abbr}
+                  </th>
+                ))}
+              </Fragment>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {semanticColors.map((color) => (
+            <tr key={color}>
+              <td className="color-td-name">{color}</td>
+              {GROUPS.map((group, gi) => (
+                <Fragment key={group.label}>
+                  {gi > 0 && <td className="color-td-gap" />}
+                  {group.variants.map((v, vi) => {
+                    const token = `--ds-color-${color}-${v.key}`;
+                    const hex = hexMap[token] ?? '';
+                    const textColor = hex ? hexContrastColor(hex) : 'transparent';
+                    return (
+                      <td key={v.key} className={`color-td-swatch${vi === 0 ? ' group-start' : ''}`}>
+                        <div
+                          className="color-swatch-box"
+                          style={{ backgroundColor: `var(--ds-color-${color}-${v.key})` }}
+                          title={`${token}\n${hex}`}
+                        >
+                          {hex && (
+                            <span className="swatch-hex" style={{ color: textColor }}>
+                              {hex}
+                            </span>
+                          )}
+                        </div>
+                      </td>
+                    );
+                  })}
+                </Fragment>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+        <thead>
+          <tr>
+            <th colSpan={42} style={{ padding: '20px 0px 10px 0px' }}>
+              Farger
+            </th>
+          </tr>
           <tr>
             <th className="color-th-corner" />
             {GROUPS.map((group, gi) => (

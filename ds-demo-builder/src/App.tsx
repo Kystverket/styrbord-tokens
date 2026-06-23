@@ -25,7 +25,7 @@ export default function App() {
           </p>
         </div>
 
-        <Section id="colors" title="Farger" desc="9 fargepaletter · 16 semantiske varianter per palett">
+        <Section id="colors" title="Farger" desc="16 semantiske varianter per palett">
           <ColorSection />
         </Section>
         <Section id="typography" title="Typografi" desc="Skala for overskrifter og brødtekst">
@@ -40,7 +40,11 @@ export default function App() {
         <Section id="shadows" title="Skygger" desc="Skyggenivåer for dybde og høyde">
           <ShadowSection />
         </Section>
-        <Section id="global" title="Globale stilverdier" desc="Fokusring, kantstørrelser, skrifttype og deaktivert tilstand">
+        <Section
+          id="global"
+          title="Globale stilverdier"
+          desc="Fokusring, kantstørrelser, skrifttype og deaktivert tilstand"
+        >
           <GlobalSection />
         </Section>
       </main>

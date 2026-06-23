@@ -2,27 +2,32 @@
   font-family: 'Museo sans';
   font-weight: 300;
   font-style: normal;
-  src: url('/museo-sans-300.woff2') format('woff2'),
-       url('/museo-sans-300.woff') format('woff');
+  src:
+    url('/museo-sans-300.woff2') format('woff2'),
+    url('/museo-sans-300.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Museo sans';
   font-weight: 500;
   font-style: normal;
-  src: url('/museo-sans-500.woff2') format('woff2'),
-       url('/museo-sans-500.woff') format('woff');
+  src:
+    url('/museo-sans-500.woff2') format('woff2'),
+    url('/museo-sans-500.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Museo sans';
   font-weight: 700;
   font-style: normal;
-  src: url('/museo-sans-700.woff2') format('woff2'),
-       url('/museo-sans-700.woff') format('woff');
+  src:
+    url('/museo-sans-700.woff2') format('woff2'),
+    url('/museo-sans-700.woff') format('woff');
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -94,7 +99,9 @@ body {
   text-decoration: none;
   color: var(--ds-color-neutral-text-subtle);
   border-radius: 6px;
-  transition: background 0.12s, color 0.12s;
+  transition:
+    background 0.12s,
+    color 0.12s;
   font-family: 'Museo sans', sans-serif;
 }
 
@@ -249,7 +256,7 @@ body {
 }
 
 .color-swatch-box {
-  width: 46px;
+  width: 64px;
   height: 64px;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.07);
@@ -334,7 +341,6 @@ body {
   gap: 8px;
   flex-shrink: 0;
 }
-
 
 /* ── Border Radius Section ────────────────────────────── */
 
@@ -545,4 +551,3 @@ body {
   font-size: 0.6875rem;
   color: var(--ds-color-neutral-text-subtle);
 }
-

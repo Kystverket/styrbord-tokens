@@ -1,46 +1,46 @@
-import { useEffect, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import { colors } from './tokens';
 
 const GROUPS = [
   {
-    label: 'Bakgrunn',
+    label: 'background',
     variants: [
-      { key: 'background-default', abbr: 'standard' },
-      { key: 'background-tinted', abbr: 'tonet' },
+      { key: 'background-default', abbr: 'default' },
+      { key: 'background-tinted', abbr: 'tinted' },
     ],
   },
   {
-    label: 'Overflate',
+    label: 'surface',
     variants: [
-      { key: 'surface-default', abbr: 'standard' },
-      { key: 'surface-tinted', abbr: 'tonet' },
+      { key: 'surface-default', abbr: 'default' },
+      { key: 'surface-tinted', abbr: 'tinted' },
       { key: 'surface-hover', abbr: 'hover' },
-      { key: 'surface-active', abbr: 'aktiv' },
+      { key: 'surface-active', abbr: 'active' },
     ],
   },
   {
-    label: 'Kant',
+    label: 'border',
     variants: [
-      { key: 'border-subtle', abbr: 'subtil' },
-      { key: 'border-default', abbr: 'standard' },
-      { key: 'border-strong', abbr: 'sterk' },
+      { key: 'border-subtle', abbr: 'subtle' },
+      { key: 'border-default', abbr: 'default' },
+      { key: 'border-strong', abbr: 'strong' },
     ],
   },
   {
-    label: 'Tekst',
+    label: 'text',
     variants: [
-      { key: 'text-subtle', abbr: 'subtil' },
-      { key: 'text-default', abbr: 'standard' },
+      { key: 'text-subtle', abbr: 'subtle' },
+      { key: 'text-default', abbr: 'default' },
     ],
   },
   {
-    label: 'Base',
+    label: 'base',
     variants: [
-      { key: 'base-default', abbr: 'standard' },
+      { key: 'base-default', abbr: 'default' },
       { key: 'base-hover', abbr: 'hover' },
-      { key: 'base-active', abbr: 'aktiv' },
-      { key: 'base-contrast-subtle', abbr: 'k·subtil' },
-      { key: 'base-contrast-default', abbr: 'k·standard' },
+      { key: 'base-active', abbr: 'active' },
+      { key: 'base-contrast-subtle', abbr: 'contrast-subtle' },
+      { key: 'base-contrast-default', abbr: 'contrast-default' },
     ],
   },
 ];
@@ -52,6 +52,15 @@ function parsedToHex(raw: string): string {
   }
   if (raw.startsWith('#')) return raw;
   return '';
+}
+
+function hexContrastColor(hex: string): string {
+  if (hex.length < 7) return 'rgba(0,0,0,0.5)';
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5, 7), 16);
+  const luminance = (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+  return luminance > 0.45 ? 'rgba(0,0,0,0.55)' : 'rgba(255,255,255,0.8)';
 }
 
 function useColorHexMap(): Record<string, string> {
@@ -79,35 +88,67 @@ export default function ColorSection() {
   const hexMap = useColorHexMap();
 
   return (
-    <div className="color-list">
-      {colors.map((color) => (
-        <div key={color} className="color-list-color">
-          <h3 className="color-list-color-heading">{color}</h3>
-          {GROUPS.map((group) => (
-            <div key={group.label} className="color-list-group">
-              <span className="color-list-group-label">{group.label}</span>
-              <div className="color-list-variants">
-                {group.variants.map((v) => {
-                  const token = `--ds-color-${color}-${v.key}`;
-                  const hex = hexMap[token] ?? '';
-                  return (
-                    <div key={v.key} className="color-list-item">
-                      <div
-                        className="color-list-swatch"
-                        style={{ backgroundColor: `var(${token})` }}
-                      />
-                      <div className="color-list-meta">
-                        <span className="color-list-token">{token}</span>
-                        {hex && <span className="color-list-hex">{hex}</span>}
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
+    <div className="color-table-scroll">
+      <table className="color-table">
+        <thead>
+          <tr>
+            <th className="color-th-corner" />
+            {GROUPS.map((group, gi) => (
+              <Fragment key={group.label}>
+                {gi > 0 && <th className="color-th-group-spacer" />}
+                <th colSpan={group.variants.length} className="color-th-group color-th-group-cell">
+                  {group.label}
+                </th>
+              </Fragment>
+            ))}
+          </tr>
+          <tr>
+            <th className="color-th-corner" />
+            {GROUPS.map((group, gi) => (
+              <Fragment key={group.label}>
+                {gi > 0 && <th className="color-th-spacer-row" />}
+                {group.variants.map((v) => (
+                  <th key={v.key} className="color-th-variant">
+                    {v.abbr}
+                  </th>
+                ))}
+              </Fragment>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {colors.map((color) => (
+            <tr key={color}>
+              <td className="color-td-name">{color}</td>
+              {GROUPS.map((group, gi) => (
+                <Fragment key={group.label}>
+                  {gi > 0 && <td className="color-td-gap" />}
+                  {group.variants.map((v, vi) => {
+                    const token = `--ds-color-${color}-${v.key}`;
+                    const hex = hexMap[token] ?? '';
+                    const textColor = hex ? hexContrastColor(hex) : 'transparent';
+                    return (
+                      <td key={v.key} className={`color-td-swatch${vi === 0 ? ' group-start' : ''}`}>
+                        <div
+                          className="color-swatch-box"
+                          style={{ backgroundColor: `var(--ds-color-${color}-${v.key})` }}
+                          title={`${token}\n${hex}`}
+                        >
+                          {hex && (
+                            <span className="swatch-hex" style={{ color: textColor }}>
+                              {hex}
+                            </span>
+                          )}
+                        </div>
+                      </td>
+                    );
+                  })}
+                </Fragment>
+              ))}
+            </tr>
           ))}
-        </div>
-      ))}
+        </tbody>
+      </table>
     </div>
   );
 }

@@ -6,7 +6,7 @@ on:
 jobs:
   run-linters:
     name: Pretty / Lint / Build
-    runs-on: ubuntu-latest
+    runs-on: runner_private
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -17,7 +17,7 @@ jobs:
 
   check-pr-title:
     name: Conventional Commit PR title
-    runs-on: ubuntu-latest
+    runs-on: runner_private
     steps:
       - uses: amannn/action-semantic-pull-request@v5
         env:

@@ -51,5 +51,5 @@ jobs:
 
       - name: Publish to npmjs.org (tokenless OIDC)
         run: |
-          echo "@kystverket:registry=https://registry.npmjs.org/" > .npmrc
-          npm publish --provenance --access public
+          echo "@kystverket:registry=https://registry.npmjs.org/" > /tmp/npmrc-oidc
+          npm publish --provenance --access public --userconfig /tmp/npmrc-oidc

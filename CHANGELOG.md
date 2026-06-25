@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.6.1](https://github.com/Kystverket/styrbord-tokens/compare/styrbord-tokens-v0.6.0...styrbord-tokens-v0.6.1) (2026-06-25)
+
+
+### Bug Fixes
+
+* **ci:** fix tokenless OIDC publishing to npmjs ([#12](https://github.com/Kystverket/styrbord-tokens/issues/12)) ([33315b8](https://github.com/Kystverket/styrbord-tokens/commit/33315b87329a0cd6ab977f1796304706aab494cd))
+
+## [0.6.0](https://github.com/Kystverket/styrbord-tokens/compare/styrbord-tokens-v0.5.0...styrbord-tokens-v0.6.0) (2026-06-25)
+
+
+### Features
+
+* **demo:** copy CSS var or hex on click in color swatches ([#10](https://github.com/Kystverket/styrbord-tokens/issues/10)) ([5b0e261](https://github.com/Kystverket/styrbord-tokens/commit/5b0e26130222c1f724680b61880f531380755c38))
+
 ## [0.5.0](https://github.com/Kystverket/styrbord-tokens/compare/styrbord-tokens-v0.4.0...styrbord-tokens-v0.5.0) (2026-06-25)
 
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.4](https://github.com/Kystverket/styrbord-tokens/compare/styrbord-tokens-v0.6.3...styrbord-tokens-v0.6.4) (2026-06-25)
+
+
+### Bug Fixes
+
+* **ci:** fix 2 ([#18](https://github.com/Kystverket/styrbord-tokens/issues/18)) ([4cf930e](https://github.com/Kystverket/styrbord-tokens/commit/4cf930ed6ca9a02f969aae15a0611ad395ef7e48))
+
 ## [0.6.3](https://github.com/Kystverket/styrbord-tokens/compare/styrbord-tokens-v0.6.2...styrbord-tokens-v0.6.3) (2026-06-25)
 
 

@@ -50,6 +50,14 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish to npmjs.org (tokenless OIDC)
-        run: |
-          echo "@kystverket:registry=https://registry.npmjs.org/" > /tmp/npmrc-oidc
-          npm publish --provenance --access public --userconfig /tmp/npmrc-oidc
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          registry-url: 'https://registry.npmjs.org'
+          # Defaults to the user or organization that owns the workflow file
+          scope: '@kystverket'
+      - run: rm .npmrc
+      - run: npm install -g npm@latest
+      - name: Clear auth token for OIDC
+        run: echo "NODE_AUTH_TOKEN=" >> $GITHUB_ENV
+      - run: npm publish --access public

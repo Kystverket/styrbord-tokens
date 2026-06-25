@@ -11,19 +11,21 @@
     ".": {
       "style": "./dist/kystverket.css"
     },
+    "./colors": {
+      "import": "./dist/color-tokens.js",
+      "types": "./dist/color-tokens.d.ts"
+    },
     "./*.css": {
       "import": "./dist/*.css",
       "require": "./dist/*.css"
     }
   },
-  "main": "./dist/main.js",
-  "typings": "./dist/src/main.d.ts",
   "files": [
     "dist/**/*"
   ],
   "scripts": {
-    "build": "npx @digdir/designsystemet@1.16.1 tokens build -o dist",
-    "html": "npx @digdir/designsystemet@1.16.1 tokens build -o dist && cd ds-demo-builder && npm install && npm run build"
+    "build": "npx @digdir/designsystemet@1.16.1 tokens build -o dist && node scripts/build-ts-colors.mjs",
+    "html": "npx @digdir/designsystemet@1.16.1 tokens build -o dist && node scripts/build-ts-colors.mjs && cd ds-demo-builder && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",

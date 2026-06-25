@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.3](https://github.com/Kystverket/styrbord-tokens/compare/styrbord-tokens-v0.6.2...styrbord-tokens-v0.6.3) (2026-06-25)
+
+
+### Bug Fixes
+
+* **ci:** revert to old pub method ([#16](https://github.com/Kystverket/styrbord-tokens/issues/16)) ([3d2f8b5](https://github.com/Kystverket/styrbord-tokens/commit/3d2f8b5d3c89ff92455585fe5c9bcec06320dc1b))
+
 ## [0.6.2](https://github.com/Kystverket/styrbord-tokens/compare/styrbord-tokens-v0.6.1...styrbord-tokens-v0.6.2) (2026-06-25)
 
 

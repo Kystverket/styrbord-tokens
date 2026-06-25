@@ -1,5 +1,16 @@
-import { Fragment, useEffect, useState } from 'react';
+import { Fragment, useCallback, useEffect, useState } from 'react';
 import { colors, semanticColors } from './tokens';
+
+function useCopyFeedback() {
+  const [copied, setCopied] = useState<string | null>(null);
+  const copy = useCallback((text: string) => {
+    navigator.clipboard.writeText(text).then(() => {
+      setCopied(text);
+      setTimeout(() => setCopied(null), 1200);
+    });
+  }, []);
+  return { copied, copy };
+}
 
 const GROUPS = [
   {
@@ -86,6 +97,7 @@ function useColorHexMap(): Record<string, string> {
 
 export default function ColorSection() {
   const hexMap = useColorHexMap();
+  const { copied, copy } = useCopyFeedback();
 
   return (
     <div className="color-table-scroll">
@@ -136,12 +148,18 @@ export default function ColorSection() {
                       <td key={v.key} className={`color-td-swatch${vi === 0 ? ' group-start' : ''}`}>
                         <div
                           className="color-swatch-box"
-                          style={{ backgroundColor: `var(--ds-color-${color}-${v.key})` }}
-                          title={`${token}\n${hex}`}
+                          style={{ backgroundColor: `var(--ds-color-${color}-${v.key})`, cursor: 'pointer' }}
+                          title={`Click to copy: ${token}`}
+                          onClick={(e) => { e.stopPropagation(); copy(token); }}
                         >
                           {hex && (
-                            <span className="swatch-hex" style={{ color: textColor }}>
-                              {hex}
+                            <span
+                              className="swatch-hex"
+                              style={{ color: textColor, cursor: 'pointer' }}
+                              title={`Click to copy: ${hex}`}
+                              onClick={(e) => { e.stopPropagation(); copy(hex); }}
+                            >
+                              {copied === token ? '✓ var' : copied === hex ? '✓ hex' : hex}
                             </span>
                           )}
                         </div>
@@ -199,12 +217,18 @@ export default function ColorSection() {
                       <td key={v.key} className={`color-td-swatch${vi === 0 ? ' group-start' : ''}`}>
                         <div
                           className="color-swatch-box"
-                          style={{ backgroundColor: `var(--ds-color-${color}-${v.key})` }}
-                          title={`${token}\n${hex}`}
+                          style={{ backgroundColor: `var(--ds-color-${color}-${v.key})`, cursor: 'pointer' }}
+                          title={`Click to copy: ${token}`}
+                          onClick={(e) => { e.stopPropagation(); copy(token); }}
                         >
                           {hex && (
-                            <span className="swatch-hex" style={{ color: textColor }}>
-                              {hex}
+                            <span
+                              className="swatch-hex"
+                              style={{ color: textColor, cursor: 'pointer' }}
+                              title={`Click to copy: ${hex}`}
+                              onClick={(e) => { e.stopPropagation(); copy(hex); }}
+                            >
+                              {copied === token ? '✓ var' : copied === hex ? '✓ hex' : hex}
                             </span>
                           )}
                         </div>

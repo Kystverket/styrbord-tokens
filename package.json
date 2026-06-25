@@ -12,8 +12,8 @@
       "style": "./dist/kystverket.css"
     },
     "./colors": {
-      "import": "./dist/colors.js",
-      "types": "./dist/colors.d.ts"
+      "import": "./dist/color-tokens.js",
+      "types": "./dist/color-tokens.d.ts"
     },
     "./*.css": {
       "import": "./dist/*.css",

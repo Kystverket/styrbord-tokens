@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.2](https://github.com/Kystverket/styrbord-tokens/compare/styrbord-tokens-v0.6.1...styrbord-tokens-v0.6.2) (2026-06-25)
+
+
+### Bug Fixes
+
+* **ci:** use --userconfig to fully isolate npmjs OIDC publish step ([#14](https://github.com/Kystverket/styrbord-tokens/issues/14)) ([32565f0](https://github.com/Kystverket/styrbord-tokens/commit/32565f0b80e0b18ed38ecb670363665f2495debb))
+
 ## [0.6.1](https://github.com/Kystverket/styrbord-tokens/compare/styrbord-tokens-v0.6.0...styrbord-tokens-v0.6.1) (2026-06-25)
 
 

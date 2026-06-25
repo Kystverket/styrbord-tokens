@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.1](https://github.com/Kystverket/styrbord-tokens/compare/styrbord-tokens-v0.6.0...styrbord-tokens-v0.6.1) (2026-06-25)
+
+
+### Bug Fixes
+
+* **ci:** fix tokenless OIDC publishing to npmjs ([#12](https://github.com/Kystverket/styrbord-tokens/issues/12)) ([33315b8](https://github.com/Kystverket/styrbord-tokens/commit/33315b87329a0cd6ab977f1796304706aab494cd))
+
 ## [0.6.0](https://github.com/Kystverket/styrbord-tokens/compare/styrbord-tokens-v0.5.0...styrbord-tokens-v0.6.0) (2026-06-25)
 
 

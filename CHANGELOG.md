@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://github.com/Kystverket/styrbord-tokens/compare/styrbord-tokens-v0.6.4...styrbord-tokens-v0.7.0) (2026-07-02)
+
+
+### Features
+
+* **colors:** enhance color extraction and add semantic color support ([#20](https://github.com/Kystverket/styrbord-tokens/issues/20)) ([7b476da](https://github.com/Kystverket/styrbord-tokens/commit/7b476dacefd9a2395e6942ab57900b1c26ed905a))
+
 ## [0.6.4](https://github.com/Kystverket/styrbord-tokens/compare/styrbord-tokens-v0.6.3...styrbord-tokens-v0.6.4) (2026-06-25)
 
 

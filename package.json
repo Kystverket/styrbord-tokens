@@ -24,8 +24,8 @@
     "dist/**/*"
   ],
   "scripts": {
-    "build": "npx @digdir/designsystemet@1.16.1 tokens build -o dist && node scripts/build-ts-colors.mjs",
-    "html": "npx @digdir/designsystemet@1.16.1 tokens build -o dist && node scripts/build-ts-colors.mjs && cd ds-demo-builder && npm install && npm run build"
+    "build": "npx @digdir/designsystemet@1.21.1 tokens build -o dist && node scripts/build-ts-colors.mjs",
+    "html": "npx @digdir/designsystemet@1.21.1 tokens build -o dist && node scripts/build-ts-colors.mjs && cd ds-demo-builder && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",

@@ -333,67 +333,67 @@
     "success": {
       "background-default": {
         "$type": "color",
-        "$value": "#ffffff"
+        "$value": "{global.green.1}"
       },
       "background-tinted": {
         "$type": "color",
-        "$value": "#ecf6ee"
+        "$value": "{global.green.2}"
       },
       "surface-default": {
         "$type": "color",
-        "$value": "#ffffff"
+        "$value": "{global.green.3}"
       },
       "surface-tinted": {
         "$type": "color",
-        "$value": "#daeddd"
+        "$value": "{global.green.4}"
       },
       "surface-hover": {
         "$type": "color",
-        "$value": "#c3e2c7"
+        "$value": "{global.green.5}"
       },
       "surface-active": {
         "$type": "color",
-        "$value": "#a8d5ae"
+        "$value": "{global.green.6}"
       },
       "border-subtle": {
         "$type": "color",
-        "$value": "#8fc997"
+        "$value": "{global.green.7}"
       },
       "border-default": {
         "$type": "color",
-        "$value": "#108c22"
+        "$value": "{global.green.8}"
       },
       "border-strong": {
         "$type": "color",
-        "$value": "#056d13"
+        "$value": "{global.green.9}"
       },
       "text-subtle": {
         "$type": "color",
-        "$value": "#056d13"
+        "$value": "{global.green.10}"
       },
       "text-default": {
         "$type": "color",
-        "$value": "#023409"
+        "$value": "{global.green.11}"
       },
       "base-default": {
         "$type": "color",
-        "$value": "#068718"
+        "$value": "{global.green.12}"
       },
       "base-hover": {
         "$type": "color",
-        "$value": "#057014"
+        "$value": "{global.green.13}"
       },
       "base-active": {
         "$type": "color",
-        "$value": "#045a10"
+        "$value": "{global.green.14}"
       },
       "base-contrast-subtle": {
         "$type": "color",
-        "$value": "#fafdfb"
+        "$value": "{global.green.15}"
       },
       "base-contrast-default": {
         "$type": "color",
-        "$value": "#ffffff"
+        "$value": "{global.green.16}"
       }
     },
     "danger": {
@@ -465,59 +465,59 @@
     "info": {
       "background-default": {
         "$type": "color",
-        "$value": "#ffffff"
+        "$value": "{global.blue.1}"
       },
       "background-tinted": {
         "$type": "color",
-        "$value": "#edf5fa"
+        "$value": "{global.blue.2}"
       },
       "surface-default": {
         "$type": "color",
-        "$value": "#ffffff"
+        "$value": "{global.blue.3}"
       },
       "surface-tinted": {
         "$type": "color",
-        "$value": "#dcebf6"
+        "$value": "{global.blue.4}"
       },
       "surface-hover": {
         "$type": "color",
-        "$value": "#c5ddf0"
+        "$value": "{global.blue.5}"
       },
       "surface-active": {
         "$type": "color",
-        "$value": "#abcfe9"
+        "$value": "{global.blue.6}"
       },
       "border-subtle": {
         "$type": "color",
-        "$value": "#94c1e3"
+        "$value": "{global.blue.7}"
       },
       "border-default": {
         "$type": "color",
-        "$value": "#1f7dc5"
+        "$value": "{global.blue.8}"
       },
       "border-strong": {
         "$type": "color",
-        "$value": "#0860a3"
+        "$value": "{global.blue.9}"
       },
       "text-subtle": {
         "$type": "color",
-        "$value": "#0860a3"
+        "$value": "{global.blue.10}"
       },
       "text-default": {
         "$type": "color",
-        "$value": "#042d4d"
+        "$value": "{global.blue.11}"
       },
       "base-default": {
         "$type": "color",
-        "$value": "#0a71c0"
+        "$value": "{global.blue.12}"
       },
       "base-hover": {
         "$type": "color",
-        "$value": "#085d9f"
+        "$value": "{global.blue.13}"
       },
       "base-active": {
         "$type": "color",
-        "$value": "#074a7e"
+        "$value": "{global.blue.14}"
       },
       "base-contrast-subtle": {
         "$type": "color",
@@ -525,7 +525,7 @@
       },
       "base-contrast-default": {
         "$type": "color",
-        "$value": "#ffffff"
+        "$value": "{global.blue.16}"
       }
     },
     "warning": {

@@ -5,3 +5,7 @@ input
 temp
 dist
 static
+
+dist copy
+design-tokens-build
+design-tokens-build copy

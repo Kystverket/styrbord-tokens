@@ -851,9 +851,9 @@
     "id": "593774a74235b661fff40693ca7bda160aadfb74",
     "name": "primary",
     "selectedTokenSets": {
-      "semantic/modes/main-color/primary": "enabled"
+      "semantic/color/primary": "enabled"
     },
-    "group": "Main color",
+    "group": "Color",
     "$figmaCollectionId": "VariableCollectionId:40350:32139",
     "$figmaModeId": "44797:1",
     "$figmaVariableReferences": {
@@ -879,9 +879,9 @@
     "id": "77029e975ec86efe4b92eb0be546d61959085bd1",
     "name": "accent",
     "selectedTokenSets": {
-      "semantic/modes/main-color/accent": "enabled"
+      "semantic/color/accent": "enabled"
     },
-    "group": "Main color",
+    "group": "Color",
     "$figmaCollectionId": "VariableCollectionId:40350:32139",
     "$figmaModeId": "44797:4",
     "$figmaVariableReferences": {
@@ -907,9 +907,9 @@
     "id": "0d546651bdff926cb8bb0befe83947ca4bf348b0",
     "name": "extra1",
     "selectedTokenSets": {
-      "semantic/modes/support-color/extra1": "enabled"
+      "semantic/color/extra1": "enabled"
     },
-    "group": "Support color",
+    "group": "Color",
     "$figmaCollectionId": "VariableCollectionId:40350:32140",
     "$figmaModeId": "44797:2",
     "$figmaVariableReferences": {
@@ -935,9 +935,9 @@
     "id": "276da52ce879d63f404de7dbc88b166b5f602248",
     "name": "extra2",
     "selectedTokenSets": {
-      "semantic/modes/support-color/extra2": "enabled"
+      "semantic/color/extra2": "enabled"
     },
-    "group": "Support color",
+    "group": "Color",
     "$figmaCollectionId": "VariableCollectionId:40350:32140",
     "$figmaModeId": "44797:3",
     "$figmaVariableReferences": {
@@ -958,5 +958,125 @@
       "color.support.base-contrast-subtle": "417a4636bca6ffaee883cb5800d03eb2f585106b",
       "color.support.base-contrast-default": "84ae120ccdf48e69fe0daa0e777a46533b8a659e"
     }
+  },
+  {
+    "id": "123da52ce879d63f404de7dbc88b166b5f602248",
+    "name": "warning",
+    "selectedTokenSets": {
+      "semantic/color/warning": "enabled"
+    },
+    "group": "Color"
+  },
+  {
+    "id": "124da52ce879d63f404de7dbc88b166b5f602248",
+    "name": "success",
+    "selectedTokenSets": {
+      "semantic/color/success": "enabled"
+    },
+    "group": "Color"
+  },
+  {
+    "id": "125da52ce879d63f404de7dbc88b166b5f602248",
+    "name": "neutral",
+    "selectedTokenSets": {
+      "semantic/color/neutral": "enabled"
+    },
+    "group": "Color"
+  },
+  {
+    "id": "126da52ce879d63f404de7dbc88b166b5f602248",
+    "name": "info",
+    "selectedTokenSets": {
+      "semantic/color/info": "enabled"
+    },
+    "group": "Color"
+  },
+  {
+    "id": "127da52ce879d63f404de7dbc88b166b5f602248",
+    "name": "danger",
+    "selectedTokenSets": {
+      "semantic/color/danger": "enabled"
+    },
+    "group": "Color"
+  },
+  {
+    "id": "128da52ce879d63f404de7dbc88b166b5f602248",
+    "name": "hav",
+    "selectedTokenSets": {
+      "semantic/color/hav": "enabled"
+    },
+    "group": "Color"
+  },
+  {
+    "id": "129da52ce879d63f404de7dbc88b166b5f602248",
+    "name": "stein",
+    "selectedTokenSets": {
+      "semantic/color/stein": "enabled"
+    },
+    "group": "Color"
+  },
+  {
+    "id": "130da52ce879d63f404de7dbc88b166b5f602248",
+    "name": "gress",
+    "selectedTokenSets": {
+      "semantic/color/gress": "enabled"
+    },
+    "group": "Color"
+  },
+  {
+    "id": "131da52ce879d63f404de7dbc88b166b5f602248",
+    "name": "sol",
+    "selectedTokenSets": {
+      "semantic/color/sol": "enabled"
+    },
+    "group": "Color"
+  },
+  {
+    "id": "132da52ce879d63f404de7dbc88b166b5f602248",
+    "name": "lyng",
+    "selectedTokenSets": {
+      "semantic/color/lyng": "enabled"
+    },
+    "group": "Color"
+  },
+  {
+    "id": "133da52ce879d63f404de7dbc88b166b5f602248",
+    "name": "himmel",
+    "selectedTokenSets": {
+      "semantic/color/himmel": "enabled"
+    },
+    "group": "Color"
+  },
+  {
+    "id": "134da52ce879d63f404de7dbc88b166b5f602248",
+    "name": "sand",
+    "selectedTokenSets": {
+      "semantic/color/sand": "enabled"
+    },
+    "group": "Color"
+  },
+  {
+    "id": "135da52ce879d63f404de7dbc88b166b5f602248",
+    "name": "fyr",
+    "selectedTokenSets": {
+      "semantic/color/fyr": "enabled"
+    },
+    "group": "Color"
+  },
+  {
+    "id": "136da52ce879d63f404de7dbc88b166b5f602248",
+    "name": "dyphav",
+    "selectedTokenSets": {
+      "semantic/color/dyphav": "enabled"
+    },
+    "group": "Color"
+  },
+  {
+    "id": "137da52ce879d63f404de7dbc88b166b5f602248",
+    "name": "skog",
+    "selectedTokenSets": {
+      "semantic/color/skog": "enabled"
+    },
+    "group": "Color"
   }
 ]

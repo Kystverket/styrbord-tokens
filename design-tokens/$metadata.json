@@ -16,10 +16,10 @@
     "primitives/modes/color-scheme/light/kystverket",
     "themes/kystverket",
     "semantic/color",
-    "semantic/modes/main-color/primary",
-    "semantic/modes/main-color/accent",
-    "semantic/modes/support-color/extra1",
-    "semantic/modes/support-color/extra2",
+    "semantic/color/primary",
+    "semantic/color/accent",
+    "semantic/color/extra1",
+    "semantic/color/extra2",
     "semantic/style",
     "$designsystemet"
   ]

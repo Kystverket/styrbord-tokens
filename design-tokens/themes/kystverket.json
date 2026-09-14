@@ -329,6 +329,666 @@
         "$type": "color",
         "$value": "{kystverket.extra2.16}"
       }
+    },
+    "lyng": {
+      "1": {
+        "$type": "color",
+        "$value": "{kystverket.lyng.1}"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "{kystverket.lyng.2}"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "{kystverket.lyng.3}"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "{kystverket.lyng.4}"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "{kystverket.lyng.5}"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "{kystverket.lyng.6}"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "{kystverket.lyng.7}"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "{kystverket.lyng.8}"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "{kystverket.lyng.9}"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "{kystverket.lyng.10}"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "{kystverket.lyng.11}"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "{kystverket.lyng.12}"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "{kystverket.lyng.13}"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "{kystverket.lyng.14}"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "{kystverket.lyng.15}"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "{kystverket.lyng.16}"
+      }
+    },
+    "hav": {
+      "1": {
+        "$type": "color",
+        "$value": "{kystverket.hav.1}"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "{kystverket.hav.2}"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "{kystverket.hav.3}"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "{kystverket.hav.4}"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "{kystverket.hav.5}"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "{kystverket.hav.6}"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "{kystverket.hav.7}"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "{kystverket.hav.8}"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "{kystverket.hav.9}"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "{kystverket.hav.10}"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "{kystverket.hav.11}"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "{kystverket.hav.12}"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "{kystverket.hav.13}"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "{kystverket.hav.14}"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "{kystverket.hav.15}"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "{kystverket.hav.16}"
+      }
+    },
+    "stein": {
+      "1": {
+        "$type": "color",
+        "$value": "{kystverket.stein.1}"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "{kystverket.stein.2}"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "{kystverket.stein.3}"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "{kystverket.stein.4}"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "{kystverket.stein.5}"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "{kystverket.stein.6}"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "{kystverket.stein.7}"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "{kystverket.stein.8}"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "{kystverket.stein.9}"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "{kystverket.stein.10}"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "{kystverket.stein.11}"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "{kystverket.stein.12}"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "{kystverket.stein.13}"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "{kystverket.stein.14}"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "{kystverket.stein.15}"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "{kystverket.stein.16}"
+      }
+    },
+    "gress": {
+      "1": {
+        "$type": "color",
+        "$value": "{kystverket.gress.1}"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "{kystverket.gress.2}"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "{kystverket.gress.3}"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "{kystverket.gress.4}"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "{kystverket.gress.5}"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "{kystverket.gress.6}"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "{kystverket.gress.7}"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "{kystverket.gress.8}"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "{kystverket.gress.9}"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "{kystverket.gress.10}"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "{kystverket.gress.11}"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "{kystverket.gress.12}"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "{kystverket.gress.13}"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "{kystverket.gress.14}"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "{kystverket.gress.15}"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "{kystverket.gress.16}"
+      }
+    },
+    "sol": {
+      "1": {
+        "$type": "color",
+        "$value": "{kystverket.sol.1}"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "{kystverket.sol.2}"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "{kystverket.sol.3}"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "{kystverket.sol.4}"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "{kystverket.sol.5}"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "{kystverket.sol.6}"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "{kystverket.sol.7}"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "{kystverket.sol.8}"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "{kystverket.sol.9}"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "{kystverket.sol.10}"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "{kystverket.sol.11}"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "{kystverket.sol.12}"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "{kystverket.sol.13}"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "{kystverket.sol.14}"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "{kystverket.sol.15}"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "{kystverket.sol.16}"
+      }
+    },
+    "himmel": {
+      "1": {
+        "$type": "color",
+        "$value": "{kystverket.himmel.1}"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "{kystverket.himmel.2}"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "{kystverket.himmel.3}"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "{kystverket.himmel.4}"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "{kystverket.himmel.5}"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "{kystverket.himmel.6}"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "{kystverket.himmel.7}"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "{kystverket.himmel.8}"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "{kystverket.himmel.9}"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "{kystverket.himmel.10}"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "{kystverket.himmel.11}"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "{kystverket.himmel.12}"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "{kystverket.himmel.13}"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "{kystverket.himmel.14}"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "{kystverket.himmel.15}"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "{kystverket.himmel.16}"
+      }
+    },
+    "sand": {
+      "1": {
+        "$type": "color",
+        "$value": "{kystverket.sand.1}"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "{kystverket.sand.2}"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "{kystverket.sand.3}"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "{kystverket.sand.4}"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "{kystverket.sand.5}"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "{kystverket.sand.6}"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "{kystverket.sand.7}"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "{kystverket.sand.8}"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "{kystverket.sand.9}"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "{kystverket.sand.10}"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "{kystverket.sand.11}"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "{kystverket.sand.12}"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "{kystverket.sand.13}"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "{kystverket.sand.14}"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "{kystverket.sand.15}"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "{kystverket.sand.16}"
+      }
+    },
+    "fyr": {
+      "1": {
+        "$type": "color",
+        "$value": "{kystverket.fyr.1}"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "{kystverket.fyr.2}"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "{kystverket.fyr.3}"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "{kystverket.fyr.4}"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "{kystverket.fyr.5}"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "{kystverket.fyr.6}"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "{kystverket.fyr.7}"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "{kystverket.fyr.8}"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "{kystverket.fyr.9}"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "{kystverket.fyr.10}"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "{kystverket.fyr.11}"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "{kystverket.fyr.12}"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "{kystverket.fyr.13}"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "{kystverket.fyr.14}"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "{kystverket.fyr.15}"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "{kystverket.fyr.16}"
+      }
+    },
+    "dyphav": {
+      "1": {
+        "$type": "color",
+        "$value": "{kystverket.dyphav.1}"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "{kystverket.dyphav.2}"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "{kystverket.dyphav.3}"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "{kystverket.dyphav.4}"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "{kystverket.dyphav.5}"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "{kystverket.dyphav.6}"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "{kystverket.dyphav.7}"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "{kystverket.dyphav.8}"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "{kystverket.dyphav.9}"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "{kystverket.dyphav.10}"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "{kystverket.dyphav.11}"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "{kystverket.dyphav.12}"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "{kystverket.dyphav.13}"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "{kystverket.dyphav.14}"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "{kystverket.dyphav.15}"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "{kystverket.dyphav.16}"
+      }
+    },
+    "skog": {
+      "1": {
+        "$type": "color",
+        "$value": "{kystverket.skog.1}"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "{kystverket.skog.2}"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "{kystverket.skog.3}"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "{kystverket.skog.4}"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "{kystverket.skog.5}"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "{kystverket.skog.6}"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "{kystverket.skog.7}"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "{kystverket.skog.8}"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "{kystverket.skog.9}"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "{kystverket.skog.10}"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "{kystverket.skog.11}"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "{kystverket.skog.12}"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "{kystverket.skog.13}"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "{kystverket.skog.14}"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "{kystverket.skog.15}"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "{kystverket.skog.16}"
+      }
     }
   },
   "font-family": {

@@ -850,9 +850,7 @@
   {
     "id": "593774a74235b661fff40693ca7bda160aadfb74",
     "name": "primary",
-    "selectedTokenSets": {
-      "semantic/color/primary": "enabled"
-    },
+    "selectedTokenSets": {},
     "group": "Color",
     "$figmaCollectionId": "VariableCollectionId:40350:32139",
     "$figmaModeId": "44797:1",
@@ -878,9 +876,7 @@
   {
     "id": "77029e975ec86efe4b92eb0be546d61959085bd1",
     "name": "accent",
-    "selectedTokenSets": {
-      "semantic/color/accent": "enabled"
-    },
+    "selectedTokenSets": {},
     "group": "Color",
     "$figmaCollectionId": "VariableCollectionId:40350:32139",
     "$figmaModeId": "44797:4",
@@ -906,9 +902,7 @@
   {
     "id": "0d546651bdff926cb8bb0befe83947ca4bf348b0",
     "name": "extra1",
-    "selectedTokenSets": {
-      "semantic/color/extra1": "enabled"
-    },
+    "selectedTokenSets": {},
     "group": "Color",
     "$figmaCollectionId": "VariableCollectionId:40350:32140",
     "$figmaModeId": "44797:2",
@@ -934,9 +928,7 @@
   {
     "id": "276da52ce879d63f404de7dbc88b166b5f602248",
     "name": "extra2",
-    "selectedTokenSets": {
-      "semantic/color/extra2": "enabled"
-    },
+    "selectedTokenSets": {},
     "group": "Color",
     "$figmaCollectionId": "VariableCollectionId:40350:32140",
     "$figmaModeId": "44797:3",
@@ -962,121 +954,91 @@
   {
     "id": "123da52ce879d63f404de7dbc88b166b5f602248",
     "name": "warning",
-    "selectedTokenSets": {
-      "semantic/color/warning": "enabled"
-    },
+    "selectedTokenSets": {},
     "group": "Color"
   },
   {
     "id": "124da52ce879d63f404de7dbc88b166b5f602248",
     "name": "success",
-    "selectedTokenSets": {
-      "semantic/color/success": "enabled"
-    },
+    "selectedTokenSets": {},
     "group": "Color"
   },
   {
     "id": "125da52ce879d63f404de7dbc88b166b5f602248",
     "name": "neutral",
-    "selectedTokenSets": {
-      "semantic/color/neutral": "enabled"
-    },
+    "selectedTokenSets": {},
     "group": "Color"
   },
   {
     "id": "126da52ce879d63f404de7dbc88b166b5f602248",
     "name": "info",
-    "selectedTokenSets": {
-      "semantic/color/info": "enabled"
-    },
+    "selectedTokenSets": {},
     "group": "Color"
   },
   {
     "id": "127da52ce879d63f404de7dbc88b166b5f602248",
     "name": "danger",
-    "selectedTokenSets": {
-      "semantic/color/danger": "enabled"
-    },
+    "selectedTokenSets": {},
     "group": "Color"
   },
   {
     "id": "128da52ce879d63f404de7dbc88b166b5f602248",
     "name": "hav",
-    "selectedTokenSets": {
-      "semantic/color/hav": "enabled"
-    },
+    "selectedTokenSets": {},
     "group": "Color"
   },
   {
     "id": "129da52ce879d63f404de7dbc88b166b5f602248",
     "name": "stein",
-    "selectedTokenSets": {
-      "semantic/color/stein": "enabled"
-    },
+    "selectedTokenSets": {},
     "group": "Color"
   },
   {
     "id": "130da52ce879d63f404de7dbc88b166b5f602248",
     "name": "gress",
-    "selectedTokenSets": {
-      "semantic/color/gress": "enabled"
-    },
+    "selectedTokenSets": {},
     "group": "Color"
   },
   {
     "id": "131da52ce879d63f404de7dbc88b166b5f602248",
     "name": "sol",
-    "selectedTokenSets": {
-      "semantic/color/sol": "enabled"
-    },
+    "selectedTokenSets": {},
     "group": "Color"
   },
   {
     "id": "132da52ce879d63f404de7dbc88b166b5f602248",
     "name": "lyng",
-    "selectedTokenSets": {
-      "semantic/color/lyng": "enabled"
-    },
+    "selectedTokenSets": {},
     "group": "Color"
   },
   {
     "id": "133da52ce879d63f404de7dbc88b166b5f602248",
     "name": "himmel",
-    "selectedTokenSets": {
-      "semantic/color/himmel": "enabled"
-    },
+    "selectedTokenSets": {},
     "group": "Color"
   },
   {
     "id": "134da52ce879d63f404de7dbc88b166b5f602248",
     "name": "sand",
-    "selectedTokenSets": {
-      "semantic/color/sand": "enabled"
-    },
+    "selectedTokenSets": {},
     "group": "Color"
   },
   {
     "id": "135da52ce879d63f404de7dbc88b166b5f602248",
     "name": "fyr",
-    "selectedTokenSets": {
-      "semantic/color/fyr": "enabled"
-    },
+    "selectedTokenSets": {},
     "group": "Color"
   },
   {
     "id": "136da52ce879d63f404de7dbc88b166b5f602248",
     "name": "dyphav",
-    "selectedTokenSets": {
-      "semantic/color/dyphav": "enabled"
-    },
+    "selectedTokenSets": {},
     "group": "Color"
   },
   {
     "id": "137da52ce879d63f404de7dbc88b166b5f602248",
     "name": "skog",
-    "selectedTokenSets": {
-      "semantic/color/skog": "enabled"
-    },
+    "selectedTokenSets": {},
     "group": "Color"
   }
 ]

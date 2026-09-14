@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.0](https://github.com/Kystverket/styrbord-tokens/compare/styrbord-tokens-v0.7.0...styrbord-tokens-v1.0.0) (2026-09-14)
+
+
+### ⚠ BREAKING CHANGES
+
+* Migrere tokens til siste versjon av Designsystemet ([#23](https://github.com/Kystverket/styrbord-tokens/issues/23))
+
+### Features
+
+* Migrere tokens til siste versjon av Designsystemet ([#23](https://github.com/Kystverket/styrbord-tokens/issues/23)) ([1eaf96b](https://github.com/Kystverket/styrbord-tokens/commit/1eaf96b7520419c297504c7f35df5b2c8acae863))
+
 ## [0.7.0](https://github.com/Kystverket/styrbord-tokens/compare/styrbord-tokens-v0.6.4...styrbord-tokens-v0.7.0) (2026-07-02)
 
 

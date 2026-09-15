@@ -1036,7 +1036,7 @@
     },
     "base": {
       "$type": "dimension",
-      "$value": "2"
+      "$value": "4"
     },
     "scale": {
       "$type": "dimension",

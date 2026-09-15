@@ -1,0 +1,22 @@
+{
+  "$schema": "https://designsystemet.no/schemas/config/latest.json",
+  "outDir": "./design-tokens2",
+  "themes": {
+    "theme": {
+      "colors": {
+        "dyphav": "#001955",
+        "hav": "#0596CB",
+        "himmel": "#A9E5FB",
+        "neutral": "#24272B",
+        "stein": "#5D5D5D",
+        "sand": "#F7EFE5",
+        "sol": "#F6D316",
+        "fyr": "#FF451F",
+        "gress": "#ACEA9D",
+        "skog": "#3BA460",
+        "lyng": "#B6428A"
+      },
+      "borderRadius": 4
+    }
+  }
+}

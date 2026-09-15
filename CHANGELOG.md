@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/Kystverket/styrbord-tokens/compare/styrbord-tokens-v1.0.0...styrbord-tokens-v1.1.0) (2026-09-15)
+
+
+### Features
+
+* justere palette farger ihht designsystemets skala ([#25](https://github.com/Kystverket/styrbord-tokens/issues/25)) ([5886d0b](https://github.com/Kystverket/styrbord-tokens/commit/5886d0bcadd5baf2f950744b2831fc8b8ac14680))
+
 ## [1.0.0](https://github.com/Kystverket/styrbord-tokens/compare/styrbord-tokens-v0.7.0...styrbord-tokens-v1.0.0) (2026-09-14)
 
 

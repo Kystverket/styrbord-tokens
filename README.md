@@ -52,6 +52,7 @@ colors.light.hav.baseDefault           // Kystverket brand palette
 | Role | Description |
 |------|-------------|
 | `primary` | Main brand color (navy) |
+| `inverted` | Dark navy surfaces with light sky-blue content (mirrors `primary` in dark mode) |
 | `accent` | Accent color (coral/red) |
 | `neutral` | Greys |
 | `extra1` | Extra semantic role 1 |

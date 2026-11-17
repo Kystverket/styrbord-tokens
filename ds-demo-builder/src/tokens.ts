@@ -1,5 +1,6 @@
 export const semanticColors = [
   'primary',
+  'inverted',
   'accent',
   'extra1',
   'extra2',

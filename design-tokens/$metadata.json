@@ -16,6 +16,7 @@
     "primitives/modes/color-scheme/light/kystverket",
     "themes/kystverket",
     "semantic/color/primary",
+    "semantic/color/inverted",
     "semantic/color/accent",
     "semantic/color/extra1",
     "semantic/color/extra2",

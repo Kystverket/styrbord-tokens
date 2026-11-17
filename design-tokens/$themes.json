@@ -2368,6 +2368,14 @@
     "group": "Color"
   },
   {
+    "id": "84d95871b626aae58d544bff965d5ec6a963b4fc",
+    "name": "inverted",
+    "selectedTokenSets": {
+      "semantic/color/inverted": "enabled"
+    },
+    "group": "Color"
+  },
+  {
     "id": "77029e975ec86efe4b92eb0be546d61959085bd1",
     "name": "accent",
     "selectedTokenSets": {

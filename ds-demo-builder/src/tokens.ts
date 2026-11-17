@@ -11,7 +11,7 @@ export const semanticColors = [
   'danger',
 ];
 
-export const colors = ['dyphav', 'hav', 'himmel', 'stein', 'sand', 'sol', 'fyr', 'gress', 'skog', 'lyng'];
+export const colors = ['sol', 'lyng'];
 
 export const colorVariants = [
   'background-default',

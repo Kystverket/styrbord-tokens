@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/Kystverket/styrbord-tokens/compare/styrbord-tokens-v1.1.0...styrbord-tokens-v1.2.0) (2026-11-18)
+
+
+### Features
+
+* nye fargeverdier for Styrbord [SAK-1176] ([3d9221a](https://github.com/Kystverket/styrbord-tokens/commit/3d9221a7fd13785a67a200f7cca3a14e590f2926))
+
+
+### Bug Fixes
+
+* oppgradere designsystemet til 1.24.0 og forbedre demosiden ([#29](https://github.com/Kystverket/styrbord-tokens/issues/29)) ([210424e](https://github.com/Kystverket/styrbord-tokens/commit/210424ea4c3fff08a80e47f30aa61021f70137b5))
+
 ## [1.1.0](https://github.com/Kystverket/styrbord-tokens/compare/styrbord-tokens-v1.0.0...styrbord-tokens-v1.1.0) (2026-09-15)
 
 

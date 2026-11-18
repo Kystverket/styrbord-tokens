@@ -39,7 +39,9 @@ const dark = extractColors(css, '[data-color-scheme="dark"]', 'color-scheme: dar
 // A slot is "<variant>-<modifier>" (e.g. "base-contrast-subtle" → variant "base-contrast",
 // modifier "subtle"). The modifier is the last hyphen-delimited segment; slots with no
 // hyphen (e.g. "inner", "outer") have no modifier and are treated as bare variants.
-const variantModifierPairs = [...rawSlots].map((slot) => {
+// Brand slots (brand, brand-contrast, brand-secondary, …) are standalone profile
+// colours outside the scale, so they are left out of the variant/modifier lists.
+const variantModifierPairs = [...rawSlots].filter((slot) => !slot.startsWith('brand')).map((slot) => {
   const i = slot.lastIndexOf('-');
   if (i === -1) return [toCamel(slot), null];
   return [toCamel(slot.slice(0, i)), slot.slice(i + 1)];

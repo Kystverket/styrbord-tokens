@@ -62,5 +62,21 @@
   "base-contrast-default": {
     "$type": "color",
     "$value": "{color.extra1.base-contrast-default}"
+  },
+  "brand": {
+    "$type": "color",
+    "$value": "{color.extra1.brand}"
+  },
+  "brand-contrast": {
+    "$type": "color",
+    "$value": "{color.extra1.brand-contrast}"
+  },
+  "brand-secondary": {
+    "$type": "color",
+    "$value": "{color.extra1.brand-secondary}"
+  },
+  "brand-secondary-contrast": {
+    "$type": "color",
+    "$value": "{color.extra1.brand-secondary-contrast}"
   }
 }

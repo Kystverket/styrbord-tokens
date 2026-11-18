@@ -62,5 +62,13 @@
   "base-contrast-default": {
     "$type": "color",
     "$value": "{color.accent.base-contrast-default}"
+  },
+  "brand": {
+    "$type": "color",
+    "$value": "{color.accent.brand}"
+  },
+  "brand-contrast": {
+    "$type": "color",
+    "$value": "{color.accent.brand-contrast}"
   }
 }

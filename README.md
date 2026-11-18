@@ -64,4 +64,6 @@ colors.light.hav.baseDefault           // Kystverket brand palette
 
 Each role exposes 16 slots: `backgroundDefault`, `backgroundTinted`, `surfaceDefault`, `surfaceTinted`, `surfaceHover`, `surfaceActive`, `borderSubtle`, `borderDefault`, `borderStrong`, `textSubtle`, `textDefault`, `baseDefault`, `baseHover`, `baseActive`, `baseContrastSubtle`, `baseContrastDefault`.
 
+Some roles also expose profile colours from the brand guidelines, outside the scale, each with a `-contrast` text colour: `brand` (`primary`, `accent`, `neutral`, `extra1`, `extra2`, `sol`, `lyng`), `brandSecondary` (`primary`, `extra1`) and `brandBackground` (`primary`). They are the same in light and dark mode and are meant for single elements. In CSS they are `--ds-color-<role>-brand`, `--ds-color-<role>-brand-contrast` etc., and `--ds-color-brand` inside `[data-color]`.
+
 > **Note:** Hex values are static snapshots. For runtime theme switching (light/dark), use the CSS custom properties instead.

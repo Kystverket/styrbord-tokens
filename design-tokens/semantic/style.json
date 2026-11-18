@@ -64,6 +64,30 @@
       "base-contrast-default": {
         "$type": "color",
         "$value": "{color.primary.16}"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{kystverket.primary.brand}"
+      },
+      "brand-contrast": {
+        "$type": "color",
+        "$value": "{kystverket.primary.brand-contrast}"
+      },
+      "brand-secondary": {
+        "$type": "color",
+        "$value": "{kystverket.primary.brand-secondary}"
+      },
+      "brand-secondary-contrast": {
+        "$type": "color",
+        "$value": "{kystverket.primary.brand-secondary-contrast}"
+      },
+      "brand-background": {
+        "$type": "color",
+        "$value": "{kystverket.primary.brand-background}"
+      },
+      "brand-background-contrast": {
+        "$type": "color",
+        "$value": "{kystverket.primary.brand-background-contrast}"
       }
     },
     "accent": {
@@ -130,6 +154,14 @@
       "base-contrast-default": {
         "$type": "color",
         "$value": "{color.accent.16}"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{kystverket.accent.brand}"
+      },
+      "brand-contrast": {
+        "$type": "color",
+        "$value": "{kystverket.accent.brand-contrast}"
       }
     },
     "neutral": {
@@ -196,6 +228,14 @@
       "base-contrast-default": {
         "$type": "color",
         "$value": "{color.neutral.16}"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{kystverket.neutral.brand}"
+      },
+      "brand-contrast": {
+        "$type": "color",
+        "$value": "{kystverket.neutral.brand-contrast}"
       }
     },
     "extra1": {
@@ -262,6 +302,22 @@
       "base-contrast-default": {
         "$type": "color",
         "$value": "{color.extra1.16}"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{kystverket.extra1.brand}"
+      },
+      "brand-contrast": {
+        "$type": "color",
+        "$value": "{kystverket.extra1.brand-contrast}"
+      },
+      "brand-secondary": {
+        "$type": "color",
+        "$value": "{kystverket.extra1.brand-secondary}"
+      },
+      "brand-secondary-contrast": {
+        "$type": "color",
+        "$value": "{kystverket.extra1.brand-secondary-contrast}"
       }
     },
     "extra2": {
@@ -328,6 +384,14 @@
       "base-contrast-default": {
         "$type": "color",
         "$value": "{color.extra2.16}"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{kystverket.extra2.brand}"
+      },
+      "brand-contrast": {
+        "$type": "color",
+        "$value": "{kystverket.extra2.brand-contrast}"
       }
     },
     "success": {
@@ -521,7 +585,7 @@
       },
       "base-contrast-subtle": {
         "$type": "color",
-        "$value": "#eff6fb"
+        "$value": "{global.blue.15}"
       },
       "base-contrast-default": {
         "$type": "color",
@@ -856,6 +920,14 @@
       "base-contrast-default": {
         "$type": "color",
         "$value": "{color.sol.16}"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{kystverket.sol.brand}"
+      },
+      "brand-contrast": {
+        "$type": "color",
+        "$value": "{kystverket.sol.brand-contrast}"
       }
     },
     "lyng": {
@@ -922,6 +994,14 @@
       "base-contrast-default": {
         "$type": "color",
         "$value": "{color.lyng.16}"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{kystverket.lyng.brand}"
+      },
+      "brand-contrast": {
+        "$type": "color",
+        "$value": "{kystverket.lyng.brand-contrast}"
       }
     },
     "himmel": {

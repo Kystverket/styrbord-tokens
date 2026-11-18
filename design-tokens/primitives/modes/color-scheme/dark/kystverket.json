@@ -3,331 +3,403 @@
     "primary": {
       "1": {
         "$type": "color",
-        "$value": "#031344"
+        "$value": "#131a25"
       },
       "2": {
         "$type": "color",
-        "$value": "#071a54"
+        "$value": "#1f2228"
       },
       "3": {
         "$type": "color",
-        "$value": "#11235b"
+        "$value": "#1f2735"
       },
       "4": {
         "$type": "color",
-        "$value": "#192a60"
+        "$value": "#242f42"
       },
       "5": {
         "$type": "color",
-        "$value": "#213266"
+        "$value": "#2e3c53"
       },
       "6": {
         "$type": "color",
-        "$value": "#314171"
+        "$value": "#32415d"
       },
       "7": {
         "$type": "color",
-        "$value": "#404e7b"
+        "$value": "#415372"
       },
       "8": {
         "$type": "color",
-        "$value": "#7681a1"
+        "$value": "#518b9f"
       },
       "9": {
         "$type": "color",
-        "$value": "#a0a7be"
+        "$value": "#67a1b6"
       },
       "10": {
         "$type": "color",
-        "$value": "#a0a7be"
+        "$value": "#a0dcf1"
       },
       "11": {
         "$type": "color",
-        "$value": "#ebecf1"
+        "$value": "#bbecff"
       },
       "12": {
         "$type": "color",
-        "$value": "#a7a9ca"
+        "$value": "#a9e5fb"
       },
       "13": {
         "$type": "color",
-        "$value": "#9093bd"
+        "$value": "#9bd6ec"
       },
       "14": {
         "$type": "color",
-        "$value": "#7a7db0"
+        "$value": "#92cde3"
       },
       "15": {
         "$type": "color",
-        "$value": "#1b1c21"
+        "$value": "#3a4b6b"
       },
       "16": {
         "$type": "color",
-        "$value": "#000000"
+        "$value": "#001955"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "#001955",
+        "$description": "Profilfarge: Mørk blå"
+      },
+      "brand-contrast": {
+        "$type": "color",
+        "$value": "#ffffff"
+      },
+      "brand-secondary": {
+        "$type": "color",
+        "$value": "#a9e5fb",
+        "$description": "Profilfarge: Lys blå"
+      },
+      "brand-secondary-contrast": {
+        "$type": "color",
+        "$value": "#0e295f"
+      },
+      "brand-background": {
+        "$type": "color",
+        "$value": "#f7efe5",
+        "$description": "Profilfarge: Sand"
+      },
+      "brand-background-contrast": {
+        "$type": "color",
+        "$value": "#0e295f"
       }
     },
     "accent": {
       "1": {
         "$type": "color",
-        "$value": "#0e1923"
+        "$value": "#2e110b"
       },
       "2": {
         "$type": "color",
-        "$value": "#12212e"
+        "$value": "#28201e"
       },
       "3": {
         "$type": "color",
-        "$value": "#17293b"
+        "$value": "#411c15"
       },
       "4": {
         "$type": "color",
-        "$value": "#1a2f43"
+        "$value": "#511f15"
       },
       "5": {
         "$type": "color",
-        "$value": "#1e374f"
+        "$value": "#65281c"
       },
       "6": {
         "$type": "color",
-        "$value": "#264563"
+        "$value": "#722a1c"
       },
       "7": {
         "$type": "color",
-        "$value": "#2d5376"
+        "$value": "#8a3929"
       },
       "8": {
         "$type": "color",
-        "$value": "#4985be"
+        "$value": "#cc654f"
       },
       "9": {
         "$type": "color",
-        "$value": "#76ade0"
+        "$value": "#e07e6a"
       },
       "10": {
         "$type": "color",
-        "$value": "#76ade0"
+        "$value": "#ffc7ba"
       },
       "11": {
         "$type": "color",
-        "$value": "#e2eef8"
+        "$value": "#ffddd6"
       },
       "12": {
         "$type": "color",
-        "$value": "#135f9a"
+        "$value": "#ff6a4c"
       },
       "13": {
         "$type": "color",
-        "$value": "#0f4c7a"
+        "$value": "#ff896f"
       },
       "14": {
         "$type": "color",
-        "$value": "#0b395d"
+        "$value": "#ff9982"
       },
       "15": {
         "$type": "color",
-        "$value": "#fbfcfd"
+        "$value": "#5a0c00"
       },
       "16": {
         "$type": "color",
-        "$value": "#ffffff"
+        "$value": "#360500"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "#ff451f",
+        "$description": "Profilfarge: Rødoransje"
+      },
+      "brand-contrast": {
+        "$type": "color",
+        "$value": "#1a0805"
       }
     },
     "extra1": {
       "1": {
         "$type": "color",
-        "$value": "#241313"
+        "$value": "#121c14"
       },
       "2": {
         "$type": "color",
-        "$value": "#301919"
+        "$value": "#1d241f"
       },
       "3": {
         "$type": "color",
-        "$value": "#3c2020"
+        "$value": "#1e2a20"
       },
       "4": {
         "$type": "color",
-        "$value": "#452524"
+        "$value": "#223226"
       },
       "5": {
         "$type": "color",
-        "$value": "#502b2a"
+        "$value": "#2c4031"
       },
       "6": {
         "$type": "color",
-        "$value": "#653635"
+        "$value": "#2f4635"
       },
       "7": {
         "$type": "color",
-        "$value": "#78403f"
+        "$value": "#3e5845"
       },
       "8": {
         "$type": "color",
-        "$value": "#c16766"
+        "$value": "#688c5f"
       },
       "9": {
         "$type": "color",
-        "$value": "#e39291"
+        "$value": "#7da274"
       },
       "10": {
         "$type": "color",
-        "$value": "#e39291"
+        "$value": "#b6deac"
       },
       "11": {
         "$type": "color",
-        "$value": "#f9e8e8"
+        "$value": "#cbefc2"
       },
       "12": {
         "$type": "color",
-        "$value": "#9f3e41"
+        "$value": "#acea9d"
       },
       "13": {
         "$type": "color",
-        "$value": "#7f3234"
+        "$value": "#9edb8f"
       },
       "14": {
         "$type": "color",
-        "$value": "#612628"
+        "$value": "#96d287"
       },
       "15": {
         "$type": "color",
-        "$value": "#ffffff"
+        "$value": "#36503d"
       },
       "16": {
         "$type": "color",
-        "$value": "#ffffff"
+        "$value": "#0b1b10"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "#3ba460",
+        "$description": "Profilfarge: Grønn"
+      },
+      "brand-contrast": {
+        "$type": "color",
+        "$value": "#021005"
+      },
+      "brand-secondary": {
+        "$type": "color",
+        "$value": "#acea9d",
+        "$description": "Profilfarge: Lys grønn"
+      },
+      "brand-secondary-contrast": {
+        "$type": "color",
+        "$value": "#003416"
       }
     },
     "extra2": {
       "1": {
         "$type": "color",
-        "$value": "#1c170d"
+        "$value": "#0b1b24"
       },
       "2": {
         "$type": "color",
-        "$value": "#261f11"
+        "$value": "#1c2327"
       },
       "3": {
         "$type": "color",
-        "$value": "#2f2716"
+        "$value": "#142934"
       },
       "4": {
         "$type": "color",
-        "$value": "#372c19"
+        "$value": "#153241"
       },
       "5": {
         "$type": "color",
-        "$value": "#40341d"
+        "$value": "#1b3f51"
       },
       "6": {
         "$type": "color",
-        "$value": "#504124"
+        "$value": "#1a465b"
       },
       "7": {
         "$type": "color",
-        "$value": "#5f4e2b"
+        "$value": "#28576f"
       },
       "8": {
         "$type": "color",
-        "$value": "#9a7d46"
+        "$value": "#4e8aa8"
       },
       "9": {
         "$type": "color",
-        "$value": "#c8a25b"
+        "$value": "#6aa0bc"
       },
       "10": {
         "$type": "color",
-        "$value": "#c8a25b"
+        "$value": "#a3dbf9"
       },
       "11": {
         "$type": "color",
-        "$value": "#f5ebd8"
+        "$value": "#c5eaff"
       },
       "12": {
         "$type": "color",
-        "$value": "#513c0b"
+        "$value": "#27a4da"
       },
       "13": {
         "$type": "color",
-        "$value": "#694e0f"
+        "$value": "#3eb5eb"
       },
       "14": {
         "$type": "color",
-        "$value": "#816012"
+        "$value": "#4abef6"
       },
       "15": {
         "$type": "color",
-        "$value": "#ddd9cf"
+        "$value": "#002f42"
       },
       "16": {
         "$type": "color",
-        "$value": "#ffffff"
+        "$value": "#001a27"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "#0596cb",
+        "$description": "Profilfarge: Mellomblå"
+      },
+      "brand-contrast": {
+        "$type": "color",
+        "$value": "#000f18"
       }
     },
     "neutral": {
       "1": {
         "$type": "color",
-        "$value": "#13181f"
+        "$value": "#161a1f"
       },
       "2": {
         "$type": "color",
-        "$value": "#192029"
+        "$value": "#1f2228"
       },
       "3": {
         "$type": "color",
-        "$value": "#202834"
+        "$value": "#23272e"
       },
       "4": {
         "$type": "color",
-        "$value": "#262e3a"
+        "$value": "#292f38"
       },
       "5": {
         "$type": "color",
-        "$value": "#2e3641"
+        "$value": "#353c47"
       },
       "6": {
         "$type": "color",
-        "$value": "#3c444e"
+        "$value": "#3a424f"
       },
       "7": {
         "$type": "color",
-        "$value": "#49515a"
+        "$value": "#4a5362"
       },
       "8": {
         "$type": "color",
-        "$value": "#7c8289"
+        "$value": "#788498"
       },
       "9": {
         "$type": "color",
-        "$value": "#a4a8ad"
+        "$value": "#8f9aad"
       },
       "10": {
         "$type": "color",
-        "$value": "#a4a8ad"
+        "$value": "#c8d4e8"
       },
       "11": {
         "$type": "color",
-        "$value": "#ebeced"
+        "$value": "#dce5f6"
       },
       "12": {
         "$type": "color",
-        "$value": "#a6acb2"
+        "$value": "#879abd"
       },
       "13": {
         "$type": "color",
-        "$value": "#90979f"
+        "$value": "#96aacd"
       },
       "14": {
         "$type": "color",
-        "$value": "#7a828c"
+        "$value": "#a0b4d8"
       },
       "15": {
         "$type": "color",
-        "$value": "#1b1c1d"
+        "$value": "#232b39"
       },
       "16": {
         "$type": "color",
-        "$value": "#000000"
+        "$value": "#131821"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "#5d5d5d",
+        "$description": "Profilfarge: Grå"
+      },
+      "brand-contrast": {
+        "$type": "color",
+        "$value": "#ffffff"
       }
     },
     "dyphav": {
@@ -663,67 +735,76 @@
     "sol": {
       "1": {
         "$type": "color",
-        "$value": "#1a180d"
+        "$value": "#1f1903"
       },
       "2": {
         "$type": "color",
-        "$value": "#231f11"
+        "$value": "#24221b"
       },
       "3": {
         "$type": "color",
-        "$value": "#2c2815"
+        "$value": "#2d2709"
       },
       "4": {
         "$type": "color",
-        "$value": "#332e18"
+        "$value": "#372e03"
       },
       "5": {
         "$type": "color",
-        "$value": "#3b351c"
+        "$value": "#463b03"
       },
       "6": {
         "$type": "color",
-        "$value": "#4a4323"
+        "$value": "#4d4000"
       },
       "7": {
         "$type": "color",
-        "$value": "#59502a"
+        "$value": "#605205"
       },
       "8": {
         "$type": "color",
-        "$value": "#8f8144"
+        "$value": "#95822d"
       },
       "9": {
         "$type": "color",
-        "$value": "#baa858"
+        "$value": "#a9984e"
       },
       "10": {
         "$type": "color",
-        "$value": "#baa858"
+        "$value": "#e5d488"
       },
       "11": {
         "$type": "color",
-        "$value": "#f7edc1"
+        "$value": "#f3e5a8"
       },
       "12": {
         "$type": "color",
-        "$value": "#2b2504"
+        "$value": "#b29800"
       },
       "13": {
         "$type": "color",
-        "$value": "#403706"
+        "$value": "#c2a826"
       },
       "14": {
         "$type": "color",
-        "$value": "#554908"
+        "$value": "#ccb234"
       },
       "15": {
         "$type": "color",
-        "$value": "#bab8ae"
+        "$value": "#332a00"
       },
       "16": {
         "$type": "color",
-        "$value": "#ffffff"
+        "$value": "#1d1700"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "#f6d316",
+        "$description": "Profilfarge: Gul"
+      },
+      "brand-contrast": {
+        "$type": "color",
+        "$value": "#352b00"
       }
     },
     "fyr": {
@@ -927,67 +1008,76 @@
     "lyng": {
       "1": {
         "$type": "color",
-        "$value": "#23121c"
+        "$value": "#27131e"
       },
       "2": {
         "$type": "color",
-        "$value": "#2f1825"
+        "$value": "#272024"
       },
       "3": {
         "$type": "color",
-        "$value": "#3b1f2f"
+        "$value": "#381f2d"
       },
       "4": {
         "$type": "color",
-        "$value": "#442336"
+        "$value": "#452437"
       },
       "5": {
         "$type": "color",
-        "$value": "#4f293f"
+        "$value": "#572e45"
       },
       "6": {
         "$type": "color",
-        "$value": "#63334f"
+        "$value": "#61314d"
       },
       "7": {
         "$type": "color",
-        "$value": "#763d5e"
+        "$value": "#764160"
       },
       "8": {
         "$type": "color",
-        "$value": "#b06b94"
+        "$value": "#b26d94"
       },
       "9": {
         "$type": "color",
-        "$value": "#c99ab6"
+        "$value": "#c685a9"
       },
       "10": {
         "$type": "color",
-        "$value": "#c99ab6"
+        "$value": "#ffc2e2"
       },
       "11": {
         "$type": "color",
-        "$value": "#f4eaef"
+        "$value": "#ffdbed"
       },
       "12": {
         "$type": "color",
-        "$value": "#c15e9b"
+        "$value": "#e870b7"
       },
       "13": {
         "$type": "color",
-        "$value": "#cc7aac"
+        "$value": "#fa80c7"
       },
       "14": {
         "$type": "color",
-        "$value": "#d797be"
+        "$value": "#ff8ecf"
       },
       "15": {
         "$type": "color",
-        "$value": "#140a10"
+        "$value": "#4a1937"
       },
       "16": {
         "$type": "color",
-        "$value": "#000000"
+        "$value": "#2c0c1f"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "#b6428a",
+        "$description": "Profilfarge: Lyng"
+      },
+      "brand-contrast": {
+        "$type": "color",
+        "$value": "#ffffff"
       }
     }
   }

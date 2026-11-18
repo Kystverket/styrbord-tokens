@@ -19,11 +19,11 @@
       },
       "5": {
         "$type": "color",
-        "$value": "#c2edfd"
+        "$value": "#4ebfea33"
       },
       "6": {
         "$type": "color",
-        "$value": "#afe4f8"
+        "$value": "#4ebfea48"
       },
       "7": {
         "$type": "color",
@@ -85,11 +85,11 @@
       },
       "5": {
         "$type": "color",
-        "$value": "#ffdfd8"
+        "$value": "#e4a49435"
       },
       "6": {
         "$type": "color",
-        "$value": "#ffd2c8"
+        "$value": "#e4a4944e"
       },
       "7": {
         "$type": "color",
@@ -151,11 +151,11 @@
       },
       "5": {
         "$type": "color",
-        "$value": "#d1eeca"
+        "$value": "#79c56732"
       },
       "6": {
         "$type": "color",
-        "$value": "#c2e6ba"
+        "$value": "#79c56748"
       },
       "7": {
         "$type": "color",
@@ -217,11 +217,11 @@
       },
       "5": {
         "$type": "color",
-        "$value": "#cceafc"
+        "$value": "#73bbea34"
       },
       "6": {
         "$type": "color",
-        "$value": "#bce2f7"
+        "$value": "#71bbe948"
       },
       "7": {
         "$type": "color",
@@ -283,11 +283,11 @@
       },
       "5": {
         "$type": "color",
-        "$value": "#e3e6ed"
+        "$value": "#adb3c036"
       },
       "6": {
         "$type": "color",
-        "$value": "#d7dde7"
+        "$value": "#adb3c04b"
       },
       "7": {
         "$type": "color",
@@ -679,11 +679,11 @@
       },
       "5": {
         "$type": "color",
-        "$value": "#f1e6b6"
+        "$value": "#d5b00032"
       },
       "6": {
         "$type": "color",
-        "$value": "#ebdda0"
+        "$value": "#d5b0004a"
       },
       "7": {
         "$type": "color",
@@ -943,11 +943,11 @@
       },
       "5": {
         "$type": "color",
-        "$value": "#ffddee"
+        "$value": "#e59ec433"
       },
       "6": {
         "$type": "color",
-        "$value": "#ffcfe8"
+        "$value": "#e69ec24a"
       },
       "7": {
         "$type": "color",

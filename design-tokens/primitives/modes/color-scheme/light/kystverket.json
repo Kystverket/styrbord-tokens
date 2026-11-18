@@ -51,11 +51,11 @@
       },
       "13": {
         "$type": "color",
-        "$value": "#0b2a67"
+        "$value": "#1e3f7d"
       },
       "14": {
         "$type": "color",
-        "$value": "#1b3b79"
+        "$value": "#2d4e8e"
       },
       "15": {
         "$type": "color",
@@ -144,7 +144,7 @@
       },
       "13": {
         "$type": "color",
-        "$value": "#a83823"
+        "$value": "#a43520"
       },
       "14": {
         "$type": "color",
@@ -219,11 +219,11 @@
       },
       "13": {
         "$type": "color",
-        "$value": "#2e6a41"
+        "$value": "#2c6840"
       },
       "14": {
         "$type": "color",
-        "$value": "#1b5931"
+        "$value": "#1d5a33"
       },
       "15": {
         "$type": "color",
@@ -303,11 +303,11 @@
       },
       "13": {
         "$type": "color",
-        "$value": "#00668b"
+        "$value": "#006388"
       },
       "14": {
         "$type": "color",
-        "$value": "#005473"
+        "$value": "#005575"
       },
       "15": {
         "$type": "color",
@@ -378,15 +378,15 @@
       },
       "13": {
         "$type": "color",
-        "$value": "#475978"
+        "$value": "#4c5e7d"
       },
       "14": {
         "$type": "color",
-        "$value": "#576a8a"
+        "$value": "#586a8b"
       },
       "15": {
         "$type": "color",
-        "$value": "#eff5ff"
+        "$value": "#f0f5ff"
       },
       "16": {
         "$type": "color",
@@ -783,11 +783,11 @@
       },
       "13": {
         "$type": "color",
-        "$value": "#6e5d00"
+        "$value": "#6b5b00"
       },
       "14": {
         "$type": "color",
-        "$value": "#5b4d00"
+        "$value": "#5c4e00"
       },
       "15": {
         "$type": "color",
@@ -1056,11 +1056,11 @@
       },
       "13": {
         "$type": "color",
-        "$value": "#9c3976"
+        "$value": "#993674"
       },
       "14": {
         "$type": "color",
-        "$value": "#882665"
+        "$value": "#892665"
       },
       "15": {
         "$type": "color",

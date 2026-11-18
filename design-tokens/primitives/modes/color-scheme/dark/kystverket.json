@@ -64,33 +64,6 @@
       "16": {
         "$type": "color",
         "$value": "#001955"
-      },
-      "brand": {
-        "$type": "color",
-        "$value": "#001955",
-        "$description": "Profilfarge: Mørk blå"
-      },
-      "brand-contrast": {
-        "$type": "color",
-        "$value": "#ffffff"
-      },
-      "brand-secondary": {
-        "$type": "color",
-        "$value": "#a9e5fb",
-        "$description": "Profilfarge: Lys blå"
-      },
-      "brand-secondary-contrast": {
-        "$type": "color",
-        "$value": "#0e295f"
-      },
-      "brand-background": {
-        "$type": "color",
-        "$value": "#f7efe5",
-        "$description": "Profilfarge: Sand"
-      },
-      "brand-background-contrast": {
-        "$type": "color",
-        "$value": "#0e295f"
       }
     },
     "accent": {
@@ -157,15 +130,6 @@
       "16": {
         "$type": "color",
         "$value": "#360500"
-      },
-      "brand": {
-        "$type": "color",
-        "$value": "#ff451f",
-        "$description": "Profilfarge: Rødoransje"
-      },
-      "brand-contrast": {
-        "$type": "color",
-        "$value": "#1a0805"
       }
     },
     "extra1": {
@@ -232,24 +196,6 @@
       "16": {
         "$type": "color",
         "$value": "#0b1b10"
-      },
-      "brand": {
-        "$type": "color",
-        "$value": "#3ba460",
-        "$description": "Profilfarge: Grønn"
-      },
-      "brand-contrast": {
-        "$type": "color",
-        "$value": "#021005"
-      },
-      "brand-secondary": {
-        "$type": "color",
-        "$value": "#acea9d",
-        "$description": "Profilfarge: Lys grønn"
-      },
-      "brand-secondary-contrast": {
-        "$type": "color",
-        "$value": "#003416"
       }
     },
     "extra2": {
@@ -316,15 +262,6 @@
       "16": {
         "$type": "color",
         "$value": "#001a27"
-      },
-      "brand": {
-        "$type": "color",
-        "$value": "#0596cb",
-        "$description": "Profilfarge: Mellomblå"
-      },
-      "brand-contrast": {
-        "$type": "color",
-        "$value": "#000f18"
       }
     },
     "neutral": {
@@ -391,13 +328,334 @@
       "16": {
         "$type": "color",
         "$value": "#131821"
-      },
-      "brand": {
+      }
+    },
+    "dyphav": {
+      "1": {
         "$type": "color",
-        "$value": "#5d5d5d",
-        "$description": "Profilfarge: Grå"
+        "$value": "#081735"
       },
-      "brand-contrast": {
+      "2": {
+        "$type": "color",
+        "$value": "#0a1e45"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "#13274d"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "#1a2d52"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "#233559"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "#324364"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "#40506f"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "#768298"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "#a0a8b8"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "#a0a8b8"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "#ebecf0"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "#a2abc1"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "#8b96b1"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "#7381a2"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "#1a1b1f"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "#000000"
+      }
+    },
+    "hav": {
+      "1": {
+        "$type": "color",
+        "$value": "#0d1920"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#11212a"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "#162a35"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "#19313d"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "#1d3947"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "#244759"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "#2b556a"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "#4689ab"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "#79afca"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "#79afca"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "#e3eef4"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "#046b90"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "#035675"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "#02425a"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "#dcebf0"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "#ffffff"
+      }
+    },
+    "himmel": {
+      "1": {
+        "$type": "color",
+        "$value": "#14191a"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#1b2023"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "#22292c"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "#272f32"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "#2d373b"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "#38454a"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "#435258"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "#6d858e"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "#8dadb8"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "#8dadb8"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "#dbf0f8"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "#192125"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "#263338"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "#34464d"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "#afb1b3"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "#ffffff"
+      }
+    },
+    "stein": {
+      "1": {
+        "$type": "color",
+        "$value": "#181818"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#1f1f1f"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "#282828"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "#2e2e2e"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "#353535"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "#434343"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "#505050"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "#818181"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "#a8a8a8"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "#a8a8a8"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "#ececec"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "#929292"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "#a7a7a7"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "#bdbdbd"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "#020202"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "#000000"
+      }
+    },
+    "sand": {
+      "1": {
+        "$type": "color",
+        "$value": "#181817"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#201f1e"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "#292826"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "#2f2e2c"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "#363534"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "#444341"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "#52504d"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "#84817d"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "#aba7a2"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "#aba7a2"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "#f1ebe4"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "#111110"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "#232220"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "#343331"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "#9e9e9e"
+      },
+      "16": {
         "$type": "color",
         "$value": "#ffffff"
       }
@@ -466,15 +724,204 @@
       "16": {
         "$type": "color",
         "$value": "#1d1700"
-      },
-      "brand": {
+      }
+    },
+    "fyr": {
+      "1": {
         "$type": "color",
-        "$value": "#f6d316",
-        "$description": "Profilfarge: Gul"
+        "$value": "#27120e"
       },
-      "brand-contrast": {
+      "2": {
         "$type": "color",
-        "$value": "#352b00"
+        "$value": "#341812"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "#411e17"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "#4a221a"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "#57281e"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "#6c3226"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "#813b2d"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "#cf5f48"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "#ea907e"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "#ea907e"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "#fbe8e5"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "#ba3217"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "#972912"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "#75200e"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "#f6e6e2"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "#ffffff"
+      }
+    },
+    "gress": {
+      "1": {
+        "$type": "color",
+        "$value": "#141913"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#1b2119"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "#222a20"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "#273025"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "#2e382b"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "#3a4736"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "#455441"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "#6f8868"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "#90b188"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "#90b188"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "#def2d9"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "#1a2418"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "#283624"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "#364931"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "#b1b4b0"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "#ffffff"
+      }
+    },
+    "skog": {
+      "1": {
+        "$type": "color",
+        "$value": "#0f1a12"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#142318"
+      },
+      "3": {
+        "$type": "color",
+        "$value": "#1a2c1f"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "#1d3223"
+      },
+      "5": {
+        "$type": "color",
+        "$value": "#223b29"
+      },
+      "6": {
+        "$type": "color",
+        "$value": "#2b4a33"
+      },
+      "7": {
+        "$type": "color",
+        "$value": "#33583d"
+      },
+      "8": {
+        "$type": "color",
+        "$value": "#538e63"
+      },
+      "9": {
+        "$type": "color",
+        "$value": "#80b48e"
+      },
+      "10": {
+        "$type": "color",
+        "$value": "#80b48e"
+      },
+      "11": {
+        "$type": "color",
+        "$value": "#e4efe7"
+      },
+      "12": {
+        "$type": "color",
+        "$value": "#266b3e"
+      },
+      "13": {
+        "$type": "color",
+        "$value": "#1f5532"
+      },
+      "14": {
+        "$type": "color",
+        "$value": "#174126"
+      },
+      "15": {
+        "$type": "color",
+        "$value": "#d9e5dd"
+      },
+      "16": {
+        "$type": "color",
+        "$value": "#ffffff"
       }
     },
     "lyng": {
@@ -541,15 +988,6 @@
       "16": {
         "$type": "color",
         "$value": "#2c0c1f"
-      },
-      "brand": {
-        "$type": "color",
-        "$value": "#b6428a",
-        "$description": "Profilfarge: Lyng"
-      },
-      "brand-contrast": {
-        "$type": "color",
-        "$value": "#ffffff"
       }
     }
   }

@@ -39,9 +39,7 @@ const dark = extractColors(css, '[data-color-scheme="dark"]', 'color-scheme: dar
 // A slot is "<variant>-<modifier>" (e.g. "base-contrast-subtle" → variant "base-contrast",
 // modifier "subtle"). The modifier is the last hyphen-delimited segment; slots with no
 // hyphen (e.g. "inner", "outer") have no modifier and are treated as bare variants.
-// Brand slots (brand, brand-contrast, brand-secondary, …) are standalone profile
-// colours, not part of the variant/modifier scale, so they are left out here.
-const variantModifierPairs = [...rawSlots].filter((slot) => !slot.startsWith('brand')).map((slot) => {
+const variantModifierPairs = [...rawSlots].map((slot) => {
   const i = slot.lastIndexOf('-');
   if (i === -1) return [toCamel(slot), null];
   return [toCamel(slot.slice(0, i)), slot.slice(i + 1)];
@@ -49,9 +47,9 @@ const variantModifierPairs = [...rawSlots].filter((slot) => !slot.startsWith('br
 const colorVariantNames = [...new Set(variantModifierPairs.map(([variant]) => variant))];
 const colorModifierNames = [...new Set(variantModifierPairs.map(([, modifier]) => modifier).filter(Boolean))];
 
-// Kystverket category scales named after the brand palette (design-tokens/primitives/modes/color-scheme/*/kystverket.json).
+// Kystverket brand palette names (design-tokens/primitives/modes/color-scheme/*/global.json).
 // Everything else in `colors.light`/`colors.dark` is a functional/semantic role.
-const PALETTE_COLORS = new Set(['lyng', 'sol']);
+const PALETTE_COLORS = new Set(['dyphav', 'fyr', 'gress', 'hav', 'himmel', 'lyng', 'sand', 'skog', 'sol', 'stein']);
 const allColorNames = Object.keys(light);
 const paletteColorNames = allColorNames.filter((name) => PALETTE_COLORS.has(name));
 const semanticColorNames = allColorNames.filter((name) => !PALETTE_COLORS.has(name));

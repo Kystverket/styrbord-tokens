@@ -41,31 +41,27 @@ For contexts where CSS variables aren't available — Node.js tooling, chart lib
 ```ts
 import { colors } from '@kystverket/styrbord-tokens/colors';
 
-colors.light.primary.baseDefault       // "#001955"
-colors.dark.primary.baseDefault        // "#a9e5fb"
+colors.light.primary.baseDefault       // "#000667"
+colors.dark.primary.baseDefault        // "#a7a9ca"
 colors.light.accent.backgroundDefault  // "#ffffff"
-colors.light.accent.brand              // "#ff451f" (profile colour)
+colors.light.hav.baseDefault           // Kystverket brand palette
 ```
 
 #### Available color roles
 
 | Role | Description |
 |------|-------------|
-| `primary` | Main brand color (dark blue #001955) |
+| `primary` | Main brand color (navy) |
 | `accent` | Accent color (coral/red) |
-| `neutral` | Blue-greys |
-| `extra1` | Category scale (green) |
-| `extra2` | Category scale (mid blue) |
+| `neutral` | Greys |
+| `extra1` | Extra semantic role 1 |
+| `extra2` | Extra semantic role 2 |
 | `success` | Positive feedback |
 | `danger` | Destructive / error |
 | `warning` | Caution |
 | `info` | Informational |
-| `sol`, `lyng` | Category scales (yellow, heather) |
+| `hav`, `stein`, `gress`, `sol`, `lyng`, `himmel`, `sand`, `fyr`, `dyphav`, `skog` | Kystverket brand palette |
 
 Each role exposes 16 slots: `backgroundDefault`, `backgroundTinted`, `surfaceDefault`, `surfaceTinted`, `surfaceHover`, `surfaceActive`, `borderSubtle`, `borderDefault`, `borderStrong`, `textSubtle`, `textDefault`, `baseDefault`, `baseHover`, `baseActive`, `baseContrastSubtle`, `baseContrastDefault`.
-
-In light mode `borderSubtle` and `backgroundTinted` are 8-digit hex (`#rrggbbaa`) with opacity.
-
-Some roles also expose profile colours from the brand guidelines, each with a `-contrast` text colour: `brand` (`primary`, `accent`, `neutral`, `extra1`, `extra2`, `sol`, `lyng`), `brandSecondary` (`primary`, `extra1`) and `brandBackground` (`primary`). These are for single elements and do not build the scales. In CSS they are `--ds-color-<role>-brand`, `--ds-color-<role>-brand-contrast` etc., and `--ds-color-brand` inside `[data-color]`.
 
 > **Note:** Hex values are static snapshots. For runtime theme switching (light/dark), use the CSS custom properties instead.

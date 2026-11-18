@@ -24,8 +24,16 @@
     "semantic/color/neutral",
     "semantic/color/info",
     "semantic/color/danger",
+    "semantic/color/hav",
+    "semantic/color/stein",
+    "semantic/color/gress",
     "semantic/color/sol",
     "semantic/color/lyng",
+    "semantic/color/himmel",
+    "semantic/color/sand",
+    "semantic/color/fyr",
+    "semantic/color/dyphav",
+    "semantic/color/skog",
     "semantic/style",
     "$designsystemet"
   ]

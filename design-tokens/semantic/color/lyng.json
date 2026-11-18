@@ -62,13 +62,5 @@
   "base-contrast-default": {
     "$type": "color",
     "$value": "{color.lyng.base-contrast-default}"
-  },
-  "brand": {
-    "$type": "color",
-    "$value": "{color.lyng.brand}"
-  },
-  "brand-contrast": {
-    "$type": "color",
-    "$value": "{color.lyng.brand-contrast}"
   }
 }

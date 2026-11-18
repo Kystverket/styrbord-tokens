@@ -52,7 +52,6 @@ colors.light.accent.brand              // "#ff451f" (profile colour)
 | Role | Description |
 |------|-------------|
 | `primary` | Main brand color (dark blue #001955) |
-| `inverted` | Dark navy surfaces with light sky-blue content (mirrors `primary` in dark mode) |
 | `accent` | Accent color (coral/red) |
 | `neutral` | Blue-greys |
 | `extra1` | Category scale (green) |

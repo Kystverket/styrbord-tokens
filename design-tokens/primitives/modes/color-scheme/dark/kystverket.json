@@ -64,6 +64,33 @@
       "16": {
         "$type": "color",
         "$value": "#001955"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "#001955",
+        "$description": "Profilfarge: Mørk blå"
+      },
+      "brand-contrast": {
+        "$type": "color",
+        "$value": "#ffffff"
+      },
+      "brand-secondary": {
+        "$type": "color",
+        "$value": "#a9e5fb",
+        "$description": "Profilfarge: Lys blå"
+      },
+      "brand-secondary-contrast": {
+        "$type": "color",
+        "$value": "#0e295f"
+      },
+      "brand-background": {
+        "$type": "color",
+        "$value": "#f7efe5",
+        "$description": "Profilfarge: Sand"
+      },
+      "brand-background-contrast": {
+        "$type": "color",
+        "$value": "#0e295f"
       }
     },
     "accent": {
@@ -130,6 +157,15 @@
       "16": {
         "$type": "color",
         "$value": "#360500"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "#ff451f",
+        "$description": "Profilfarge: Rødoransje"
+      },
+      "brand-contrast": {
+        "$type": "color",
+        "$value": "#1a0805"
       }
     },
     "extra1": {
@@ -196,6 +232,24 @@
       "16": {
         "$type": "color",
         "$value": "#0b1b10"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "#3ba460",
+        "$description": "Profilfarge: Grønn"
+      },
+      "brand-contrast": {
+        "$type": "color",
+        "$value": "#021005"
+      },
+      "brand-secondary": {
+        "$type": "color",
+        "$value": "#acea9d",
+        "$description": "Profilfarge: Lys grønn"
+      },
+      "brand-secondary-contrast": {
+        "$type": "color",
+        "$value": "#003416"
       }
     },
     "extra2": {
@@ -262,6 +316,15 @@
       "16": {
         "$type": "color",
         "$value": "#001a27"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "#0596cb",
+        "$description": "Profilfarge: Mellomblå"
+      },
+      "brand-contrast": {
+        "$type": "color",
+        "$value": "#000f18"
       }
     },
     "neutral": {
@@ -328,6 +391,15 @@
       "16": {
         "$type": "color",
         "$value": "#131821"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "#5d5d5d",
+        "$description": "Profilfarge: Grå"
+      },
+      "brand-contrast": {
+        "$type": "color",
+        "$value": "#ffffff"
       }
     },
     "dyphav": {
@@ -724,6 +796,15 @@
       "16": {
         "$type": "color",
         "$value": "#1d1700"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "#f6d316",
+        "$description": "Profilfarge: Gul"
+      },
+      "brand-contrast": {
+        "$type": "color",
+        "$value": "#352b00"
       }
     },
     "fyr": {
@@ -988,6 +1069,15 @@
       "16": {
         "$type": "color",
         "$value": "#2c0c1f"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "#b6428a",
+        "$description": "Profilfarge: Lyng"
+      },
+      "brand-contrast": {
+        "$type": "color",
+        "$value": "#ffffff"
       }
     }
   }

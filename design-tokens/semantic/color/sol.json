@@ -62,5 +62,13 @@
   "base-contrast-default": {
     "$type": "color",
     "$value": "{color.sol.base-contrast-default}"
+  },
+  "brand": {
+    "$type": "color",
+    "$value": "{color.sol.brand}"
+  },
+  "brand-contrast": {
+    "$type": "color",
+    "$value": "{color.sol.brand-contrast}"
   }
 }

@@ -62,5 +62,29 @@
   "base-contrast-default": {
     "$type": "color",
     "$value": "{color.primary.base-contrast-default}"
+  },
+  "brand": {
+    "$type": "color",
+    "$value": "{color.primary.brand}"
+  },
+  "brand-contrast": {
+    "$type": "color",
+    "$value": "{color.primary.brand-contrast}"
+  },
+  "brand-secondary": {
+    "$type": "color",
+    "$value": "{color.primary.brand-secondary}"
+  },
+  "brand-secondary-contrast": {
+    "$type": "color",
+    "$value": "{color.primary.brand-secondary-contrast}"
+  },
+  "brand-background": {
+    "$type": "color",
+    "$value": "{color.primary.brand-background}"
+  },
+  "brand-background-contrast": {
+    "$type": "color",
+    "$value": "{color.primary.brand-background-contrast}"
   }
 }

@@ -70,3 +70,20 @@ export const shadowSizes = ['xs', 'sm', 'md', 'lg', 'xl'] as const;
 export const borderWidths = ['default', 'focus'] as const;
 
 export const focusColors = ['inner', 'outer'] as const;
+
+/**
+ * Profile colours from the brand guidelines (`--ds-color-<role>-<slot>`),
+ * each paired with `--ds-color-<role>-<slot>-contrast`. Same in light and dark mode.
+ */
+export const brandColors = [
+  { role: 'primary', slot: 'brand', name: 'Mørk blå' },
+  { role: 'primary', slot: 'brand-secondary', name: 'Lys blå' },
+  { role: 'primary', slot: 'brand-background', name: 'Sand' },
+  { role: 'accent', slot: 'brand', name: 'Rødoransje' },
+  { role: 'extra1', slot: 'brand', name: 'Grønn' },
+  { role: 'extra1', slot: 'brand-secondary', name: 'Lys grønn' },
+  { role: 'extra2', slot: 'brand', name: 'Mellomblå' },
+  { role: 'sol', slot: 'brand', name: 'Gul' },
+  { role: 'lyng', slot: 'brand', name: 'Lyng' },
+  { role: 'neutral', slot: 'brand', name: 'Grå' },
+] as const;

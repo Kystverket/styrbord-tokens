@@ -1,16 +1,5 @@
-import { Fragment, useCallback, useEffect, useState } from 'react';
-import { colors, semanticColors } from './tokens';
-
-function useCopyFeedback() {
-  const [copied, setCopied] = useState<string | null>(null);
-  const copy = useCallback((text: string) => {
-    navigator.clipboard.writeText(text).then(() => {
-      setCopied(text);
-      setTimeout(() => setCopied(null), 1200);
-    });
-  }, []);
-  return { copied, copy };
-}
+import { Fragment, useEffect, useState } from 'react';
+import { parsedToHex, useCopyFeedback } from './colorUtils';
 
 const GROUPS = [
   {
@@ -56,15 +45,6 @@ const GROUPS = [
   },
 ];
 
-function parsedToHex(raw: string): string {
-  const m = raw.match(/rgb\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)/);
-  if (m) {
-    return '#' + [m[1], m[2], m[3]].map((n) => parseInt(n).toString(16).padStart(2, '0')).join('');
-  }
-  if (raw.startsWith('#')) return raw;
-  return '';
-}
-
 function hexContrastColor(hex: string): string {
   if (hex.length < 7) return 'rgba(0,0,0,0.5)';
   // 8-digit hex (#rrggbbaa): composite over white so translucent tokens
@@ -78,13 +58,13 @@ function hexContrastColor(hex: string): string {
   return luminance > 0.45 ? 'rgba(0,0,0,0.55)' : 'rgba(255,255,255,0.8)';
 }
 
-function useColorHexMap(): Record<string, string> {
+function useColorHexMap(palettes: readonly string[]): Record<string, string> {
   const [hexMap, setHexMap] = useState<Record<string, string>>({});
 
   useEffect(() => {
     const style = getComputedStyle(document.documentElement);
     const map: Record<string, string> = {};
-    for (const color of [...semanticColors, ...colors]) {
+    for (const color of palettes) {
       for (const group of GROUPS) {
         for (const v of group.variants) {
           const token = `--ds-color-${color}-${v.key}`;
@@ -94,13 +74,14 @@ function useColorHexMap(): Record<string, string> {
       }
     }
     setHexMap(map);
-  }, []);
+  }, [palettes]);
 
   return hexMap;
 }
 
-export default function ColorSection() {
-  const hexMap = useColorHexMap();
+/** Table of all 16 variants for each of the given palettes (e.g. semantic roles or brand palettes). */
+export default function ColorSection({ palettes }: { palettes: readonly string[] }) {
+  const hexMap = useColorHexMap(palettes);
   const { copied, copy } = useCopyFeedback();
 
   return (
@@ -108,11 +89,6 @@ export default function ColorSection() {
       <table className="color-table">
         <thead>
           <tr>
-            <th colSpan={42} style={{ padding: '20px 0px 10px 0px' }}>
-              Semantiske farger
-            </th>
-          </tr>
-          <tr>
             <th className="color-th-corner" />
             {GROUPS.map((group, gi) => (
               <Fragment key={group.label}>
@@ -138,76 +114,7 @@ export default function ColorSection() {
           </tr>
         </thead>
         <tbody>
-          {semanticColors.map((color) => (
-            <tr key={color}>
-              <td className="color-td-name">{color}</td>
-              {GROUPS.map((group, gi) => (
-                <Fragment key={group.label}>
-                  {gi > 0 && <td className="color-td-gap" />}
-                  {group.variants.map((v, vi) => {
-                    const token = `--ds-color-${color}-${v.key}`;
-                    const hex = hexMap[token] ?? '';
-                    const textColor = hex ? hexContrastColor(hex) : 'transparent';
-                    return (
-                      <td key={v.key} className={`color-td-swatch${vi === 0 ? ' group-start' : ''}`}>
-                        <div
-                          className="color-swatch-box"
-                          style={{ backgroundColor: `var(--ds-color-${color}-${v.key})`, cursor: 'pointer' }}
-                          title={`Click to copy: ${token}`}
-                          onClick={(e) => { e.stopPropagation(); copy(token); }}
-                        >
-                          {hex && (
-                            <span
-                              className="swatch-hex"
-                              style={{ color: textColor, cursor: 'pointer' }}
-                              title={`Click to copy: ${hex}`}
-                              onClick={(e) => { e.stopPropagation(); copy(hex); }}
-                            >
-                              {copied === token ? '✓ var' : copied === hex ? '✓ hex' : hex}
-                            </span>
-                          )}
-                        </div>
-                      </td>
-                    );
-                  })}
-                </Fragment>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-        <thead>
-          <tr>
-            <th colSpan={42} style={{ padding: '20px 0px 10px 0px' }}>
-              Farger
-            </th>
-          </tr>
-          <tr>
-            <th className="color-th-corner" />
-            {GROUPS.map((group, gi) => (
-              <Fragment key={group.label}>
-                {gi > 0 && <th className="color-th-group-spacer" />}
-                <th colSpan={group.variants.length} className="color-th-group color-th-group-cell">
-                  {group.label}
-                </th>
-              </Fragment>
-            ))}
-          </tr>
-          <tr>
-            <th className="color-th-corner" />
-            {GROUPS.map((group, gi) => (
-              <Fragment key={group.label}>
-                {gi > 0 && <th className="color-th-spacer-row" />}
-                {group.variants.map((v) => (
-                  <th key={v.key} className="color-th-variant">
-                    {v.abbr}
-                  </th>
-                ))}
-              </Fragment>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {colors.map((color) => (
+          {palettes.map((color) => (
             <tr key={color}>
               <td className="color-td-name">{color}</td>
               {GROUPS.map((group, gi) => (

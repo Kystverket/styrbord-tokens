@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/Kystverket/styrbord-tokens/compare/styrbord-tokens-v1.2.0...styrbord-tokens-v1.2.1) (2026-11-19)
+
+
+### Bug Fixes
+
+* lysere text-default i mørk modus ([#30](https://github.com/Kystverket/styrbord-tokens/issues/30)) ([0083347](https://github.com/Kystverket/styrbord-tokens/commit/008334753bcb18089744c647d1fe7fd65a2a42ef))
+
 ## [1.2.0](https://github.com/Kystverket/styrbord-tokens/compare/styrbord-tokens-v1.1.0...styrbord-tokens-v1.2.0) (2026-11-18)
 
 
